@@ -20,7 +20,6 @@ public class LinkedStack <T> implements StackInterface <T>
 		T outData = topNode.getData();
 		topNode = topNode.getNext();
 		return outData;
-
 	}
 	public T peek() {
 		if (isEmpty())

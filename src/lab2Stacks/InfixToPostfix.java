@@ -10,10 +10,13 @@ public class InfixToPostfix {
 			a = a.substring(0, a.length() - 1);
 					switch (nextChar)
 					{
-					case '0':
+					case '1':
 						postfix += nextChar;
 						break;
-					case '1':
+					case '2':
+						postfix += nextChar;
+						break;
+					case '3':
 						postfix += nextChar;
 						break;
 					case '^':
@@ -55,11 +58,11 @@ public class InfixToPostfix {
 						while (topOperator != '(') {
 							postfix += topOperator;
 							topOperator = operatorStack.pop();
+							
 						}
 						break;
 					default:
 						break; // ignore unexpected characters
-
 					}
 		}
 
