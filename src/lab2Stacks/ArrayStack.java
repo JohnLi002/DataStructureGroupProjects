@@ -3,9 +3,9 @@ package lab2Stacks;
 import java.util.EmptyStackException;
 
 public class ArrayStack <T> implements StackInterface <T> {
-	private T[] stackArray;
-	private int stackLength;
-	private int capacity;
+	private T[] stackArray; //array to hold objects
+	private int stackLength; //number of object in the array
+	private int capacity; //number of objects an array can hold
 	private static final int DEFAULT_CAPACITY = 50;
 
 	public ArrayStack() {
@@ -20,7 +20,11 @@ public class ArrayStack <T> implements StackInterface <T> {
 	
 	@Override
 	public void push(T anEntry) {
-		// TODO Auto-generated method stub
+		if(stackLength == capacity) {
+			capacity *= 2;
+		}
+		stackArray[stackLength] = anEntry;
+		stackLength++;
 	}
 	
 	@Override
@@ -44,13 +48,18 @@ public class ArrayStack <T> implements StackInterface <T> {
 		return outData;
 	}
 	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isEmpty() { //checks to see if the Array in stackArray is empty
+		for(int i = 0; i < stackLength; i++) {
+			if(stackArray[i] != null) { //if there is something that is not null, then there is something so the method returns false
+				return false;
+			}
+		}
+		return true;
 	}
 	@Override
-	public void clear() {
-		// TODO Auto-generated method stub
-
+	public void clear() { //goes through array and turns everything into null
+		for(int i = 0; i < stackLength; i++) {
+			stackArray[i] = null;
+		}
 	}
 }
