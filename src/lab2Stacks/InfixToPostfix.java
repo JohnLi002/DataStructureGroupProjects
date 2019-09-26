@@ -71,7 +71,7 @@ public class InfixToPostfix {
 		return postfix;
 	}
 	
-	private int precedence(char c) {
+	private static int precedence(char c) {
 		switch(c) {
 		case '(':
 			return 1;
