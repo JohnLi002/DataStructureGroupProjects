@@ -3,7 +3,7 @@ package lab2Stacks;
 public class LinkedStack <T> implements StackInterface <T>
 {
 	private Node firstNode;
-	
+
 	public LinkedStack()
 	{
 		firstNode = null;
@@ -22,24 +22,24 @@ public class LinkedStack <T> implements StackInterface <T>
 	{
 		return null;	// stub; to be implemented
 	}
-	
+
 	@Override
 	public boolean isEmpty()
 	{
 		return (topNode == null);
-	};
-	
+	}
+
 	public void clear()
 	{
 		topNode = null;	// not a stub, but the code is very simple
-	};
-	
+	}
+
 	private class Node
 	{
 		private T data;
 		private Node next;
-		
-		public Node( )
+
+		public Node()
 		{
 			this (null);
 		}
