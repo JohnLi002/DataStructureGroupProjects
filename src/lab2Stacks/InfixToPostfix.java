@@ -1,7 +1,7 @@
 package lab2Stacks;
 
 public class InfixToPostfix {
-	public String convert(String a) {
+	public static String convert(String a) {
 		LinkedStack<Character> operatorStack = new LinkedStack<>();
 		String postfix = "";
 
@@ -11,6 +11,9 @@ public class InfixToPostfix {
 					switch (nextChar)
 					{
 					case '0':
+						postfix += nextChar;
+						break;
+					case '1':
 						postfix += nextChar;
 						break;
 					case '^':
