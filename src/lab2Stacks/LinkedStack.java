@@ -1,41 +1,43 @@
 package lab2Stacks;
 
+import java.util.EmptyStackException;
+
 public class LinkedStack <T> implements StackInterface <T>
 {
-	private Node firstNode;
+	private Node topNode; //top node is the first Node but for a stack, top is the first Node
 
-	public LinkedStack()
-	{
-		firstNode = null;
+	public LinkedStack() {
+		topNode = null;
 	}
-	public void push(T anEntry)
-	{
+	public void push(T anEntry) {
 		Node dataNode = new Node(anEntry);
 		dataNode.setNext(topNode);
 		topNode = dataNode;
 	}
-	public T pop()
-	{
-		return null;	// stub; to be implemented
+	public T pop() {
+		if (isEmpty())
+			throw new EmptyStackException();
+		T outData = topNode.getData();
+		topNode = topNode.getNext();
+		return outData;
+
 	}
-	public T peek()
-	{
-		return null;	// stub; to be implemented
+	public T peek() {
+		if (isEmpty())
+			throw new EmptyStackException();
+		return  topNode.getData();
 	}
 
 	@Override
-	public boolean isEmpty()
-	{
+	public boolean isEmpty() {
 		return (topNode == null);
 	}
 
-	public void clear()
-	{
+	public void clear() {
 		topNode = null;	// not a stub, but the code is very simple
 	}
 
-	private class Node
-	{
+	private class Node {
 		private T data;
 		private Node next;
 
