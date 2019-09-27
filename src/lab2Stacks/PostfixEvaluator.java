@@ -1,7 +1,7 @@
 package lab2Stacks;
 
 public class PostfixEvaluator {
-	public static double evalutaor(String a) {
+	public static double evaluator(String a) {
 		LinkedStack<Double> valueStack = new LinkedStack<>();
 				while (!a.isEmpty()) {
 					char nextCharacter = a.charAt(0);
