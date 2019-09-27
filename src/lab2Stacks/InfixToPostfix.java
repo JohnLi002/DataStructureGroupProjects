@@ -24,7 +24,7 @@ public class InfixToPostfix {
                               isPaired (openDelimiter, nextCharacter );
                     }
                     break;
-                default: //irelevant character
+                default: //irrelevant character
                     break;
                  
             }
@@ -53,81 +53,25 @@ public class InfixToPostfix {
 		while (!a.isEmpty()) {
 			char nextChar = a.charAt(0);
 			a = a.substring(1, a.length());
-					switch (nextChar) {
-					case '0': // checks for numbers 0 to 9 variables
-						postfix += nextChar;
-						break;
-					case '1':
-						postfix += nextChar;
-						break;
-					case '2':
-						postfix += nextChar;
-						break;
-					case '3':
-						postfix += nextChar;
-						break;
-					case '4':
-						postfix += nextChar;
-						break;
-					case '5':
-						postfix += nextChar;
-						break;
-					case '6':
-						postfix += nextChar;
-						break;
-					case '7':
-						postfix += nextChar;
-						break;
-					case '8':
-						postfix += nextChar;
-						break;
-					case '9':
-						postfix += nextChar;
-						break;
-					case '^':
-						operatorStack.push(nextChar);
-						break;
-					case '+':
-						while (!operatorStack.isEmpty() && precedence(nextChar)<= precedence(operatorStack.peek())) {
-							postfix += operatorStack.peek();
-							operatorStack.pop();
-						}
-						operatorStack.push(nextChar);
-						break;
-					case '-':
-						while (!operatorStack.isEmpty() && precedence(nextChar)<= precedence(operatorStack.peek())) {
-							postfix += operatorStack.peek();
-							operatorStack.pop();
-						}
-						operatorStack.push(nextChar);
-						break;
-					case '*':
-						while (!operatorStack.isEmpty() && precedence(nextChar)<= precedence(operatorStack.peek())) {
-							postfix += operatorStack.peek();
-							operatorStack.pop();
-						}
-						operatorStack.push(nextChar);
-						break;
-					case '/' :
-						while (!operatorStack.isEmpty() && precedence(nextChar) <= precedence(operatorStack.peek())) {
-							postfix += operatorStack.peek();
-							operatorStack.pop();
-						}
-						operatorStack.push(nextChar);
-						break;
-					case '(':
-						operatorStack.push(nextChar);
-						break;
-					case ')' : // the stack is not empty
-						char topOperator = operatorStack.pop();
-						while (topOperator != '(') {
-							postfix += topOperator;
-							topOperator = operatorStack.pop();	
-						}
-						break;
-					default:
-						break; // ignore unexpected characters
-					}
+			if('0' <= nextChar && nextChar <= '9') {
+				postfix += nextChar;
+			} else if(nextChar == '+' || nextChar == '-' || nextChar == '*' || nextChar == '/') {
+				while (!operatorStack.isEmpty() && precedence(nextChar)<= precedence(operatorStack.peek())) {
+					postfix += operatorStack.peek();
+					operatorStack.pop();
+				}
+				operatorStack.push(nextChar);
+			} 
+			else if(nextChar == '(') {
+				operatorStack.push(nextChar);
+			} 
+			else if (nextChar == ')') {
+				char topOperator = operatorStack.pop();
+				while (topOperator != '(') {
+					postfix += topOperator;
+					topOperator = operatorStack.pop();	
+				}
+			} //ignore everything else is there is an unexpected variable
 		}
 
 		while (!operatorStack.isEmpty()) {
