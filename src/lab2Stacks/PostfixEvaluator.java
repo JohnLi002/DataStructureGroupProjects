@@ -1,7 +1,8 @@
 package lab2Stacks;
 
 public class PostfixEvaluator {
-	public static double evaluator(String a) {
+	public static double eval(String a) {
+		
 		LinkedStack<Double> valueStack = new LinkedStack<>();
 				while (!a.isEmpty()) {
 					char nextCharacter = a.charAt(0);
@@ -19,6 +20,6 @@ public class PostfixEvaluator {
 								break;
 							}
 				}
-		return valueStack.pop();
+		
 	}
 }
