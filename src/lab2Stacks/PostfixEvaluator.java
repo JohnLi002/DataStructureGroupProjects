@@ -7,7 +7,7 @@ public class PostfixEvaluator {
 			char nextChar = a.charAt(0);
 			a = a.substring(1, a.length());
 			if('0' <= nextChar && nextChar <= '9') {
-				valueStack.push((double) (nextChar - '0')); //Turns the character into double.
+				valueStack.push((double) (nextChar - '0')); //Turns the character into double after converting next to the proper number.
 			}else if(nextChar == '+'  || nextChar == '-' || nextChar == '*' || nextChar == '/' || nextChar == '^') {
 				double operandTwo = valueStack.pop();
 				double operandOne = valueStack.pop();
