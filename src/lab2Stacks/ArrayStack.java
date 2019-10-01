@@ -16,6 +16,7 @@ public class ArrayStack <T> implements StackInterface <T> {
 	public ArrayStack(int size) {
 		capacity = size;
 		stackArray = (T[]) new Object[capacity];
+		stackLength = 0;
 	}
 	
 	@Override

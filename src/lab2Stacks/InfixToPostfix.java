@@ -1,7 +1,7 @@
 package lab2Stacks;
 
 public class InfixToPostfix {
-	private static boolean checkBalance (String expression) { //part of the lab is to also make sure that there is no problem with the brackets
+	public static boolean checkBalance (String expression) { //part of the lab is to also make sure that there is no problem with the brackets
 		LinkedStack <Character> openDelimiterStack = new LinkedStack<>();
 		boolean isBalanced = true;
 		int index = 0;
@@ -43,10 +43,6 @@ public class InfixToPostfix {
 	}
 
 	public static String convert(String a) {
-		if(!checkBalance(a)) { //checks to make sure that everything actually closes
-			return "nope"; //change output if the balance is wrong
-		}
-
 		LinkedStack<Character> operatorStack = new LinkedStack<>();
 		String postfix = "";
 
