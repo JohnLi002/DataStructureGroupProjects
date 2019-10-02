@@ -1,5 +1,9 @@
 package lab2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.util.Scanner;
 
 public class UserUsage {

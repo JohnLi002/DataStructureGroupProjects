@@ -1,5 +1,9 @@
 package lab2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class ExpressionTest {
 	public static void main(String[] args) {
 		String a = "(1+2)*3";

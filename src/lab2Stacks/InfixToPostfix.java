@@ -1,5 +1,9 @@
 package lab2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class InfixToPostfix {
 	public static boolean checkBalance (String expression) { //part of the lab is to also make sure that there is no problem with the brackets
 		LinkedStack <Character> openDelimiterStack = new LinkedStack<>();

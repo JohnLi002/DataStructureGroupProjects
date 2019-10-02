@@ -1,4 +1,9 @@
 package lab2Stacks;
+
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public interface StackInterface <T> {
 
     /**

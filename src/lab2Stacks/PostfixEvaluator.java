@@ -1,5 +1,9 @@
 package lab2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class PostfixEvaluator {
 	public static double eval(String a) {
 		LinkedStack<Double> valueStack = new LinkedStack<>();
