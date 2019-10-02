@@ -11,8 +11,8 @@ public class PostfixEvaluator {
 			}else if(nextChar == '+'  || nextChar == '-' || nextChar == '*' || nextChar == '/' || nextChar == '^') {
 				double operandTwo = valueStack.pop();
 				double operandOne = valueStack.pop();
-				
 				double result;
+				
 				if(nextChar == '+') {
 					result = operandOne + operandTwo;
 				}else if(nextChar == '-') {
