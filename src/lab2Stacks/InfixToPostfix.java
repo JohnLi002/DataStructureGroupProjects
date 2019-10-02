@@ -52,7 +52,7 @@ public class InfixToPostfix {
 			if('0' <= nextChar && nextChar <= '9') {
 				postfix += nextChar;
 			} 
-			else if(nextChar == '+' || nextChar == '-' || nextChar == '*' || nextChar == '/') {
+			else if(nextChar == '+' || nextChar == '-' || nextChar == '*' || nextChar == '/' || nextChar == '^') {
 				while (!operatorStack.isEmpty() && precedence(nextChar)<= precedence(operatorStack.peek())) {
 					postfix += operatorStack.peek();
 					operatorStack.pop();
