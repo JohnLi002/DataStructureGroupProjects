@@ -35,5 +35,23 @@ public class ExpressionTest {
 		System.out.println(f);
 		System.out.println(InfixToPostfix.convert(f));
 		System.out.println(PostfixEvaluator.eval(InfixToPostfix.convert(f)));
+		
+		String g = "(4-5";
+		System.out.println(g);
+		System.out.println(InfixToPostfix.checkBalance(g) + "\n");
+		
+		String h = "5-3)";
+		System.out.println(h);
+		System.out.println(InfixToPostfix.checkBalance(h) + "\n");
+		
+		String i = "((2-3)";
+		System.out.println(i);
+		System.out.println(InfixToPostfix.checkBalance(i) + "\n");
+		
+		String j = "((7-9)*(3+3))";
+		System.out.println(j);
+		System.out.println(InfixToPostfix.checkBalance(j));
+		System.out.println(InfixToPostfix.convert(j));
+		System.out.println(PostfixEvaluator.eval(InfixToPostfix.convert(j)));
 	}
 }
