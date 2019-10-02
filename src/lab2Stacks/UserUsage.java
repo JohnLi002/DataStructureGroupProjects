@@ -2,7 +2,7 @@ package lab2Stacks;
 
 import java.util.Scanner;
 
-public class UserControl {
+public class UserUsage {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
