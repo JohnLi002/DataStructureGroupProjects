@@ -21,6 +21,9 @@ public class LinkedStack<T> implements StackInterface<T>{
 		topNode = newNode;
 	}
 
+	/**
+	 * replace topNode with the next node. Also returns the previous data and
+	 */
 	@Override
 	public T pop() {
 		if(!isEmpty()) {
@@ -31,6 +34,9 @@ public class LinkedStack<T> implements StackInterface<T>{
 		return oldData;
 	}
 
+	/**
+	 * return the data of the topNode
+	 */
 	@Override
 	public T peek() {
 		return topNode.getData();
