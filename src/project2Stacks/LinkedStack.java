@@ -1,5 +1,7 @@
 package project2Stacks;
 
+import java.util.EmptyStackException;
+
 public class LinkedStack<T> implements StackInterface<T>{
 	private Node topNode;
 	
@@ -14,20 +16,24 @@ public class LinkedStack<T> implements StackInterface<T>{
 	
 	@Override
 	public void push(T anEntry) {
-		// TODO Auto-generated method stub
-		
+		Node newNode = new Node(anEntry);
+		newNode.setNext(topNode);
+		topNode = newNode;
 	}
 
 	@Override
 	public T pop() {
-		// TODO Auto-generated method stub
-		return null;
+		if(!isEmpty()) {
+			throw new EmptyStackException();
+		}
+		T oldData = topNode.getData();
+		topNode = topNode.getNext();
+		return oldData;
 	}
 
 	@Override
 	public T peek() {
-		// TODO Auto-generated method stub
-		return null;
+		return topNode.getData();
 	}
 
 	/**
@@ -40,13 +46,13 @@ public class LinkedStack<T> implements StackInterface<T>{
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
+		topNode = null;
 		
 	}
 	
 	private class Node{
-		public T data;
-		public Node next;
+		private T data;
+		private Node next;
 		
 		Node(){
 			data = null;
@@ -60,6 +66,18 @@ public class LinkedStack<T> implements StackInterface<T>{
 		
 		public void setData(T entry) {
 			data = entry;
+		}
+		
+		public T getData() {
+			return data;
+		}
+		
+		public void setNext(Node n) {
+			next = n;
+		}
+		
+		public Node getNext() {
+			return next;
 		}
 	}
 
