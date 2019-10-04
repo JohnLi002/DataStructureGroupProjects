@@ -245,9 +245,6 @@ public class Calculator_javafx extends Application
 					button_open.setPrefHeight(64);
 					button_open.setFont(Font.font("System", FontWeight.BOLD, 24));
 					button_open.setAlignment(Pos.CENTER);
-					button_open.setOnAction( e -> {
-						screen.setText( screen.getText() + "(" );
-					});
 					
 					Button button_close = new Button(")");
 					buttons_5.getChildren().add(button_close);
@@ -255,8 +252,22 @@ public class Calculator_javafx extends Application
 					button_close.setPrefHeight(64);
 					button_close.setFont(Font.font("System", FontWeight.BOLD, 24));
 					button_close.setAlignment(Pos.CENTER);
+					button_close.setTextFill(Paint.valueOf("333333"));
+					button_close.setBackground( new Background(new BackgroundFill(
+					/*cont.*/	Paint.valueOf("c4c4c4"), CornerRadii.EMPTY, Insets.EMPTY )) );
+					
+					//	I need to interact with the buttons AFTER they have been created
+					button_open.setOnAction( e -> {
+						screen.setText( screen.getText() + "(" );
+						button_close.setTextFill(Paint.valueOf("000000"));
+						button_close.setBackground( new Background(new BackgroundFill(
+								Paint.valueOf("d0d0d0"), CornerRadii.EMPTY, Insets.EMPTY)));
+					});
 					button_close.setOnAction( e -> {
-						screen.setText( screen.getText() + ")" );
+						if (!button_close.getTextFill().equals(Paint.valueOf("333333")))
+						{
+							screen.setText( screen.getText() + ")" );
+						}
 					});
 					
 					Button button_equals = new Button("=");
