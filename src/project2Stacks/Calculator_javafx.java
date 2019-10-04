@@ -64,7 +64,10 @@ public class Calculator_javafx extends Application
 					button_less.setFont(Font.font("System", FontWeight.BOLD, 24));
 					button_less.setAlignment(Pos.CENTER);
 					button_less.setOnAction( e -> {
-						screen.setText("");
+						if(screen.getText().length() > 0)
+						{
+							screen.setText( screen.getText().substring(0, screen.getText().length()-1) );
+						}
 					});
 					
 					Button button_Q = new Button("Q");
