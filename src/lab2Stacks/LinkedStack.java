@@ -44,30 +44,24 @@ public class LinkedStack <T> implements StackInterface <T>
 		private T data;
 		private Node next;
 
-		public Node()
-		{
+		public Node() {
 			this (null);
 		}
-		public Node(T anEntry)
-		{
+		public Node(T anEntry) {
 			data = anEntry;
 			next = null;
 		}
-		public void setData (T dataPortion)
-		{
+		public void setData (T dataPortion) {
 			data = dataPortion;
 		}
-		public T getData()
-		{
+		public T getData() {
 			return data;
 		}
-		public void setNext(Node nextNode)
-		{
+		public void setNext(Node nextNode) {
 			next = nextNode;
 		}
-		public Node getNext()
-		{
+		public Node getNext() {
 			return next;
 		}
-	} // END Node
-} // END LinkedStack
+	} 
+} 

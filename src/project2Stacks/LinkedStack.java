@@ -7,8 +7,8 @@ public class LinkedStack<T> implements StackInterface<T>{
 		this(null);
 	}
 	
-	public LinkedStack(T something) {
-		topNode = something;
+	public LinkedStack(T firstNode) {
+		topNode = new Node(firstNode);
 	}
 	
 	
@@ -30,10 +30,12 @@ public class LinkedStack<T> implements StackInterface<T>{
 		return null;
 	}
 
+	/**
+	 * returns if the stack is empty or not
+	 */
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (topNode == null);
 	}
 
 	@Override
@@ -43,9 +45,22 @@ public class LinkedStack<T> implements StackInterface<T>{
 	}
 	
 	private class Node{
-		public data;
-		public next;
+		public T data;
+		public Node next;
 		
+		Node(){
+			data = null;
+			next = null;
+		}
+		
+		Node(T entry){
+			data = entry;
+			next = null;
+		}
+		
+		public void setData(T entry) {
+			data = entry;
+		}
 	}
 
 }
