@@ -2,76 +2,86 @@ package lab3Queues;
 
 
 public class LinkedQueue <T> implements QueueInterface <T> {
-    private Node frontNode;
-    private Node backNode;
-    
-    public LinkedQueue () {
-        frontNode = null;
-        backNode = null;
-    }
+	private Node frontNode;
+	private Node backNode;
+
+	public LinkedQueue () {
+		frontNode = null;
+		backNode = null;
+	}
 
 	@Override
 	public void enqueue (T newEntry){
-	       Node newNode = new Node (newEntry);
-	       if (isEmpty()) 
-	           frontNode = newNode;     
-	       else
-	           backNode.setNext(newNode);
-	       backNode = newNode;   
-	   }
+		Node newNode = new Node (newEntry);
+		if (isEmpty()) 
+			frontNode = newNode;     
+		else
+			backNode.setNext(newNode);
+		backNode = newNode;   
+	}
 
 
 	@Override
-	public T dequeue() {
-		// TODO Auto-generated method stub
-		return null;
+	public T dequeue (){
+		if (isEmpty()) {
+			throw new EmptyQueueException();
+		}
+		
+		T front = frontNode.getData();
+		frontNode = frontNode.getNext();
+		
+		if (frontNode == null) { // happens when only one entry was in the queue, so only one node is in the chain
+			backNode = null;
+		}
+		return front;
+
 	}
 
 	@Override
 	public T getFront(){
-        if (isEmpty())
-            throw new EmptyQueueException();
-        return frontNode.getData();  
-    }
-	
+		if (isEmpty())
+			throw new EmptyQueueException();
+		return frontNode.getData();  
+	}
+
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (frontNode == null && backNode == null); //checks to make sure both front and back nodes are empty
 	}
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
+		frontNode = null;
+		backNode = null;
+
 	}
-	
+
 	private class Node{
 		private T data;
 		private Node next;
-		
+
 		Node(){
 			data = null;
 			next = null;
 		}
-		
+
 		Node(T entry){
 			data = entry;
 			next = null;
 		}
-		
+
 		public void setData(T entry) {
 			data = entry;
 		}
-		
+
 		public T getData() {
 			return data;
 		}
-		
+
 		public void setNext(Node n) {
 			next = n;
 		}
-		
+
 		public Node getNext() {
 			return next;
 		}
