@@ -2,6 +2,10 @@ package lab3Queues;
 
 public class Passenger {
 	public int id;
-	public String destination;
-
+	public Station destination;
+	
+	public Passenger(int num, Station s) {
+		id = num;
+		destination = s;
+	}
 }

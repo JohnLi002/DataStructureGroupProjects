@@ -1,8 +1,10 @@
 package lab3Queues;
 
 public class Station {
-	String name;
-	LinkedQueue<Passenger> passengers = new LinkedQueue<>();
+	public String name;
+	public LinkedQueue<Passenger> passengers = new LinkedQueue<>();
 	
-	
+	public Station(String s) {
+		name = s;
+	}
 }
