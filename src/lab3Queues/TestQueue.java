@@ -8,9 +8,12 @@ public class TestQueue {
 		queue.enqueue(2);
 		queue.enqueue(3);
 		
+		System.out.println(queue.getFront());
+		
 		System.out.println(queue.dequeue());
 		System.out.println(queue.dequeue());
-		System.out.println(queue.dequeue());
+		System.out.println(queue.isEmpty());
+		queue.clear();
 		System.out.println(queue.isEmpty());
 	}
 }
