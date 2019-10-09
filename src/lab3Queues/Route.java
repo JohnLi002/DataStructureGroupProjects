@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Route {
-	public static Station[] stations;
+	public Station[] stations;
 	
-	private static Station getRandomDestination(Station origin)
+	private Station getRandomDestination(Station origin)
 	{
 		Station dest;
 		do
@@ -19,7 +19,7 @@ public class Route {
 	
 	public Route(String fileName) {
 		//read file 
-		try(Scanner scan = new Scanner(new File(fileName));){
+		try(Scanner scan = new Scanner(new File("" + fileName));){
 			int temp = 0;
 			while (scan.hasNextLine())
 			{
@@ -32,7 +32,7 @@ public class Route {
 		}
 	}
 	
-	public static void initializeStations() {
+	public void initializeStations() {
 		//for each statement generate a random number 0-15
 		//for each passenger numbers, create new passenger
 		//add it to queue
@@ -45,7 +45,7 @@ public class Route {
 		}
 	}
 	
-	public static void print()
+	public void print()
 	{
 		for(Station everyStation : stations) {
 			everyStation.print();
