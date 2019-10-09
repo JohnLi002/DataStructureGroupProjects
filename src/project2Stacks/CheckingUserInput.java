@@ -1,6 +1,6 @@
 package project2Stacks;
 
-public class checkingUserInput {
+public class CheckingUserInput {
 	
 	public static boolean balanceChecker(String equation) {
 		LinkedStack<Character> paranthesis = new LinkedStack<>();
