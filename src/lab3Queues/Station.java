@@ -25,8 +25,17 @@ public class Station {
 		System.out.println("----------------------");
 		System.out.println(name);
 		System.out.println("" + '\t' + "Passengers:" + '\n');
-		/*
-		 * have a for loop where we print each passenger on its own line
-		 */
+		if (!passengers.isEmpty())
+		{
+			Passenger placeholder = passengers.getFront();
+			Passenger temp;
+			do
+			{
+				temp = passengers.dequeue();
+				System.out.print(temp.toString());
+				passengers.enqueue(temp);
+			}while( !passengers.getFront().equals(placeholder) );
+		}
+		System.out.println("===================");
 	}
 }
