@@ -25,4 +25,13 @@ public class CalculatingResult {
 			return false;
 		}
 	}
+	public static boolean isPaired (char first, char second) {
+		return true; //placeholder for now
+	}
+	public static String convert(String a) {
+		return ""; //placeholder for now
+	}
+	public static int precedence(char c) {
+		return 0; //placeholder for now
+	}
 }
