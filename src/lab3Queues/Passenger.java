@@ -23,4 +23,10 @@ public class Passenger {
 	public Station getDestination() {
 		return destination;
 	}
+	
+	public String toString() {
+		String s = String.format("%d, %s", id, destination.getName());
+		
+		return s;
+	}
 }
