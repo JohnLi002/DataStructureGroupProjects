@@ -1,8 +1,8 @@
 package lab3Queues;
 
 public class Passenger {
-	public String id;
-	public Station destination;
+	private String id;
+	private Station destination;
 	
 	public Passenger(String id, Station destination)
 	{
