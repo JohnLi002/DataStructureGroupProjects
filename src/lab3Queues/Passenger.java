@@ -9,4 +9,12 @@ public class Passenger {
 		this.id = id;
 		this.destination = destination;
 	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public Station getDestination() {
+		return destination;
+	}
 }
