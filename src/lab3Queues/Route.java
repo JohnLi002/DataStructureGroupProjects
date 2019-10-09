@@ -32,7 +32,7 @@ public class Route {
 		}
 	}
 	
-	public static void initiallizeStations() {
+	public static void initializeStations() {
 		//for each statement generate a random number 0-15
 		//for each passenger numbers, create new passenger
 		//add it to queue
@@ -47,6 +47,10 @@ public class Route {
 	
 	public static void main(String[] args) {
 		
+		for(Station everyStation : stations) {
+			everyStation.print();
+			System.out.println("\n\n");
+		}
 		
 	}
 }
