@@ -15,5 +15,11 @@ public class TestQueue {
 		System.out.println(queue.isEmpty());
 		queue.clear();
 		System.out.println(queue.isEmpty());
+		
+		System.out.println("==============ROUTE CLASS=============");
+		
+		Route orangeLine = new Route("orange.txt");
+		orangeLine.initializeStations();
+		orangeLine.print();
 	}
 }

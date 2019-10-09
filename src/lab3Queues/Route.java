@@ -19,7 +19,7 @@ public class Route {
 	
 	public Route(String fileName) {
 		//read file 
-		try(Scanner scan = new Scanner(new File("orange.txt"));){
+		try(Scanner scan = new Scanner(new File(fileName));){
 			int temp = 0;
 			while (scan.hasNextLine())
 			{
@@ -45,12 +45,16 @@ public class Route {
 		}
 	}
 	
-	public static void main(String[] args) {
-		
+	public static void print()
+	{
 		for(Station everyStation : stations) {
 			everyStation.print();
-			System.out.println("\n\n");
+			System.out.println("\n");
 		}
-		
+	}
+	
+	public static void main(String[] args) {
+		//	CONSIDER DELETING MAIN
+		//	FOR "MAIN" LOOK TO TestQueue.java
 	}
 }
