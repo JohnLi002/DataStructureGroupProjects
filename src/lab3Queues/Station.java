@@ -20,4 +20,13 @@ public class Station {
 	public String getName() {
 		return name;
 	}
+	
+	public void print() {
+		System.out.println("----------------------");
+		System.out.println(name);
+		System.out.println("" + '\t' + "Passengers:" + '\n');
+		/*
+		 * have a for loop where we print each passenger on its own line
+		 */
+	}
 }
