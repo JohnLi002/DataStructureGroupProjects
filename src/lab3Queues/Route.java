@@ -10,7 +10,12 @@ public class Route {
 	public Route(String fileName) {
 		//read file 
 		try(Scanner scan = new Scanner(new File("orange.txt"));){
-			
+			int temp = 0;
+			while (scan.hasNextLine())
+			{
+				stations[temp] = new Station(scan.nextLine());
+				temp++;
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -24,8 +29,6 @@ public class Route {
 	}
 	
 	public static void main(String[] args) {
-		
-		
 		
 		
 	}
