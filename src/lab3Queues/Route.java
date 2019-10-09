@@ -9,52 +9,42 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Route {
-	public Station[] stations = new Station[17];
-	
-	private Station getRandomDestination(Station origin)
-	{
-		Station dest;
-		do
-		{
-			dest = stations[ (int)(Math.random()*stations.length) ];
-		}while( dest.equals(origin) );
-		return dest;
-	}
+	public Station[] stations = new Station[17]; //17 because that is the number of stations in the orange.txt file
 	
 	public Route(String fileName) {
-		//read file 
-		try(Scanner scan = new Scanner(new File("" + fileName));){
+		//reads file 
+		try(Scanner scan = new Scanner(new File(fileName));){
 			int temp = 0;
-			while (scan.hasNextLine())
-			{
+			while (scan.hasNextLine()) {
 				stations[temp] = new Station(scan.nextLine());
 				temp++;
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
 	public void initializeStations() {
-		//for each statement generate a random number 0-15
-		//for each passenger numbers, create new passenger
-		//add it to queue
-		for( Station eachStation : stations )
-		{
-			int temp = (int)(Math.random()*16);
-			for(int i = 0; i < temp; i++)
-			{
-				eachStation.add( new Passenger(getRandomDestination(eachStation)) );
+		for( Station eachStation : stations ) {
+			int temp = (int)(Math.random()*16); //create random number which is also the number of passengers that will be added
+			for(int i = 0; i < temp; i++) {
+				eachStation.add( new Passenger(getRandomDestination(eachStation)) ); //use method to give Passenger random station
 			}
 		}
 	}
 	
-	public void print()
-	{
+	private Station getRandomDestination(Station origin) { //gives passenger a random destination
+		Station dest;
+		do {
+			dest = stations[(int)(Math.random()*stations.length)]; //random station from array
+		} while( dest.equals(origin) ); //makes sure that the destination and current station are different
+		return dest;
+	}
+	
+	public void print() {
 		for(Station everyStation : stations) {
 			everyStation.print();
-			System.out.println("");
+			System.out.println();
 		}
 	}
 }
