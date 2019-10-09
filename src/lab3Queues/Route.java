@@ -8,7 +8,7 @@ public class Route {
 	public static Station[] stations;
 	
 	public Route(String fileName) {
-		//rade file 
+		//read file 
 		try(Scanner scan = new Scanner(new File("orange.txt"));){
 			
 		} catch (FileNotFoundException e) {
