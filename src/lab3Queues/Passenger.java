@@ -16,7 +16,7 @@ public class Passenger {
 			+ ((int)Math.random()*10) + ((int)Math.random()*10) + ((int)Math.random()*10);
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	
