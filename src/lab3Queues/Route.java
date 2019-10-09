@@ -26,6 +26,13 @@ public class Route {
 		//for each statement generate a random number 0-15
 		//for each passenger numbers, create new passenger
 		//add it to queue
+		for( Station eachStation : stations )
+		{
+			for(int i = 0; i < ((int)Math.random()*16); i++)
+			{
+				eachStation.add( new Passenger(/*PARAMETERS*/) );
+			}
+		}
 	}
 	
 	public static void main(String[] args) {

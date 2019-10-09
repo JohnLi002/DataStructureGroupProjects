@@ -11,4 +11,9 @@ public class Station {
 	public void fill() {
 		
 	}
+	
+	public void add( Passenger anEntry )
+	{
+		passengers.enqueue(anEntry);
+	}
 }
