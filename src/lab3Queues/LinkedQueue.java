@@ -17,7 +17,8 @@ public class LinkedQueue <T> implements QueueInterface <T> {
 	public void enqueue (T newEntry){
 		Node newNode = new Node (newEntry);
 		if (isEmpty()) 
-			frontNode = newNode;     
+			frontNode = newNode; //the queue is empty so that means the newEntry is both the first and last object
+			//so the object is added to the front as well
 		else
 			backNode.setNext(newNode);
 		backNode = newNode;   
@@ -26,24 +27,24 @@ public class LinkedQueue <T> implements QueueInterface <T> {
 
 	@Override
 	public T dequeue (){
-		if (isEmpty()) {
+		if (isEmpty()) { //exception because method cannot be used
 			throw new EmptyQueueException();
 		}
 		
 		T front = frontNode.getData();
 		frontNode = frontNode.getNext();
 		
-		if (frontNode == null) { // happens when only one entry was in the queue, so only one node is in the chain
+		if (frontNode == null) { //happens when only one entry was in the queue, so only one node is in the chain
 			backNode = null;
 		}
 		return front;
-
 	}
 
 	@Override
 	public T getFront(){
-		if (isEmpty())
-			throw new EmptyQueueException();
+		if (isEmpty()) {
+			throw new EmptyQueueException(); 
+		}
 		return frontNode.getData();  
 	}
 
@@ -56,7 +57,6 @@ public class LinkedQueue <T> implements QueueInterface <T> {
 	public void clear() {
 		frontNode = null;
 		backNode = null;
-
 	}
 
 	private class Node{
@@ -89,5 +89,4 @@ public class LinkedQueue <T> implements QueueInterface <T> {
 			return next;
 		}
 	}
-
 }
