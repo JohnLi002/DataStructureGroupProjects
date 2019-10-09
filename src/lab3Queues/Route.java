@@ -5,15 +5,15 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Route {
-	public Station[] stations;
+	public Station[] stations = new Station[17];
 	
 	private Station getRandomDestination(Station origin)
 	{
 		Station dest;
 		do
 		{
-			dest = stations[(int)(Math.random()*stations.length)];
-		}while( !dest.equals(origin) );
+			dest = stations[ (int)(Math.random()*stations.length) ];
+		}while( dest.equals(origin) );
 		return dest;
 	}
 	
@@ -38,7 +38,7 @@ public class Route {
 		//add it to queue
 		for( Station eachStation : stations )
 		{
-			for(int i = 0; i < ((int)Math.random()*16); i++)
+			for(int i = 0; i < ( (int)(Math.random()*16) ); i++)
 			{
 				eachStation.add( new Passenger(getRandomDestination(eachStation)) );
 			}
@@ -49,7 +49,7 @@ public class Route {
 	{
 		for(Station everyStation : stations) {
 			everyStation.print();
-			System.out.println("\n");
+			System.out.println("");
 		}
 	}
 	

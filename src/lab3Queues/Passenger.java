@@ -12,8 +12,8 @@ public class Passenger {
 	public Passenger(Station destination)
 	{
 		this.destination = destination;
-		this.id = "" + ((int)Math.random()*10) + ((int)Math.random()*10)
-			+ ((int)Math.random()*10) + ((int)Math.random()*10) + ((int)Math.random()*10);
+		this.id = "" + ((int)(Math.random()*10)) + ((int)(Math.random()*10))
+			+ ((int)(Math.random()*10)) + ((int)(Math.random()*10)) + ((int)(Math.random()*10));
 	}
 	
 	public String getId() {
@@ -25,8 +25,6 @@ public class Passenger {
 	}
 	
 	public String toString() {
-		String s = String.format("%d, %s", id, destination.getName());
-		
-		return s;
+		return "" + id + ", " + destination.getName();
 	}
 }

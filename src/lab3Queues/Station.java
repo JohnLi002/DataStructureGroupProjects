@@ -32,7 +32,7 @@ public class Station {
 			do
 			{
 				temp = passengers.dequeue();
-				System.out.print(temp.toString());
+				System.out.println(temp.toString());
 				passengers.enqueue(temp);
 			}while( !passengers.getFront().equals(placeholder) );
 		}
