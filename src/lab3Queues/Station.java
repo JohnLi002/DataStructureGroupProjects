@@ -16,8 +16,7 @@ public class Station {
 		
 	}
 	
-	public void add( Passenger anEntry )
-	{
+	public void add(Passenger anEntry) {
 		passengers.enqueue(anEntry);
 	}
 	
@@ -25,7 +24,7 @@ public class Station {
 		return name;
 	}
 	
-	public void print() {
+	public void print() { //prints out name of station and all passengers inside station
 		System.out.println("----------------------");
 		System.out.println(name);
 		System.out.println("" + '\t' + "Passengers:" + '\n');
