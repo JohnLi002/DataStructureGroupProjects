@@ -1,5 +1,9 @@
 package lab3Queues;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class TestQueue {
 	public static void main(String[] args) {
 		LinkedQueue<Integer> queue = new LinkedQueue<>();

@@ -1,5 +1,9 @@
 package lab3Queues;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Station {
 	private String name;
 	private LinkedQueue<Passenger> passengers = new LinkedQueue<>();

@@ -1,5 +1,8 @@
 package lab3Queues;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public class LinkedQueue <T> implements QueueInterface <T> {
 	private Node frontNode;
