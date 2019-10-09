@@ -38,7 +38,8 @@ public class Route {
 		//add it to queue
 		for( Station eachStation : stations )
 		{
-			for(int i = 0; i < ( (int)(Math.random()*16) ); i++)
+			int temp = (int)(Math.random()*16);
+			for(int i = 0; i < temp; i++)
 			{
 				eachStation.add( new Passenger(getRandomDestination(eachStation)) );
 			}
