@@ -32,6 +32,17 @@ public class Calculator_javafx extends Application
 		aButt.setBackground( new Background(new BackgroundFill(
 		/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
 	}
+	private Button mostRecent = new Button();
+	private void setMostRecent(Button aButt)
+	{
+		mostRecent.setTextFill(Paint.valueOf("333333"));
+		mostRecent.setBackground( new Background(new BackgroundFill(
+		/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		aButt.setTextFill(Paint.valueOf("222222"));
+		aButt.setBackground( new Background(new BackgroundFill(
+		/*cont.*/	Paint.valueOf("cecece"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		mostRecent = aButt;
+	}
 	private boolean checkBalance(String aString)
 	{
 		/*	@returns TRUE if the string still needs more ")"
@@ -40,17 +51,17 @@ public class Calculator_javafx extends Application
 		int count_open = 0;
 		int count_close = 0;
 		String aStringTemp = aString;
-		while(aStringTemp != null)
+		while(!aStringTemp.isEmpty())
 		{
-			if( aStringTemp.substring(0,2).contentEquals("(") )
+			if( aStringTemp.substring(0,1).contentEquals("(") )
 			{
 				count_open++;
 			}
-			else if( aStringTemp.substring(0,2).contentEquals(")") )
+			else if( aStringTemp.substring(0,1).contentEquals(")") )
 			{
 				count_close++;
 			}
-			aStringTemp = aStringTemp.substring(1, (aStringTemp.length()-1) );
+			aStringTemp = aStringTemp.substring(1, (aStringTemp.length()) );
 		}
 		if (count_open > count_close)
 		{
@@ -70,7 +81,7 @@ public class Calculator_javafx extends Application
 		complete.setAlignment(Pos.TOP_CENTER);
 		complete.setPadding(new Insets(10,10,10,10));
 		complete.setBackground( new Background(new BackgroundFill(
-				Paint.valueOf("a2a2a2"), CornerRadii.EMPTY, Insets.EMPTY )) );
+				Paint.valueOf("696969"), CornerRadii.EMPTY, Insets.EMPTY )) );
 		complete.setSpacing(10);
 		
 			TextField screen = new TextField();
@@ -99,6 +110,7 @@ public class Calculator_javafx extends Application
 					standard(button_C);
 					button_C.setOnAction( e -> {
 						screen.setText("");
+						setMostRecent(button_C);
 					});
 					
 					Button button_less = new Button("<");
@@ -109,6 +121,7 @@ public class Calculator_javafx extends Application
 						{
 							screen.setText( screen.getText().substring(0, screen.getText().length()-1) );
 						}
+						setMostRecent(button_less);
 					});
 					
 					Button button_Q = new Button("Q");
@@ -116,6 +129,7 @@ public class Calculator_javafx extends Application
 					standard(button_Q);
 					button_Q.setOnAction( e -> {
 						screen.setText("");
+						setMostRecent(button_Q);
 					});
 					
 					Button button_div = new Button("/");
@@ -124,6 +138,7 @@ public class Calculator_javafx extends Application
 					button_div.setPrefWidth(70);
 					button_div.setOnAction( e -> {
 						screen.setText( screen.getText() + "/" );
+						setMostRecent(button_div);
 					});
 				
 				HBox buttons_2 = new HBox();
@@ -137,6 +152,7 @@ public class Calculator_javafx extends Application
 					standard(button_7);
 					button_7.setOnAction( e -> {
 						screen.setText( screen.getText() + "7" );
+						setMostRecent(button_7);
 					});
 					
 					Button button_8 = new Button("8");
@@ -144,6 +160,7 @@ public class Calculator_javafx extends Application
 					standard(button_8);
 					button_8.setOnAction( e -> {
 						screen.setText( screen.getText() + "8" );
+						setMostRecent(button_8);
 					});
 					
 					Button button_9 = new Button("9");
@@ -151,6 +168,7 @@ public class Calculator_javafx extends Application
 					standard(button_9);
 					button_9.setOnAction( e -> {
 						screen.setText( screen.getText() + "9" );
+						setMostRecent(button_9);
 					});
 					
 					Button button_mult = new Button("*");
@@ -158,6 +176,7 @@ public class Calculator_javafx extends Application
 					standard(button_mult);
 					button_mult.setOnAction( e -> {
 						screen.setText( screen.getText() + "*" );
+						setMostRecent(button_mult);
 					});
 				
 				HBox buttons_3 = new HBox();
@@ -171,6 +190,7 @@ public class Calculator_javafx extends Application
 					standard(button_4);
 					button_4.setOnAction( e -> {
 						screen.setText( screen.getText() + "4" );
+						setMostRecent(button_4);
 					});
 					
 					Button button_5 = new Button("5");
@@ -178,6 +198,7 @@ public class Calculator_javafx extends Application
 					standard(button_5);
 					button_5.setOnAction( e -> {
 						screen.setText( screen.getText() + "5" );
+						setMostRecent(button_5);
 					});
 					
 					Button button_6 = new Button("6");
@@ -185,6 +206,7 @@ public class Calculator_javafx extends Application
 					standard(button_6);
 					button_6.setOnAction( e -> {
 						screen.setText( screen.getText() + "6" );
+						setMostRecent(button_6);
 					});
 					
 					Button button_sub = new Button("-");
@@ -192,6 +214,7 @@ public class Calculator_javafx extends Application
 					standard(button_sub);
 					button_sub.setOnAction( e -> {
 						screen.setText( screen.getText() + "-" );
+						setMostRecent(button_sub);
 					});
 				
 				HBox buttons_4 = new HBox();
@@ -205,6 +228,7 @@ public class Calculator_javafx extends Application
 					standard(button_1);
 					button_1.setOnAction( e -> {
 						screen.setText( screen.getText() + "1" );
+						setMostRecent(button_1);
 					});
 					
 					Button button_2 = new Button("2");
@@ -212,6 +236,7 @@ public class Calculator_javafx extends Application
 					standard(button_2);
 					button_2.setOnAction( e -> {
 						screen.setText( screen.getText() + "2" );
+						setMostRecent(button_2);
 					});
 					
 					Button button_3 = new Button("3");
@@ -219,6 +244,7 @@ public class Calculator_javafx extends Application
 					standard(button_3);
 					button_3.setOnAction( e -> {
 						screen.setText( screen.getText() + "3" );
+						setMostRecent(button_3);
 					});
 					
 					Button button_add = new Button("+");
@@ -226,6 +252,7 @@ public class Calculator_javafx extends Application
 					standard(button_add);
 					button_add.setOnAction( e -> {
 						screen.setText( screen.getText() + "+" );
+						setMostRecent(button_add);
 					});
 				
 				HBox buttons_5 = new HBox();
@@ -239,6 +266,7 @@ public class Calculator_javafx extends Application
 					standard(button_0);
 					button_0.setOnAction( e -> {
 						screen.setText( screen.getText() + "0" );
+						setMostRecent(button_0);
 					});
 					
 					Button button_open = new Button("(");
@@ -257,15 +285,18 @@ public class Calculator_javafx extends Application
 						button_close.setTextFill(Paint.valueOf("000000"));
 						button_close.setBackground( new Background(new BackgroundFill(
 								Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
+						setMostRecent(button_open);
 					});
 					button_close.setOnAction( e -> {
 						if (!button_close.getTextFill().equals(Paint.valueOf("333333")))
 						{
 							screen.setText( screen.getText() + ")" );
-							if( !checkBalance( screen.getText() ) )
-							{
+							setMostRecent(button_close);
+							if( !(checkBalance( screen.getText()) ) )
+							{	//	if balanced parenthesis
+								button_close.setTextFill(Paint.valueOf("333333"));
 								button_close.setBackground( new Background(new BackgroundFill(
-										Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
+										Paint.valueOf("f3a0a0"), CornerRadii.EMPTY, Insets.EMPTY)));
 							}
 						}
 					});
@@ -274,7 +305,9 @@ public class Calculator_javafx extends Application
 					buttons_5.getChildren().add(button_equals);
 					standard(button_equals);
 					button_equals.setOnAction( e -> {
-						screen.setText( screen.getText() + "=" );
+						//	call class/method to handle calculations
+						screen.setText( "  =  " + screen.getText() );
+						setMostRecent(button_equals);
 					});
 		
 		Scene scene = new Scene(complete, 320, 410);
