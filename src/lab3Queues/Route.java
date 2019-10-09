@@ -57,9 +57,4 @@ public class Route {
 			System.out.println("");
 		}
 	}
-	
-	public static void main(String[] args) {
-		//	CONSIDER DELETING MAIN
-		//	FOR "MAIN" LOOK TO TestQueue.java
-	}
 }
