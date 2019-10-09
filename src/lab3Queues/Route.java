@@ -31,6 +31,7 @@ public class Route {
 			for(int i = 0; i < ((int)Math.random()*16); i++)
 			{
 				eachStation.add( new Passenger(/*PARAMETERS*/) );
+				
 			}
 		}
 	}

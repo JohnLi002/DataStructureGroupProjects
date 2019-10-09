@@ -1,7 +1,7 @@
 package lab3Queues;
 
 public class Station {
-	public String name;
+	private String name;
 	private LinkedQueue<Passenger> passengers = new LinkedQueue<>();
 	
 	public Station(String s) {
@@ -15,5 +15,9 @@ public class Station {
 	public void add( Passenger anEntry )
 	{
 		passengers.enqueue(anEntry);
+	}
+	
+	public String getName() {
+		return name;
 	}
 }
