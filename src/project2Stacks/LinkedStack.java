@@ -6,13 +6,8 @@ public class LinkedStack<T> implements StackInterface<T>{
 	private Node topNode;
 	
 	public LinkedStack() {
-		this(null);
+		topNode = null;
 	}
-	
-	public LinkedStack(T firstNode) {
-		topNode = new Node(firstNode);
-	}
-	
 	
 	@Override
 	public void push(T anEntry) {

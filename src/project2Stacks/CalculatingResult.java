@@ -13,7 +13,7 @@ public class CalculatingResult {
 			if(c =='(') {
 				paranthesis.push(c);
 			} else if(c == ')' && paranthesis.isEmpty()) {
-				return false;
+				return false; 
 			} else if(c == ')') {
 				paranthesis.pop();
 			}
