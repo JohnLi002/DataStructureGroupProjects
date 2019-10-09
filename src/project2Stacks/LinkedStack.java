@@ -26,11 +26,12 @@ public class LinkedStack<T> implements StackInterface<T>{
 	 */
 	@Override
 	public T pop() {
-		if(!isEmpty()) {
+		if(isEmpty()) {
 			throw new EmptyStackException();
 		}
 		T oldData = topNode.getData();
 		topNode = topNode.getNext();
+		
 		return oldData;
 	}
 
@@ -53,7 +54,6 @@ public class LinkedStack<T> implements StackInterface<T>{
 	@Override
 	public void clear() {
 		topNode = null;
-		
 	}
 	
 	private class Node{

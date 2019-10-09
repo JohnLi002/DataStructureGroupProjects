@@ -1,10 +1,11 @@
 package project2Stacks;
 
-public class CalculationingResult {
+public class CalculatingResult {
 	public int calculatingAnswer(String equation) { //will take in the equation and calculate the correct answer
 		return 0; //a placeholder for now
 	}
-	public boolean balanceChacker(String equation) {
+	
+	public static boolean balanceChecker(String equation) {
 		LinkedStack<Character> paranthesis = new LinkedStack<>();
 		while(!equation.isEmpty()) {
 			char c = equation.charAt(0);
@@ -13,10 +14,15 @@ public class CalculationingResult {
 				paranthesis.push(c);
 			} else if(c == ')' && paranthesis.isEmpty()) {
 				return false;
+			} else if(c == ')') {
+				paranthesis.pop();
 			}
 		}
 		
-		return false; //a placeholder for now
+		if(paranthesis.isEmpty()) {
+			return true;
+		} else {
+			return false;
+		}
 	}
-
 }
