@@ -35,9 +35,12 @@ public class Calculator_javafx extends Application
 	private Button mostRecent = new Button();
 	private void setMostRecent(Button aButt)
 	{
-		mostRecent.setTextFill(Paint.valueOf("333333"));
-		mostRecent.setBackground( new Background(new BackgroundFill(
-		/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		if( !(mostRecent.getTextFill().equals( Paint.valueOf("000000") )) )
+		{
+			mostRecent.setTextFill(Paint.valueOf("333333"));
+			mostRecent.setBackground( new Background(new BackgroundFill(
+			/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		}
 		aButt.setTextFill(Paint.valueOf("222222"));
 		aButt.setBackground( new Background(new BackgroundFill(
 		/*cont.*/	Paint.valueOf("cecece"), CornerRadii.EMPTY, Insets.EMPTY )) );
@@ -116,13 +119,7 @@ public class Calculator_javafx extends Application
 					Button button_less = new Button("<");
 					buttons_1.getChildren().add(button_less);
 					standard(button_less);
-					button_less.setOnAction( e -> {
-						if(screen.getText().length() > 0)
-						{
-							screen.setText( screen.getText().substring(0, screen.getText().length()-1) );
-						}
-						setMostRecent(button_less);
-					});
+					//	button_less.setOnAction needs to be after other objects have been created
 					
 					Button button_Q = new Button("Q");
 					buttons_1.getChildren().add(button_Q);
@@ -276,25 +273,26 @@ public class Calculator_javafx extends Application
 					Button button_close = new Button(")");
 					buttons_5.getChildren().add(button_close);
 					standard(button_close);
+					button_close.setTextFill(Paint.valueOf("000000"));
 					button_close.setBackground( new Background(new BackgroundFill(
 							Paint.valueOf("f3a0a0"), CornerRadii.EMPTY, Insets.EMPTY)));
 					
 					//	I need to interact with the buttons AFTER they have been created
 					button_open.setOnAction( e -> {
 						screen.setText( screen.getText() + "(" );
-						button_close.setTextFill(Paint.valueOf("000000"));
+						button_close.setTextFill(Paint.valueOf("333333"));
 						button_close.setBackground( new Background(new BackgroundFill(
 								Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
 						setMostRecent(button_open);
 					});
 					button_close.setOnAction( e -> {
-						if (!button_close.getTextFill().equals(Paint.valueOf("333333")))
+						if (!button_close.getTextFill().equals(Paint.valueOf("000000")))
 						{
 							screen.setText( screen.getText() + ")" );
 							setMostRecent(button_close);
 							if( !(checkBalance( screen.getText()) ) )
 							{	//	if balanced parenthesis
-								button_close.setTextFill(Paint.valueOf("333333"));
+								button_close.setTextFill(Paint.valueOf("000000"));
 								button_close.setBackground( new Background(new BackgroundFill(
 										Paint.valueOf("f3a0a0"), CornerRadii.EMPTY, Insets.EMPTY)));
 							}
@@ -308,6 +306,36 @@ public class Calculator_javafx extends Application
 						//	call class/method to handle calculations
 						screen.setText( "  =  " + screen.getText() );
 						setMostRecent(button_equals);
+					});
+					
+					//	BACKSPACE BUTTON
+					button_less.setOnAction( e -> {
+						if(screen.getText().length() > 0)
+						{
+							if ( screen.getText().substring( screen.getText().length()-1 ).contentEquals("(") )
+							{
+								if ( button_close.getTextFill().equals(Paint.valueOf("000000")) )
+								{
+									if (checkBalance(screen.getText()))
+									{
+										button_close.setTextFill(Paint.valueOf("000000"));
+										button_close.setBackground( new Background(new BackgroundFill(
+												Paint.valueOf("f3a0a0"), CornerRadii.EMPTY, Insets.EMPTY)));
+									}
+								}
+							}
+							else if ( screen.getText().substring( screen.getText().length()-1 ).contentEquals(")") )
+							{
+								if (button_close.getTextFill().equals(Paint.valueOf("000000")))
+								{
+									button_close.setTextFill(Paint.valueOf("333333"));
+									button_close.setBackground( new Background(new BackgroundFill(
+											Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
+								}
+							}
+							screen.setText( screen.getText().substring(0, screen.getText().length()-1) );
+						}
+						setMostRecent(button_less);
 					});
 		
 		Scene scene = new Scene(complete, 320, 410);
