@@ -24,7 +24,7 @@ public class CheckingUserInput {
 	}public static String convert(String a) {
 		String result = "";
 		LinkedStack<Character> operators = new LinkedStack<>();
-		boolean numDigit = true; //when operators are added last, this boolean will make sure a single space is inputted
+		boolean numDigit = true; //when operators are added last, this boolean will make sure a single space is inputed, this makes sure that the final operators added will have a necessary space
 		
 		while(!a.isEmpty()) {
 			char c = a.charAt(0);
@@ -32,20 +32,24 @@ public class CheckingUserInput {
 			
 			if(c >= '0' && c <= '9') {
 				result += c;
+				numDigit = true; //there are in fact numbers so a space might be needed
 			} else if(c == '*' || c == '/' || c == '+' || c== '-' || c== '^') {
 				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { //makes sure that all numbers with greater or equal importance is thrown into the equation first
 					result += operators.pop();
 				}
 				
 				result += " "; //an operator means that the number has ended
-				
+				numDigit = false; //no need for an extra space for now
 				operators.push(c);
 			} else if(c == '(') {
 				operators.push(c);
 			} else if(c == ')') {
+				
+				result += " "; //a space needed to separate nums and operators
 				while(!(operators.peek() == '(')) {
 					result += operators.pop();
 				}
+				numDigit = false;
 				operators.pop(); //gets rid of remaining '('
 			} else {
 				continue; //this statement is just to let the user know that there is nothing else to check for
@@ -64,17 +68,11 @@ public class CheckingUserInput {
 	}
 	
 	private static int precedence(char c) {
-			if(c== '(') {
+			if(c== '(' || c == ')') {
 				return 1;
-			} else if(c == ')') {
-				return 1;
-			} else if(c == '+') {
+			} else if(c == '+' || c == '-') {
 				return 2;
-			} else if(c == '-') {
-				return 2;
-			} else if(c == '*') {
-				return 3;
-			} else if(c == '/') {
+			} else if(c == '*' || c == '/') {
 				return 3;
 			} else { //must be '^'
 				return 4;
