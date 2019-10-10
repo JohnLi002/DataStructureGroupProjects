@@ -67,7 +67,8 @@ public class CheckingUserInput {
 		return result;
 	}
 	
-	private static int precedence(char c) {
+	private static int precedence(char c) { //checks for precedence or importance. An important operator is something that is done first
+			//more important = higher number
 			if(c== '(' || c == ')') {
 				return 1;
 			} else if(c == '+' || c == '-') {
