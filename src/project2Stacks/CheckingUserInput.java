@@ -5,7 +5,8 @@ package project2Stacks;
  */
 
 public class CheckingUserInput {
-	
+
+/* Method unneeded in the end
 	public static boolean balanceChecker(String equation) { //important for checking balance at the last moment
 		LinkedStack<Character> paranthesis = new LinkedStack<>();
 		while(!equation.isEmpty()) {
@@ -26,7 +27,7 @@ public class CheckingUserInput {
 			return false;
 		}
 	}
-	
+*/
 	public static String convert(String a) {
 		String result = "";
 		LinkedStack<Character> operators = new LinkedStack<>();
