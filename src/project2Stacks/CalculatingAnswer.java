@@ -59,8 +59,7 @@ public class CalculatingAnswer {
 		while(!c.isEmpty()) { //will transfer the latest number of the c stack and pop it to numAssistant until c stack is empty
 			numAssistant.push(c.pop());
 		}
-		c = numAssistant; //placeholder for now
 		
-		return c;
+		return numAssistant;
 	}
 }
