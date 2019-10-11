@@ -7,6 +7,7 @@ package project2Stacks;
 public class CalculatingAnswer {
 	
 	public static int evaluate(String s) { 
+		s = CheckingUserInput.convert(s);
 		int index = 0;
 		//"12+32" = 12 32 +
 		//Make it so that it registers numbers like 69 and 420
