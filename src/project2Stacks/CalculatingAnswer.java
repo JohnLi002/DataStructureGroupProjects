@@ -1,5 +1,9 @@
 package project2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class CalculatingAnswer {
 	
 	public static int evaluate(String s) { 
@@ -15,31 +19,34 @@ public class CalculatingAnswer {
 					numStack.push(s.charAt(index));
 					index++;
 				}
+				
 				index++; //when a space is reached, must go one over to reach next part
 				numStack = reverse(numStack); //reverses the numbers in numStack
 				while(!numStack.isEmpty()) { //will keep looping until numStack is empty
 					num += numStack.pop(); //stores the number in numStack into num
 				}
+				
 				postfix.push(Integer.parseInt(num)); //parseInt the num string into a number and pushes to postfix stack
 			} else if(s.charAt(index) == '+' || s.charAt(index) == '-' || s.charAt(index) == '*' || 
-					  s.charAt(index) == '/' || s.charAt(index) == '^') { //checks if the character is an operator
+					  s.charAt(index) == '/' || s.charAt(index) == '^' ) { //checks if the character is an operator
 				int operandTwo = postfix.pop();
 				int operandOne = postfix.pop();
 				int result;
 				if(s.charAt(index) == '+') {
 					result = operandOne + operandTwo;
-				}else if(s.charAt(index) == '-') {
+				} else if(s.charAt(index) == '-') {
 					result = operandOne - operandTwo;
-				}else if(s.charAt(index) == '*') {
+				} else if(s.charAt(index) == '*') {
 					result = operandOne * operandTwo;
-				}else if(s.charAt(index) == '/') {
+				} else if(s.charAt(index) == '/') {
 					result = operandOne / operandTwo;
-				}else {
+				} else {
 					result = (int) Math.pow(operandOne, operandTwo);
 				}
+				
 				postfix.push(result);
 				index++;
-			}else {
+			} else {
 				continue; //there will be only numbers so no need to do anything else
 			}//this is simply a placeholder
 		}
@@ -52,6 +59,7 @@ public class CalculatingAnswer {
 			numAssistant.push(c.pop());
 		}
 		c = numAssistant; //placeholder for now
+		
 		return c;
 	}
 }

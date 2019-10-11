@@ -1,5 +1,9 @@
 package project2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class CheckingUserInput {
 	
 	public static boolean balanceChecker(String equation) { //important for checking balance at the last moment

@@ -1,5 +1,9 @@
 package project2Stacks;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.util.EmptyStackException;
 
 public class LinkedStack<T> implements StackInterface<T>{
