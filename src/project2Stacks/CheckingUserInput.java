@@ -2,7 +2,7 @@ package project2Stacks;
 
 public class CheckingUserInput {
 	
-	public static boolean balanceChecker(String equation) {
+	public static boolean balanceChecker(String equation) { //important for checking balance at the last moment
 		LinkedStack<Character> paranthesis = new LinkedStack<>();
 		while(!equation.isEmpty()) {
 			char c = equation.charAt(0);
@@ -21,10 +21,12 @@ public class CheckingUserInput {
 		} else {
 			return false;
 		}
-	}public static String convert(String a) {
+	}
+	
+	public static String convert(String a) {
 		String result = "";
 		LinkedStack<Character> operators = new LinkedStack<>();
-		boolean numDigit = true; //when operators are added last, this boolean will make sure a single space is inputed, this makes sure that the final operators added will have a necessary space
+		boolean numDigit = true; //checks to see if there is a digit to create space
 		
 		while(!a.isEmpty()) {
 			char c = a.charAt(0);
@@ -33,13 +35,15 @@ public class CheckingUserInput {
 			if(c >= '0' && c <= '9') {
 				result += c;
 				numDigit = true; //there are in fact numbers so a space might be needed
-			} else if(c == '*' || c == '/' || c == '+' || c== '-' || c== '^') {
-				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { //makes sure that all numbers with greater or equal importance is thrown into the equation first
+			} else if(c == '*' || c == '/' || c == '+' || c== '-' || c == '^') {
+				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { 
+				//makes sure that all numbers with greater or equal importance is thrown into the equation first
 					result += operators.pop();
 				}
-				
-				result += " "; //an operator means that the number has ended
-				numDigit = false; //no need for an extra space for now
+				if(numDigit) {
+					result += " "; //creates a space if there was previously digit
+					numDigit = false; //no need for an extra space for now
+				}
 				operators.push(c);
 			} else if(c == '(') {
 				operators.push(c);

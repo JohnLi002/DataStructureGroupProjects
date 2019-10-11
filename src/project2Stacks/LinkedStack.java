@@ -55,19 +55,21 @@ public class LinkedStack<T> implements StackInterface<T>{
 		private T data;
 		private Node next;
 		
-		Node(){
-			data = null;
-			next = null;
-		}
+//this constructor is never used
+//		Node(){ 
+//			data = null;
+//			next = null;
+//		}
 		
 		Node(T entry){
 			data = entry;
 			next = null;
 		}
 		
-		public void setData(T entry) {
-			data = entry;
-		}
+//this method is never used
+//		public void setData(T entry) {
+//			data = entry;
+//		}
 		
 		public T getData() {
 			return data;
