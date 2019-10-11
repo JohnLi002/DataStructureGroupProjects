@@ -318,7 +318,7 @@ public class Calculator_javafx extends Application
 						{
 							if ( screen.getText().substring( screen.getText().length()-1 ).contentEquals("(") )
 							{
-								if ( button_close.getTextFill().equals(Paint.valueOf("000000")) )
+								if ( button_close.getTextFill().equals(Paint.valueOf("333333")) )
 								{
 									if (checkBalance(screen.getText()))
 									{
