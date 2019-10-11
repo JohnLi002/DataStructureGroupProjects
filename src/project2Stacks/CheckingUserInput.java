@@ -41,14 +41,15 @@ public class CheckingUserInput {
 				result += c;
 				numDigit = true; //there are in fact numbers so a space might be needed
 			} else if(c == '*' || c == '/' || c == '+' || c== '-' || c == '^') {
-				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { 
-				//makes sure that all numbers with greater or equal importance is thrown into the equation first
-					result += operators.pop();
-				}
 				if(numDigit) {
 					result += " "; //creates a space if there was previously digit
 					numDigit = false; //no need for an extra space for now
 				}
+				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { 
+				//makes sure that all numbers with greater or equal importance is thrown into the equation first
+					result += operators.pop();
+				}
+				
 				operators.push(c);
 			} else if(c == '(') {
 				operators.push(c);
