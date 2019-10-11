@@ -1,6 +1,7 @@
 package project2Stacks;
 
 public class CalculatingAnswer {
+	
 	public static int evaluate(String s) { 
 		int index = 0;
 		//"12+32" = 12 32 +
@@ -20,9 +21,8 @@ public class CalculatingAnswer {
 					num += numStack.pop(); //stores the number in numStack into num
 				}
 				postfix.push(Integer.parseInt(num)); //parseInt the num string into a number and pushes to postfix stack
-			}else if(s.charAt(index) == '+' || s.charAt(index) == '-' ||
-					 s.charAt(index) == '*' || s.charAt(index) == '/' ||
-					 s.charAt(index) == '^') { //checks if the character is an operator
+			} else if(s.charAt(index) == '+' || s.charAt(index) == '-' || s.charAt(index) == '*' || 
+					  s.charAt(index) == '/' || s.charAt(index) == '^') { //checks if the character is an operator
 				int operandTwo = postfix.pop();
 				int operandOne = postfix.pop();
 				int result;
@@ -45,11 +45,11 @@ public class CalculatingAnswer {
 		}
 		return postfix.pop();
 	}
+	
 	public static LinkedStack<Character> reverse(LinkedStack<Character> c){
 		LinkedStack<Character> numAssistant = new LinkedStack<>(); 
 		while(!c.isEmpty()) { //will transfer the latest number of the c stack and pop it to numAssistant until c stack is empty
-			numAssistant.push(c.peek());
-			c.pop();
+			numAssistant.push(c.pop());
 		}
 		c = numAssistant; //placeholder for now
 		return c;
