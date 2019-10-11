@@ -308,7 +308,7 @@ public class Calculator_javafx extends Application
 					standard(button_equals);
 					button_equals.setOnAction( e -> {
 						//	call class/method to handle calculations
-						screen.setText( "  =  " + CalculatingAnswer.evaluate(screen.getText()) );
+						screen.setText( "" + CalculatingAnswer.evaluate(screen.getText()) );
 						setMostRecent(button_equals);
 					});
 					
