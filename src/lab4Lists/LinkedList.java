@@ -1,5 +1,6 @@
 package lab4Lists;
 
+
 public class LinkedList<T> implements ListInterface<T> {
 	private Node firstNode;
 	private int numberOfEntries;
@@ -88,7 +89,16 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T replace(int givenPosition, T newEntry) {
-		// TODO Auto-generated method stub
+		Node current = firstNode;
+		
+		for(int i = 0; i < givenPosition; i++) {
+			current = current.getNext();
+			if(i == givenPosition-1) {
+				T result = current.getData();
+				current.setData(newEntry);
+				return result;
+			}
+		}
 		return null;
 	}
 
@@ -97,8 +107,12 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T getEntry(int givenPosition) {
-		// TODO Auto-generated method stub
-		return null;
+		Node current = firstNode;
+		
+		for(int i = 0; i < givenPosition; i++) {
+			current = current.getNext();
+		}
+		return current.getData();
 	}
 
 
@@ -106,8 +120,7 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numberOfEntries;
 	}
 
 
@@ -115,8 +128,7 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (numberOfEntries == 0);
 	}
 
 
@@ -133,7 +145,11 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
+		Object[] array = new Object[numberOfEntries];
+		
+		for(int i = 0; i < getLength(); i++) {
+			array[i] = getEntry(i);
+		}
 		return null;
 	}
 	
@@ -141,23 +157,29 @@ public class LinkedList<T> implements ListInterface<T> {
 		private T data;
 		private Node next;
 
-		public Node( ) {
-			this (null);
-		}
+//		*Never used
+//	
+//		public Node() {
+//			this (null);
+//		}
+		
 		public Node(T anEntry) {
 			data = anEntry;
 			next = null;
 		}
-
+		
+				
 		public void setData (T dataPortion) {
 			data = dataPortion;
 		}
 		public T getData (){
 			return data;
 		}
+		
 		public void setNext(Node nextNode){
 			next = nextNode;
 		}
+		
 		public Node getNext() {
 			return next;
 		}

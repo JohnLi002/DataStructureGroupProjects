@@ -127,18 +127,25 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numberOfEntries;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
+		return (firstNode == null);
 	}
 
 	@Override
 	public boolean contains(T anEntry) {
+		Node current = firstNode;
+		while(current.getNext() != null) {
+			if(current.getData().equals(anEntry)) {
+				return true;
+			} else {
+				current = current.getNext();
+			}
+		}
+		
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -152,23 +159,31 @@ public class LinkedList<T> implements ListInterface<T> {
 		private T data;
 		private Node next;
 
-		public Node( ) {
-			this (null);
-		}
+//		*Never used
+//	
+//		public Node() {
+//			this (null);
+//		}
+		
 		public Node(T anEntry) {
 			data = anEntry;
 			next = null;
 		}
-
-		public void setData (T dataPortion) {
-			data = dataPortion;
-		}
+		
+		
+//		*Never Used
+//		
+//		public void setData (T dataPortion) {
+//			data = dataPortion;
+//		}
 		public T getData (){
 			return data;
 		}
+		
 		public void setNext(Node nextNode){
 			next = nextNode;
 		}
+		
 		public Node getNext() {
 			return next;
 		}
