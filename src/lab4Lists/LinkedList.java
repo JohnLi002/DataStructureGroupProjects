@@ -13,18 +13,17 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public void add(T newEntry) {
-		numberOfEntries++;
 		Node toInsert = new Node(newEntry);
 		if(isEmpty()) {
 			firstNode = toInsert;
-		}
-		else {
+		} else {
 			Node curr = firstNode;
 			while(curr.getNext() != null) {
 				curr = curr.getNext();
 			}
 			curr.setNext(toInsert);
 		}
+		numberOfEntries++;
 	}
 
 	@Override
@@ -80,9 +79,9 @@ public class LinkedList<T> implements ListInterface<T> {
 				nextNode = currNode.getNext();
 				if (idx == givenPosition ){ // nextNode is to be removed 
 					assert (nextNode != null);
-				dataItem = nextNode.getData();
-				currNode.setNext(nextNode.getNext());
-				break;
+					dataItem = nextNode.getData();
+					currNode.setNext(nextNode.getNext());
+					break;
 				} 
 			}
 		}
@@ -91,20 +90,28 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public boolean remove(T anEntry) {
-		// TODO Auto-generated method stub
+		if(numberOfEntries == 0) {
+			throw new NullPointerException();
+		}
+		Node nextNode = firstNode;
+
+		for (Node currNode = firstNode; nextNode != null; currNode = nextNode) {
+			if (nextNode.getData().equals(anEntry) ){ // nextNode is to be removed 
+				assert (nextNode != null);
+				currNode.setNext(nextNode.getNext());
+				numberOfEntries--;
+				return true;
+			} 
+			nextNode = currNode.getNext();
+		}
+		
 		return false;
 	}
-
-
-
 
 	@Override
 	public void clear() {
 		firstNode = null;
 	}
-
-
-
 
 	@Override
 	public T replace(int givenPosition, T newEntry) { //is the positions 0 - 1 - 2 or 1 - 2 - 3
@@ -122,9 +129,6 @@ public class LinkedList<T> implements ListInterface<T> {
 		return null;
 	}
 
-
-
-
 	@Override
 	public T getEntry(int givenPosition) {
 		Node current = firstNode;
@@ -135,24 +139,15 @@ public class LinkedList<T> implements ListInterface<T> {
 		return current.getData();
 	}
 
-
-
-
 	@Override
 	public int getLength() {
 		return numberOfEntries;
 	}
 
-
-
-
 	@Override
 	public boolean isEmpty() {
 		return (numberOfEntries == 0);
 	}
-
-
-
 
 	@Override
 	public boolean contains(T anEntry) {
@@ -165,9 +160,6 @@ public class LinkedList<T> implements ListInterface<T> {
 		}
 		return false;
 	}
-
-
-
 
 	@Override
 	public Object[] toArray() {
