@@ -1,7 +1,7 @@
-package list;
+package lab4Lists;
+
 
 public class LinkedList<T> implements ListInterface<T> {
-
 	private Node firstNode;
 	private int numberOfEntries;
 
@@ -9,6 +9,7 @@ public class LinkedList<T> implements ListInterface<T> {
 		firstNode = null;
 		numberOfEntries = 0;
 	}
+
 
 	@Override
 	public void add(T newEntry) {
@@ -24,7 +25,6 @@ public class LinkedList<T> implements ListInterface<T> {
 			}
 			curr.setNext(toInsert);
 		}
-
 	}
 
 	@Override
@@ -46,150 +46,162 @@ public class LinkedList<T> implements ListInterface<T> {
 			before.setNext(toInsert);
 			toInsert.setNext(after);
 		}
+
 	}
 
 	private Node getNodeAt(int position) {
 		int count = 0;
 		Node curr = firstNode;
-		
+
 		while(count < position) {
 			curr = curr.getNext();
 			count++;
 		}
-		
+
 		return curr;
 	}
 
 	@Override
-	public T remove(int givenPosition) {
-		if(isEmpty()) {
+	public T remove (int givenPosition){
+		if (isEmpty())
 			throw new NullPointerException();
-		}
-		if(givenPosition < 0 || givenPosition >= numberOfEntries) {
+		if (givenPosition < 0 || givenPosition >= getLength())
 			throw new IndexOutOfBoundsException();
-		}
-		
-		T item;
-		if(givenPosition == 0) {
-			item = firstNode.getData();
+		T dataItem = firstNode.getData();
+		numberOfEntries --;        
+		if (givenPosition == 0)
 			firstNode = firstNode.getNext();
-		} else {
-			Node before = getNodeAt(givenPosition - 1);
-			Node current = before.getNext();
-			item = current.getData();
-			before.setNext(current.getNext());
+		else {
+			int idx = 0;
+			Node nextNode = firstNode;
+			for (Node currNode = firstNode; nextNode != null; 
+					currNode = nextNode) {
+				idx ++;
+				nextNode = currNode.getNext();
+				if (idx == givenPosition ){ // nextNode is to be removed 
+					assert (nextNode != null);
+				dataItem = nextNode.getData();
+				currNode.setNext(nextNode.getNext());
+				break;
+				} 
+			}
 		}
-		numberOfEntries--;
-		return item;
+		return dataItem;
 	}
 
 	@Override
 	public boolean remove(T anEntry) {
-		if(isEmpty()) {
-			throw new NullPointerException();
-		}
-		Node prevNode = null;
-		Node currNode = firstNode;
-		while(currNode != null) {
-			if(anEntry.equals(currNode.getData())) {
-				if(prevNode == null) {
-					firstNode = firstNode.getNext();
-				} else {
-					prevNode.setNext(currNode.getNext());
-				}
-				numberOfEntries--;
-				return true;
-			} else {
-				prevNode = currNode;
-				currNode = currNode.getNext();
-			}
-		}
+		// TODO Auto-generated method stub
 		return false;
 	}
 
+
+
+
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-
+		firstNode = null;
 	}
+
+
+
 
 	@Override
-	public T replace(int givenPosition, T newEntry) {
-		// TODO Auto-generated method stub
+	public T replace(int givenPosition, T newEntry) { //is the positions 0 - 1 - 2 or 1 - 2 - 3
+		Node current = firstNode;
+
+		for(int i = 0; i < givenPosition; i++) {
+			if(i == givenPosition-1) {
+				T result = current.getData();
+				current.setData(newEntry);
+				return result;
+			}
+
+			current = current.getNext();
+		}
 		return null;
 	}
+
+
+
 
 	@Override
 	public T getEntry(int givenPosition) {
-		// TODO Auto-generated method stub
-		return null;
+		Node current = firstNode;
+
+		for(int i = 0; i < givenPosition; i++) {
+			current = current.getNext();
+		}
+		return current.getData();
 	}
+
+
+
 
 	@Override
 	public int getLength() {
 		return numberOfEntries;
 	}
 
+
+
+
 	@Override
 	public boolean isEmpty() {
-		return (firstNode == null);
+		return (numberOfEntries == 0);
 	}
+
+
+
 
 	@Override
 	public boolean contains(T anEntry) {
-		Node current = firstNode;
-		while(current.getNext() != null) {
-			if(current.getData().equals(anEntry)) {
-				return true;
-			} else {
-				current = current.getNext();
-			}
-		}
-		
 		// TODO Auto-generated method stub
 		return false;
 	}
 
+
+
+
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
+		Object[] array = new Object[numberOfEntries];
+
+		for(int i = 0; i < getLength(); i++) {
+			array[i] = getEntry(i);
+		}
 		return null;
 	}
+
 	private class Node {
 		private T data;
 		private Node next;
 
-//		*Never used
-//	
-//		public Node() {
-//			this (null);
-//		}
-		
+		//		*Never used
+		//	
+		//		public Node() {
+		//			this (null);
+		//		}
+
 		public Node(T anEntry) {
 			data = anEntry;
 			next = null;
 		}
-		
-		
-//		*Never Used
-//		
-//		public void setData (T dataPortion) {
-//			data = dataPortion;
-//		}
+
+
+		public void setData (T dataPortion) {
+			data = dataPortion;
+		}
 		public T getData (){
 			return data;
 		}
-		
+
 		public void setNext(Node nextNode){
 			next = nextNode;
 		}
-		
+
 		public Node getNext() {
 			return next;
 		}
 	}
 }
-
-
-
-

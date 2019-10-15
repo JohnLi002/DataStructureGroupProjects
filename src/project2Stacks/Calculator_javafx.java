@@ -34,7 +34,7 @@ public class Calculator_javafx extends Application
 		aButt.setAlignment(Pos.CENTER);
 		aButt.setTextFill(Paint.valueOf("333333"));
 		aButt.setBackground( new Background(new BackgroundFill(
-		/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		/*cont.*/	Paint.valueOf("b2b2b2"), CornerRadii.EMPTY, Insets.EMPTY )) );
 	}
 	private Button mostRecent = new Button();
 	private void setMostRecent(Button aButt)
@@ -43,11 +43,11 @@ public class Calculator_javafx extends Application
 		{
 			mostRecent.setTextFill(Paint.valueOf("333333"));
 			mostRecent.setBackground( new Background(new BackgroundFill(
-			/*cont.*/	Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+			/*cont.*/	Paint.valueOf("b2b2b2"), CornerRadii.EMPTY, Insets.EMPTY )) );
 		}
 		aButt.setTextFill(Paint.valueOf("222222"));
 		aButt.setBackground( new Background(new BackgroundFill(
-		/*cont.*/	Paint.valueOf("cecece"), CornerRadii.EMPTY, Insets.EMPTY )) );
+		/*cont.*/	Paint.valueOf("a0a0a0"), CornerRadii.EMPTY, Insets.EMPTY )) );
 		mostRecent = aButt;
 	}
 	private boolean checkBalance(String aString)
@@ -88,7 +88,7 @@ public class Calculator_javafx extends Application
 		complete.setAlignment(Pos.TOP_CENTER);
 		complete.setPadding(new Insets(10,10,10,10));
 		complete.setBackground( new Background(new BackgroundFill(
-				Paint.valueOf("696969"), CornerRadii.EMPTY, Insets.EMPTY )) );
+				Paint.valueOf("333333"), CornerRadii.EMPTY, Insets.EMPTY )) );
 		complete.setSpacing(10);
 		
 			TextField screen = new TextField();
@@ -97,7 +97,7 @@ public class Calculator_javafx extends Application
 			screen.setAlignment(Pos.CENTER_RIGHT);
 			screen.setEditable(false);
 			screen.setBackground( new Background(new BackgroundFill(
-					Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY )) );
+					Paint.valueOf("b2b2b2"), CornerRadii.EMPTY, Insets.EMPTY )) );
 			screen.setFont( Font.font("System", FontWeight.BOLD, 18));
 			
 			VBox buttons = new VBox();
@@ -131,6 +131,7 @@ public class Calculator_javafx extends Application
 					button_Q.setOnAction( e -> {
 						screen.setText("");
 						setMostRecent(button_Q);
+						System.exit(0);
 					});
 					
 					Button button_div = new Button("/");
@@ -286,7 +287,7 @@ public class Calculator_javafx extends Application
 						screen.setText( screen.getText() + "(" );
 						button_close.setTextFill(Paint.valueOf("333333"));
 						button_close.setBackground( new Background(new BackgroundFill(
-								Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
+								Paint.valueOf("b2b2b2"), CornerRadii.EMPTY, Insets.EMPTY)));
 						setMostRecent(button_open);
 					});
 					button_close.setOnAction( e -> {
@@ -308,7 +309,7 @@ public class Calculator_javafx extends Application
 					standard(button_equals);
 					button_equals.setOnAction( e -> {
 						//	call class/method to handle calculations
-						screen.setText( "  =  " + CalculatingAnswer.evaluate(screen.getText()) );
+						screen.setText( "" + CalculatingAnswer.evaluate(screen.getText()) );
 						setMostRecent(button_equals);
 					});
 					
@@ -318,7 +319,7 @@ public class Calculator_javafx extends Application
 						{
 							if ( screen.getText().substring( screen.getText().length()-1 ).contentEquals("(") )
 							{
-								if ( button_close.getTextFill().equals(Paint.valueOf("000000")) )
+								if ( button_close.getTextFill().equals(Paint.valueOf("333333")) )
 								{
 									if (checkBalance(screen.getText()))
 									{
@@ -334,7 +335,7 @@ public class Calculator_javafx extends Application
 								{
 									button_close.setTextFill(Paint.valueOf("333333"));
 									button_close.setBackground( new Background(new BackgroundFill(
-											Paint.valueOf("f3f3f3"), CornerRadii.EMPTY, Insets.EMPTY)));
+											Paint.valueOf("b2b2b2"), CornerRadii.EMPTY, Insets.EMPTY)));
 								}
 							}
 							screen.setText( screen.getText().substring(0, screen.getText().length()-1) );

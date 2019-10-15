@@ -5,7 +5,8 @@ package project2Stacks;
  */
 
 public class CheckingUserInput {
-	
+
+/* Method unneeded in the end
 	public static boolean balanceChecker(String equation) { //important for checking balance at the last moment
 		LinkedStack<Character> paranthesis = new LinkedStack<>();
 		while(!equation.isEmpty()) {
@@ -26,7 +27,7 @@ public class CheckingUserInput {
 			return false;
 		}
 	}
-	
+*/
 	public static String convert(String a) {
 		String result = "";
 		LinkedStack<Character> operators = new LinkedStack<>();
@@ -40,14 +41,15 @@ public class CheckingUserInput {
 				result += c;
 				numDigit = true; //there are in fact numbers so a space might be needed
 			} else if(c == '*' || c == '/' || c == '+' || c== '-' || c == '^') {
-				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { 
-				//makes sure that all numbers with greater or equal importance is thrown into the equation first
-					result += operators.pop();
-				}
 				if(numDigit) {
 					result += " "; //creates a space if there was previously digit
 					numDigit = false; //no need for an extra space for now
 				}
+				while(!operators.isEmpty() && precedence(c) <= precedence(operators.peek())) { 
+				//makes sure that all numbers with greater or equal importance is thrown into the equation first
+					result += operators.pop();
+				}
+				
 				operators.push(c);
 			} else if(c == '(') {
 				operators.push(c);
