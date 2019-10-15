@@ -105,19 +105,25 @@ public class AList<T> implements ListInterface <T>   {
 	@Override
 	public T replace(int givenPosition, T newEntry) {
 		// TODO Auto-generated method stub
-		return null;
+		if(!isEmpty() && givenPosition > numberOfEntries-1) {
+			throw new RuntimeException();
+		}else {
+			T result = list[givenPosition];
+			list[givenPosition] = newEntry;
+			return result;
+		}
 	}
 
 	@Override
 	public T getEntry(int givenPosition) {
 		// TODO Auto-generated method stub
-		return null;
+		return list[givenPosition];
 	}
 
 	@Override
 	public int getLength() {
 		
-		return 0;
+		return numberOfEntries;
 	}
 
 	@Override
