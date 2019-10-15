@@ -156,7 +156,13 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public boolean contains(T anEntry) {
-		// TODO Auto-generated method stub
+		Node current = firstNode;
+		while(current.getNext() != null) {
+			if(firstNode.getData().equals(anEntry)) {
+				return true;
+			}
+			current = current.getNext();
+		}
 		return false;
 	}
 
