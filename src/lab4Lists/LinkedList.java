@@ -9,8 +9,8 @@ public class LinkedList<T> implements ListInterface<T> {
 		firstNode = null;
 		numberOfEntries = 0;
 	}
-	
-	
+
+
 	@Override
 	public void add(T newEntry) {
 		numberOfEntries++;
@@ -26,7 +26,7 @@ public class LinkedList<T> implements ListInterface<T> {
 			curr.setNext(toInsert);
 		}
 	}
-	
+
 	@Override
 	public void add(int newPosition, T newEntry) {
 		if(newPosition < 0 || newPosition > numberOfEntries) {
@@ -46,29 +46,48 @@ public class LinkedList<T> implements ListInterface<T> {
 			before.setNext(toInsert);
 			toInsert.setNext(after);
 		}
-		
+
 	}
 
 	private Node getNodeAt(int position) {
 		int count = 0;
 		Node curr = firstNode;
-		
+
 		while(count < position) {
 			curr = curr.getNext();
 			count++;
 		}
-		
+
 		return curr;
 	}
 
 	@Override
-	public T remove(int givenPosition) {
-		// TODO Auto-generated method stub
-		return null;
+	public T remove (int givenPosition){
+		if (isEmpty())
+			throw new NullPointerException();
+		if (givenPosition < 0 || givenPosition >= getLength())
+			throw new IndexOutOfBoundsException();
+		T dataItem = firstNode.getData();
+		numberOfEntries --;        
+		if (givenPosition == 0)
+			firstNode = firstNode.getNext();
+		else {
+			int idx = 0;
+			Node nextNode = firstNode;
+			for (Node currNode = firstNode; nextNode != null; 
+					currNode = nextNode) {
+				idx ++;
+				nextNode = currNode.getNext();
+				if (idx == givenPosition ){ // nextNode is to be removed 
+					assert (nextNode != null);
+				dataItem = nextNode.getData();
+				currNode.setNext(nextNode.getNext());
+				break;
+				} 
+			}
+		}
+		return dataItem;
 	}
-
-
-
 
 	@Override
 	public boolean remove(T anEntry) {
@@ -88,16 +107,17 @@ public class LinkedList<T> implements ListInterface<T> {
 
 
 	@Override
-	public T replace(int givenPosition, T newEntry) {
+	public T replace(int givenPosition, T newEntry) { //is the positions 0 - 1 - 2 or 1 - 2 - 3
 		Node current = firstNode;
-		
+
 		for(int i = 0; i < givenPosition; i++) {
-			current = current.getNext();
 			if(i == givenPosition-1) {
 				T result = current.getData();
 				current.setData(newEntry);
 				return result;
 			}
+
+			current = current.getNext();
 		}
 		return null;
 	}
@@ -108,7 +128,7 @@ public class LinkedList<T> implements ListInterface<T> {
 	@Override
 	public T getEntry(int givenPosition) {
 		Node current = firstNode;
-		
+
 		for(int i = 0; i < givenPosition; i++) {
 			current = current.getNext();
 		}
@@ -146,40 +166,40 @@ public class LinkedList<T> implements ListInterface<T> {
 	@Override
 	public Object[] toArray() {
 		Object[] array = new Object[numberOfEntries];
-		
+
 		for(int i = 0; i < getLength(); i++) {
 			array[i] = getEntry(i);
 		}
 		return null;
 	}
-	
+
 	private class Node {
 		private T data;
 		private Node next;
 
-//		*Never used
-//	
-//		public Node() {
-//			this (null);
-//		}
-		
+		//		*Never used
+		//	
+		//		public Node() {
+		//			this (null);
+		//		}
+
 		public Node(T anEntry) {
 			data = anEntry;
 			next = null;
 		}
-		
-				
+
+
 		public void setData (T dataPortion) {
 			data = dataPortion;
 		}
 		public T getData (){
 			return data;
 		}
-		
+
 		public void setNext(Node nextNode){
 			next = nextNode;
 		}
-		
+
 		public Node getNext() {
 			return next;
 		}
