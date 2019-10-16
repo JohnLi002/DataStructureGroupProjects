@@ -55,11 +55,11 @@ public class Test {
 			//	replace "FOX" with "ELEPHANT"
 			for (int i = 0; i < list.getLength(); i++)
 			{
-				if (list.getEntry(i).equals("Fox"))
+				if (list.getEntry(i).contains("Fox"))
 				{
 					list.replace(i, "Elephant");
 				}
-				else if (list.getEntry(i).equals("fox"))
+				else if (list.getEntry(i).contains("fox"))
 				{
 					list.replace(i, "elephant");
 				}
