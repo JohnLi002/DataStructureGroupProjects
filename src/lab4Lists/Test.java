@@ -61,7 +61,6 @@ public class Test {
 				}
 				else if (list.getEntry(i).equals("fox"))
 				{
-					System.out.println("@" + i + "elephant");
 					list.replace(i, "elephant");
 				}
 			}
@@ -73,6 +72,13 @@ public class Test {
 				printer.print(list.getEntry(i) + " ");
 			}
 			printer.close();
+			
+			//	clear & make sure its empty
+			list.clear();
+			if(list.isEmpty())
+			{
+				System.out.println('\n' + "List is now empty.");
+			}
 			
 		} catch(FileNotFoundException ex) {
 			System.out.println ("foxandcat.txt not found");
