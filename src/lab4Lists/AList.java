@@ -15,19 +15,20 @@ public class AList<T> implements ListInterface <T>   {
 	}
 	
 	public AList(int capacity) {
-		if (capacity < DEFAULT_CAPACITY)
+		if (capacity <= DEFAULT_CAPACITY)
 			capacity = DEFAULT_CAPACITY;
 		else
 			checkCapacity (capacity);
 		this.capacity = capacity;
 		@SuppressWarnings("unchecked")
-		T[] temp = (T[]) new Object[capacity];
+		T[] temp = (T[]) new Object[this.capacity];
 		list = temp;
 		numberOfEntries = 0;
 	}
 
 	private void checkCapacity(int capacity2) {
-		throw new RuntimeException();
+		if(capacity > MAX_CAPACITY)
+			throw new RuntimeException();
 	}
 
 	@Override
@@ -78,6 +79,7 @@ public class AList<T> implements ListInterface <T>   {
 		T removed = list[givenPosition];
 		list[givenPosition] = null;
 		removeGap(givenPosition);
+		numberOfEntries--;
 		return removed;
 	}
 
@@ -99,6 +101,7 @@ public class AList<T> implements ListInterface <T>   {
 		for(int i =0; i < capacity; i++) {
 			list[i] = null;
 		}
+		numberOfEntries = 0;
 
 	}
 
