@@ -69,7 +69,12 @@ public class Test {
 			PrintWriter printer = new PrintWriter("elephantandcat.txt");
 			for (int i = 0; i < list.getLength(); i++)
 			{
-				printer.print(list.getEntry(i) + " ");
+				if (i % 15 == 14) {
+					printer.println(list.getEntry(i) + " ");
+				}
+				else {
+					printer.print(list.getEntry(i) + " ");
+				}
 			}
 			printer.close();
 			
