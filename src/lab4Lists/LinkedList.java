@@ -116,6 +116,7 @@ public class LinkedList<T> implements ListInterface<T> {
 	@Override
 	public void clear() {
 		firstNode = null;
+		numberOfEntries = 0;
 	}
 
 	@Override
