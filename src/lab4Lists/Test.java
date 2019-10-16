@@ -2,6 +2,7 @@ package lab4Lists;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Test {
@@ -28,8 +29,49 @@ public class Test {
 					}
 				}
 				list.add(temp);
-				System.out.print(temp);
 			}
+			
+			//	remove all words starting with A or a
+			for (int i = 0; i < list.getLength(); i++)
+			{
+				if (list.getEntry(i).substring(0, 1).contentEquals("a")
+						|| list.getEntry(i).substring(0, 1).contentEquals("A"))
+				{
+					list.remove(i);
+					i--;
+				}
+			}
+			
+			//	find the indices of "TO" and "BE"
+			for (int i = 0; i < list.getLength(); i++)
+			{
+				if (list.getEntry(i).contentEquals("to")
+						|| list.getEntry(i).contentEquals("be"))
+				{
+					System.out.print(" " + list.getEntry(i) + "" + i);
+				}
+			}
+			
+			//	replace "FOX" with "ELEPHANT"
+			for (int i = 0; i < list.getLength(); i++)
+			{
+				if (list.getEntry(i).contentEquals("Fox"))
+				{
+					list.replace(i, "Elephant");
+				}
+				else if (list.getEntry(i).contentEquals("fox"))
+				{
+					list.replace(i, "elephant");
+				}
+			}
+			
+			//printwriter
+			PrintWriter printer = new PrintWriter("elephantandcat.txt");
+			for (int i = 0; i < list.getLength(); i++)
+			{
+				printer.print(list.getEntry(i) + " ");
+			}
+			printer.close();
 			
 		} catch(FileNotFoundException ex) {
 			System.out.println ("foxandcat.txt not found");
