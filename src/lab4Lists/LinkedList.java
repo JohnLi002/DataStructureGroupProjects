@@ -62,19 +62,20 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T remove (int givenPosition){
-		if (isEmpty())
+		if (isEmpty()) {
 			throw new NullPointerException();
-		if (givenPosition < 0 || givenPosition >= getLength())
+		} 
+		if (givenPosition < 0 || givenPosition >= getLength()) {
 			throw new IndexOutOfBoundsException();
+		}
 		T dataItem = firstNode.getData();
-		numberOfEntries --;        
+		numberOfEntries--;
 		if (givenPosition == 0)
 			firstNode = firstNode.getNext();
 		else {
 			int idx = 0;
 			Node nextNode = firstNode;
-			for (Node currNode = firstNode; nextNode != null; 
-					currNode = nextNode) {
+			for (Node currNode = firstNode; nextNode != null; currNode = nextNode) {
 				idx ++;
 				nextNode = currNode.getNext();
 				if (idx == givenPosition ){ // nextNode is to be removed 
@@ -93,16 +94,20 @@ public class LinkedList<T> implements ListInterface<T> {
 		if(numberOfEntries == 0) {
 			throw new NullPointerException();
 		}
+		if(firstNode.getData().equals(anEntry)) {
+			firstNode = firstNode.getNext();
+			return true;
+		}
 		Node nextNode = firstNode;
-
+		
 		for (Node currNode = firstNode; nextNode != null; currNode = nextNode) {
-			if (nextNode.getData().equals(anEntry) ){ // nextNode is to be removed 
+			nextNode = currNode.getNext();
+			if (nextNode.getData().equals(anEntry)){ // nextNode is to be removed 
 				assert (nextNode != null);
 				currNode.setNext(nextNode.getNext());
 				numberOfEntries--;
 				return true;
-			} 
-			nextNode = currNode.getNext();
+			}
 		}
 		
 		return false;
