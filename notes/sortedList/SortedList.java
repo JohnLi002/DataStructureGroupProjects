@@ -76,7 +76,9 @@ public class SortedList<T extends Comparable<? super T>> implements SortedListIn
 		return null;
 	}
 	
-	/*              | ArrayImplementataion | LinkedImplementation
+	/* Efficiency Stuff?
+	 * 
+	 *              | ArrayImplementataion | LinkedImplementation
 	 * getPosition  |          O(n)        |         O(n^2)
 	 * getEntry     |          O(n)        |         O(n)
 	 * addEntry     |          O(n)        |         O(n^2)
