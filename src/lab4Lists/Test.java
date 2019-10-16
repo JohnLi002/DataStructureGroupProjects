@@ -17,14 +17,14 @@ public class Test {
 				String temp = sc.next();
 				for(int i = 0; i < temp.length(); i++)
 				{
-					if(temp.substring(i, i+1).contentEquals("'")
+					if(temp.substring(i, i+1).contentEquals("?")
+							|| temp.substring(i, i+1).contentEquals("!")
 							|| temp.substring(i, i+1).contentEquals(",")
 							|| temp.substring(i, i+1).contentEquals(".")
 							|| temp.substring(i, i+1).contentEquals(":")
 							|| temp.substring(i, i+1).contentEquals(";"))
 					{
 						temp = temp.substring(0, i) + temp.substring(i+1, temp.length());
-						i--;
 					}
 				}
 				list.add(temp);
