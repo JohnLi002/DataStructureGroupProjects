@@ -122,7 +122,7 @@ public class LinkedList<T> implements ListInterface<T> {
 	public T replace(int givenPosition, T newEntry) { //is the positions 0 - 1 - 2 or 1 - 2 - 3
 		Node current = firstNode;
 
-		for(int i = 0; i < givenPosition; i++) {
+		for(int i = 0; i <= givenPosition; i++) {
 			if(i == givenPosition) {
 				T result = current.getData();
 				current.setData(newEntry);

@@ -55,12 +55,13 @@ public class Test {
 			//	replace "FOX" with "ELEPHANT"
 			for (int i = 0; i < list.getLength(); i++)
 			{
-				if (list.getEntry(i).contentEquals("Fox"))
+				if (list.getEntry(i).equals("Fox"))
 				{
 					list.replace(i, "Elephant");
 				}
-				else if (list.getEntry(i).contentEquals("fox"))
+				else if (list.getEntry(i).equals("fox"))
 				{
+					System.out.println("@" + i + "elephant");
 					list.replace(i, "elephant");
 				}
 			}
