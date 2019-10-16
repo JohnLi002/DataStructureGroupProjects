@@ -123,7 +123,7 @@ public class LinkedList<T> implements ListInterface<T> {
 		Node current = firstNode;
 
 		for(int i = 0; i < givenPosition; i++) {
-			if(i == givenPosition-1) {
+			if(i == givenPosition) {
 				T result = current.getData();
 				current.setData(newEntry);
 				return result;
