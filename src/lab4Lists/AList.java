@@ -1,5 +1,9 @@
 package lab4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.util.Arrays;
 
 public class AList<T> implements ListInterface <T>   {

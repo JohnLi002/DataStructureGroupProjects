@@ -1,5 +1,8 @@
 package lab4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public class LinkedList<T> implements ListInterface<T> {
 	private Node firstNode;

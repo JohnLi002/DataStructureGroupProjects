@@ -1,5 +1,9 @@
 package lab4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public interface ListInterface <T> {
     /**
      * Add new entry at the end of the list
