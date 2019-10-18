@@ -6,6 +6,7 @@ public class Card {
 	
 	public Card(String suite, String rank) {
 		this.setSuite(Suite.valueOf(suite.toUpperCase()));
+		this.setRank(Rank.valueOf(rank.toUpperCase()));
 	}
 
 	public Suite getSuite() {
