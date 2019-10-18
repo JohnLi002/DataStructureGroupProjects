@@ -42,17 +42,19 @@ public class Pile implements CardListInterface{
 
 	@Override
 	public void add(Card aCard) {
+		DoubleNode newNode = new DoubleNode(aCard);
 		if(numCards == 0) {
-			DoubleNode newNode = new DoubleNode(aCard);
 			firstNode = newNode;
 			lastNode = newNode;
 		}
 		
-		
+		newNode.setPrev(firstNode);
 	}
 
 	@Override
 	public boolean remove(Card aCard) {
+		
+		
 		// TODO Auto-generated method stub
 		return false;
 	}

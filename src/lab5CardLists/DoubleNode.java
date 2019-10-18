@@ -20,11 +20,13 @@ public class DoubleNode {
 	}
 	public void setNext(DoubleNode next) {
 		this.next = next;
+		next.setPrev(this);
 	}
 	public DoubleNode getPrev() {
 		return prev;
 	}
 	public void setPrev(DoubleNode prev) {
 		this.prev = prev;
+		prev.setNext(this);
 	}
 }
