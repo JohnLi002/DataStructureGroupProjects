@@ -28,4 +28,9 @@ public class Pile implements PileInterface{
 	public void setNumCards(int numCards) {
 		this.numCards = numCards;
 	}
+	
+	public void shuffle()
+	{
+		//	SHUFFLE DECK
+	}
 }
