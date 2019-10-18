@@ -5,7 +5,9 @@ public class DoubleNode {
 	private DoubleNode next;
 	private DoubleNode prev;
 	
-	
+	public DoubleNode(Card newCard) {
+		card = newCard;
+	}
 	
 	public Card getCard() {
 		return card;
