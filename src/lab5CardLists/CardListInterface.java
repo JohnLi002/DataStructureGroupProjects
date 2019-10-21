@@ -6,5 +6,7 @@ public interface CardListInterface {
 	public boolean remove(Card aCard);
 	public boolean contains(Card aCard);
 	public int getLength();
+	public boolean isEmpty();
+	public void clear();
 	
 }

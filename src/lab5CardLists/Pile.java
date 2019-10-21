@@ -35,8 +35,20 @@ public class Pile implements CardListInterface{
 		this.numCards = numCards;
 	}
 	
-	public void shuffle() //one idea, create an array, shuffle said array and recreate deck using the current order of array
-	{
+	public void shuffle() {
+		Card[] deck = toArray();
+		
+		for(int i = numCards - 1; i >= 0; i--) {
+			int random = (int) (Math.random() * i);
+			Card temp = deck[random];
+			deck[random] = deck[i];
+			deck[i] = temp;
+		}
+		
+		clear();
+		for(int i = 0; i < deck.length; i++) {
+			add(deck[i]);
+		}
 		
 		//	SHUFFLE DECK
 	}
@@ -51,6 +63,7 @@ public class Pile implements CardListInterface{
 		
 		newNode.setPrev(firstNode);
 		firstNode = newNode;
+		numCards++;
 	}
 
 	@Override
@@ -62,13 +75,8 @@ public class Pile implements CardListInterface{
 		}
 		
 		DoubleNode current = firstNode;
-		for(int i = 0; i < numCards && current.getNext() != null; i++) { //this loop is not finished yet
-			if(current.getNext().getNext() != null && current.getNext().getCard().equals(aCard)) {
-				current.setNext(current.getNext().getNext());
-				return true;
-			} else if(i == numCards - 1 &&current.getNext().getCard().equals(aCard)) {
-				
-			}
+		for(int i = 0; i < numCards; i++) { //this loop is not finished yet
+			
 		}
 		
 		return false;
@@ -89,5 +97,28 @@ public class Pile implements CardListInterface{
 	@Override
 	public int getLength() {
 		return numCards;
+	}
+	
+	public Card[] toArray() {
+		Card[] deck = new Card[numCards];
+		DoubleNode current = firstNode;
+		for(int i = 0; i < numCards; i++) {
+			deck[1] = current.getCard();
+			current = current.getNext();
+		}
+		
+		return deck;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return numCards == 0;
+	}
+
+	@Override
+	public void clear() {
+		firstNode = null;
+		lastNode = null;
+		numCards = 0;
 	}
 }
