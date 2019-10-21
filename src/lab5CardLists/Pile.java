@@ -35,8 +35,9 @@ public class Pile implements CardListInterface{
 		this.numCards = numCards;
 	}
 	
-	public void shuffle()
+	public void shuffle() //one idea, create an array, shuffle said array and recreate deck using the current order of array
 	{
+		
 		//	SHUFFLE DECK
 	}
 
@@ -49,25 +50,44 @@ public class Pile implements CardListInterface{
 		}
 		
 		newNode.setPrev(firstNode);
+		firstNode = newNode;
 	}
 
 	@Override
 	public boolean remove(Card aCard) {
+		if(contains(aCard)) {
+			return false;
+		} else if(firstNode.getCard().equals(aCard)) { //this means if the found card is the first card, easy shortcut
+			firstNode = firstNode.getNext();
+		}
 		
+		DoubleNode current = firstNode;
+		for(int i = 0; i < numCards && current.getNext() != null; i++) { //this loop is not finished yet
+			if(current.getNext().getNext() != null && current.getNext().getCard().equals(aCard)) {
+				current.setNext(current.getNext().getNext());
+				return true;
+			} else if(i == numCards - 1 &&current.getNext().getCard().equals(aCard)) {
+				
+			}
+		}
 		
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public boolean contains(Card aCard) {
-		// TODO Auto-generated method stub
+		DoubleNode current = firstNode;
+		for(int i = 0; i < numCards; i++) {
+			if(current.getCard().equals(aCard)) {
+				return true;
+			}
+			current = current.getPrev();
+		}
 		return false;
 	}
 
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numCards;
 	}
 }

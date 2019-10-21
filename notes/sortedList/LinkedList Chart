@@ -1,0 +1,16 @@
+   Linked List
+       |
+       V
+SortedLinkedList
+
+
+                                      LinkedChainBase
+                                      /             \
+                                     /               \
+                                    /                 \
+                                   /                   \
+                                  /                     \
+                             LinkedList           SortedLinkedList
+                             *add                 *addEntry
+                             *remove              *removeEntry
+                             *replace             *getPosition
