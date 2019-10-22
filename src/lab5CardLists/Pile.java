@@ -4,82 +4,90 @@ public class Pile implements CardListInterface{
 	private DoubleNode firstNode;
 	private DoubleNode lastNode;
 	private int numCards;
-	
+
 	public Pile() {
 		firstNode = null;
 		lastNode = null;
 		numCards = 0;
 	}
-	
+
 	public DoubleNode getFirstNode() {
 		return firstNode;
 	}
-	
+
 	public void setFirstNode(DoubleNode firstNode) {
 		this.firstNode = firstNode;
 	}
-	
+
 	public DoubleNode getLastNode() {
 		return lastNode;
 	}
-	
+
 	public void setLastNode(DoubleNode lastNode) {
 		this.lastNode = lastNode;
 	}
-	
+
 	public int getNumCards() {
 		return numCards;
 	}
-	
+
 	public void setNumCards(int numCards) {
 		this.numCards = numCards;
 	}
-	
+
 	public void shuffle() {
 		Card[] deck = toArray();
-		
-		for(int i = numCards - 1; i >= 0; i--) {
-			int random = (int) (Math.random() * i);
-			Card temp = deck[random];
-			deck[random] = deck[i];
-			deck[i] = temp;
+
+		for(int i = numCards - 1; i >= 0; i--) { //goes backwards, swapping card locations
+			int random = (int) (Math.random() * i); //get random numbers
+			Card temp = deck[random]; //saves object from random location
+			deck[random] = deck[i]; //changes object in the random location with the one in the i location
+			deck[i] = temp; //i location now has random object
 		}
-		
-		clear();
-		for(int i = 0; i < deck.length; i++) {
+
+		clear(); //clears old pile
+		for(int i = 0; i < deck.length; i++) { //replaces the pile with the brand new shuffled deck order
 			add(deck[i]);
 		}
-		
-		//	SHUFFLE DECK
 	}
 
 	@Override
 	public void add(Card aCard) {
 		DoubleNode newNode = new DoubleNode(aCard);
-		if(numCards == 0) {
+		if(numCards == 0) { //if there is no previous objects, the new card is both the front and back
 			firstNode = newNode;
 			lastNode = newNode;
 		}
-		
-		newNode.setPrev(firstNode);
+		//otherwise the card is added to the top (first node)
+		newNode.setPrev(firstNode); 
 		firstNode = newNode;
 		numCards++;
 	}
 
 	@Override
-	public boolean remove(Card aCard) {
-		if(contains(aCard)) {
-			return false;
+	public Card remove(Card aCard) {
+		if(!contains(aCard)) { //if the object is not found, then null is returned.
+			return null; 
 		} else if(firstNode.getCard().equals(aCard)) { //this means if the found card is the first card, easy shortcut
-			firstNode = firstNode.getNext();
+			Card removedCard = firstNode.getCard();
+			firstNode = firstNode.getPrev();
+			return removedCard;
+		} else if(lastNode.getCard().equals(aCard)) { //is card is found in the last node
+			Card removedCard = lastNode.getCard();
+			lastNode = lastNode.getNext();
+			return removedCard;
+		} else { //is none of the other options are found, then the object must be somewhere in the middle
+			DoubleNode current = firstNode;
+			DoubleNode removedNode = null;
+
+			for(int i = 0; i < numCards; i++) { //this loop is not finished yet
+				if(current.getPrev().getCard().equals(aCard)) {
+					removedNode = current.getPrev();
+					current.setPrev(removedNode.getPrev()); //the one that is set is the once right after;
+				}
+			}
+			return removedNode.getCard();
 		}
-		
-		DoubleNode current = firstNode;
-		for(int i = 0; i < numCards; i++) { //this loop is not finished yet
-			
-		}
-		
-		return false;
 	}
 
 	@Override
@@ -98,7 +106,7 @@ public class Pile implements CardListInterface{
 	public int getLength() {
 		return numCards;
 	}
-	
+
 	public Card[] toArray() {
 		Card[] deck = new Card[numCards];
 		DoubleNode current = firstNode;
@@ -106,7 +114,7 @@ public class Pile implements CardListInterface{
 			deck[1] = current.getCard();
 			current = current.getNext();
 		}
-		
+
 		return deck;
 	}
 
