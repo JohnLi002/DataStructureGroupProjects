@@ -58,8 +58,7 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return numberOfEntries;
 	}
 
 	@Override
@@ -112,8 +111,8 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 			if(!nextWasCalled) {
 				throw new IllegalStateException("attempt to call remove without call to next");
 			}
-			
+			Alist.this.remove(--cursor); //by having the "--" as a prefix, the decrement in cursor happens first
+			nextWasCalled = false;
 		}
 	}
-	
 }
