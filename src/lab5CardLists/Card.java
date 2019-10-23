@@ -4,9 +4,9 @@ public class Card {
 	private Suite suite;;
 	private Rank rank;
 	
-	public Card(String suite, String rank) {
-		this.setSuite(Suite.valueOf(suite.toUpperCase()));
-		this.setRank(Rank.valueOf(rank.toUpperCase()));
+	public Card(String s, String r) {
+		setSuite(Suite.valueOf(s.toUpperCase()));
+		setRank(Rank.valueOf(r.toUpperCase()));
 	}
 
 	public Suite getSuite() {

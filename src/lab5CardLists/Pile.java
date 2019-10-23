@@ -84,8 +84,10 @@ public class Pile implements CardListInterface{
 				if(current.getPrev().getCard().equals(aCard)) {
 					removedNode = current.getPrev();
 					current.setPrev(removedNode.getPrev()); //the one that is set is the once right after;
+					break;
 				}
 			}
+			numCards--;
 			return removedNode.getCard();
 		}
 	}
