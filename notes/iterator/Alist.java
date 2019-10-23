@@ -1,5 +1,7 @@
 package iterator;
 
+import java.util.NoSuchElementException;
+
 public class Alist<T> implements ListInterface <T>, Iterable <T> {
 	private T[] list;
 	private int numberOfEntries;
@@ -81,6 +83,7 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 	
 	private class IteratorForAList implements Iterator<T> {
 		int cursor;
+		private boolean nextWasCalled;
 		
 		public IteratorForAList() {
 			cursor = 0;
@@ -88,19 +91,27 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
 			return (cursor < numberOfEntries);
 		}
 
 		@Override
 		public T next() {
-			// TODO Auto-generated method stub
-			return null;
+			if(!hasNext()) {
+				throw new NoSuchElementException();
+			}
+			nextWasCalled = true;
+			T item = list[cursor];
+			cursor++;
+			return item;
 		}
 
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
+			// throw new UnsupportedOperatorionException();
+			
+			if(!nextWasCalled) {
+				throw new IllegalStateException("attempt to call remove without call to next");
+			}
 			
 		}
 	}
