@@ -40,11 +40,12 @@ public class Pile implements CardListInterface{
 
 		for(int i = numCards - 1; i >= 0; i--) { //goes backwards, swapping card locations
 			int random = (int) (Math.random() * i); //get random numbers
+			System.out.println(random);
 			Card temp = deck[random]; //saves object from random location
 			deck[random] = deck[i]; //changes object in the random location with the one in the i location
 			deck[i] = temp; //i location now has random object
 		}
-
+		
 		clear(); //clears old pile
 		for(int i = 0; i < deck.length; i++) { //replaces the pile with the brand new shuffled deck order
 			add(deck[i]);
