@@ -35,7 +35,7 @@ public class Test {
 		p.shuffle();
 		card = p.toArray();
 		for(int i = 0; i < card.length; i++) {
-			System.out.println(p.getFirstNode().getCard().getRank());
+			System.out.println(card[i].getRank());
 		}
 	}
 }
