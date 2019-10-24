@@ -39,8 +39,7 @@ public class Pile implements CardListInterface{
 		Card[] deck = toArray();
 
 		for(int i = numCards - 1; i >= 0; i--) { //goes backwards, swapping card locations
-			int random = (int) (Math.random() * i); //get random numbers
-			System.out.println(random);
+			int random = (int) (Math.random() * numCards); //get random numbers
 			Card temp = deck[random]; //saves object from random location
 			deck[random] = deck[i]; //changes object in the random location with the one in the i location
 			deck[i] = temp; //i location now has random object
