@@ -1,5 +1,9 @@
 package lab5CardLists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public enum Rank {
 	ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, SPARROW, KING
 }

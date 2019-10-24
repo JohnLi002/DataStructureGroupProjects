@@ -1,5 +1,9 @@
 package lab5CardLists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Pile implements CardListInterface{
 	private DoubleNode firstNode;
 	private DoubleNode lastNode;

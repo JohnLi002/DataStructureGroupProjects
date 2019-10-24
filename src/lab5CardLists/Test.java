@@ -1,5 +1,9 @@
 package lab5CardLists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Test {
 	public static void main(String[] args) {
 		Pile p = new Pile();

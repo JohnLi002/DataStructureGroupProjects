@@ -1,5 +1,9 @@
 package lab5CardLists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class DoubleNode {
 	private Card card;
 	private DoubleNode next;
