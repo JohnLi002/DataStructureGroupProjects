@@ -9,4 +9,5 @@ public interface CardListInterface {
 	public boolean isEmpty();
 	public void clear();
 	
+	
 }

@@ -91,7 +91,7 @@ public class Pile implements CardListInterface{
 			return removedNode.getCard();
 		}
 	}
-
+	
 	@Override
 	public boolean contains(Card aCard) {
 		DoubleNode current = firstNode;
@@ -103,7 +103,7 @@ public class Pile implements CardListInterface{
 		}
 		return false;
 	}
-
+	
 	@Override
 	public int getLength() {
 		return numCards;

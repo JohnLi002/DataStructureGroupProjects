@@ -1,7 +1,7 @@
 package lab5CardLists;
 
 public class Card {
-	private Suite suite;;
+	private Suite suite;
 	private Rank rank;
 	
 	public Card(String s, String r) {
@@ -25,5 +25,7 @@ public class Card {
 		this.rank = rank;
 	}
 	
-	
+	public boolean equals(Card c) {
+		return (getSuite().equals(c.getSuite()) && getRank().equals(c.getRank()));
+	}
 }
