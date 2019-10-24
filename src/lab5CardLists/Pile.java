@@ -80,7 +80,7 @@ public class Pile implements CardListInterface{
 			DoubleNode current = firstNode;
 			DoubleNode removedNode = null;
 
-			for(int i = 0; i < numCards; i++) { //this loop is not finished yet
+			while(current.getPrev() != null) { //this loop is not finished yet
 				if(current.getPrev().getCard().equals(aCard)) {
 					removedNode = current.getPrev();
 					current.setPrev(removedNode.getPrev()); //the one that is set is the once right after;
@@ -114,8 +114,8 @@ public class Pile implements CardListInterface{
 		Card[] deck = new Card[numCards];
 		DoubleNode current = firstNode;
 		for(int i = 0; i < numCards; i++) {
-			deck[1] = current.getCard();
-			current = current.getNext();
+			deck[i] = current.getCard();
+			current = current.getPrev();
 		}
 
 		return deck;

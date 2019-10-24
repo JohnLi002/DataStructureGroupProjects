@@ -17,5 +17,11 @@ public class Test {
 		p.remove(c2);
 		System.out.println(p.getLength());
 		System.out.println(p.contains(c2));
+		System.out.println(p.remove(c2));
+		Card[] card = p.toArray();
+		
+		for(int i = 0; i < card.length; i++) {
+			System.out.println(card[i].getRank());
+		}
 	}
 }
