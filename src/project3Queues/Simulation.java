@@ -10,14 +10,13 @@ public class Simulation {
 		Train t2 = new Train(10, true);
 		
 		//	HOW TIME PASSES
+		//	Also must remember what 
 		for (int i = 0; i <= runTimeMinutes; i++) {
 			//every 10 minutes fill stations with passengers
-			if (runTimeMinutes % 10 == 0)
-			{
+			if (runTimeMinutes % 10 == 0) {
 				orangeLine.initializeStations();
 			}
 			
 		}
 	}
-
 }

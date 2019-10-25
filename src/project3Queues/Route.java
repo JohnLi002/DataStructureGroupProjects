@@ -49,11 +49,39 @@ public class Route {
 		}
 	}
 	
-	public void update () {
+	public void update (Train t) {
 		//remove from train
 		//add to Train(currStation)
 		//currStation.addPassenger();
 		//update current Index;
+	}
+	
+	public Integer getIndex(Station s) {
+		for(int i = 0; i < stations.length; i++) {
+			if(stations[i].equals(s)) {
+				return i;
+			}
+		}
+		
+		return null;
+	}
+	
+	public boolean passengerGetOn(Train t, Passenger p) {
+		int negPos = 1;
+		if(!t.goingForward()) {//makes the final important number positive no matter what to make sure it is going in the right direction
+			negPos = -1;
+		}
+		
+		return negPos*(t.getCurrentIndex() - getIndex(p.getDestination())) > 0; //if going forward the passenger station will be greater
+		//than where the train currently is at so the passenger must go on. If the train is going in reverse then the number should be 
+		//negative which is why negPos is there
+	}
+	
+	public boolean shouldLeave(Passenger p, Train t) {
+		
+		
+		
+		return false;
 	}
 	
 	public void travel() {
