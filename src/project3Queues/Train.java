@@ -74,7 +74,6 @@ public class Train {
 	}
 
 	public boolean goingForward() {
-		// TODO Auto-generated method stub
 		return goingForward;
 	}
 }

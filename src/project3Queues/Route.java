@@ -49,7 +49,11 @@ public class Route {
 		}
 	}
 	
-	public void update (Train t) {
+	public void travel (Train t) {
+		t.trainMove();
+		
+		
+		
 		//remove from train
 		//add to Train(currStation)
 		//currStation.addPassenger();
@@ -77,12 +81,6 @@ public class Route {
 		//negative which is why negPos is there
 	}
 	
-	public boolean shouldLeave(Passenger p, Train t) {
-		
-		
-		
-		return false;
-	}
 	
 	public void travel() {
 		
