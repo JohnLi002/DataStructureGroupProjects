@@ -64,6 +64,7 @@ public class Pile implements CardListInterface{
 		} else {
 			//otherwise the card is added to the top (first node)
 			newNode.setPrev(firstNode); 
+			firstNode.setNext(newNode);
 			firstNode = newNode;
 			numCards++;
 		}
@@ -76,10 +77,12 @@ public class Pile implements CardListInterface{
 		} else if(firstNode.getCard().equals(aCard)) { //this means if the found card is the first card, easy shortcut
 			Card removedCard = firstNode.getCard();
 			firstNode = firstNode.getPrev();
+			numCards--;
 			return removedCard;
 		} else if(lastNode.getCard().equals(aCard)) { //is card is found in the last node
 			Card removedCard = lastNode.getCard();
 			lastNode = lastNode.getNext();
+			numCards--;
 			return removedCard;
 		} else { //is none of the other options are found, then the object must be somewhere in the middle
 			DoubleNode current = firstNode;
@@ -122,7 +125,6 @@ public class Pile implements CardListInterface{
 			deck[i] = current.getCard();
 			current = current.getPrev();
 		}
-
 		return deck;
 	}
 
