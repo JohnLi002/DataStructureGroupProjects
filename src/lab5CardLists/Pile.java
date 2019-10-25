@@ -48,7 +48,7 @@ public class Pile implements CardListInterface{
 			deck[random] = deck[i]; //changes object in the random location with the one in the i location
 			deck[i] = temp; //i location now has random object
 		}
-		
+
 		clear(); //clears old pile
 		for(int i = 0; i < deck.length; i++) { //replaces the pile with the brand new shuffled deck order
 			add(deck[i]);
@@ -59,13 +59,14 @@ public class Pile implements CardListInterface{
 	public void add(Card aCard) {
 		DoubleNode newNode = new DoubleNode(aCard);
 		if(numCards == 0) { //if there is no previous objects, the new card is both the front and back
+			firstNode = lastNode = newNode;
+			numCards++;
+		} else {
+			//otherwise the card is added to the top (first node)
+			newNode.setPrev(firstNode); 
 			firstNode = newNode;
-			lastNode = newNode;
+			numCards++;
 		}
-		//otherwise the card is added to the top (first node)
-		newNode.setPrev(firstNode); 
-		firstNode = newNode;
-		numCards++;
 	}
 
 	@Override
@@ -96,7 +97,7 @@ public class Pile implements CardListInterface{
 			return removedNode.getCard();
 		}
 	}
-	
+
 	@Override
 	public boolean contains(Card aCard) {
 		DoubleNode current = firstNode;
@@ -108,7 +109,7 @@ public class Pile implements CardListInterface{
 		}
 		return false;
 	}
-	
+
 	@Override
 	public int getLength() {
 		return numCards;

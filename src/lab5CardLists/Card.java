@@ -32,4 +32,8 @@ public class Card {
 	public boolean equals(Card c) {
 		return (getSuite().equals(c.getSuite()) && getRank().equals(c.getRank()));
 	}
+	
+	public String toString() {
+		return "";
+	}
 }
