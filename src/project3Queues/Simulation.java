@@ -1,9 +1,11 @@
 package project3Queues;
 
+import java.util.Scanner;
 public class Simulation {
 	public static int runTimeMinutes = 60;
 	
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
 		Route orangeLine = new Route("orange.txt");
 		
 		Train t1 = new Train(0, false);
@@ -18,5 +20,7 @@ public class Simulation {
 			}
 			
 		}
+		
+		scan.close();
 	}
 }
