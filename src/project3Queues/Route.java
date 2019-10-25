@@ -2,16 +2,21 @@ package project3Queues;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Route {
-	public static Station[] stations = new Station[17]; //17 because that is the number of stations in the orange.txt file
+	public static Station[] stations;
 
 	public Route(String fileName) {
 		//reads file 
 		try(Scanner scan = new Scanner(new File(fileName));){
+			stations = new Station[1];
 			int temp = 0;
 			while (scan.hasNextLine()) {
+				if(temp >= stations.length) {
+					stations = Arrays.copyOf(stations, stations.length + 1);
+				}
 				stations[temp] = new Station(scan.nextLine());
 				temp++;
 			}
@@ -44,7 +49,7 @@ public class Route {
 		}
 	}
 	
-	public void update ( ) {
+	public void update () {
 		//remove from train
 		//add to Train(currStation)
 		//currStation.addPassenger();
