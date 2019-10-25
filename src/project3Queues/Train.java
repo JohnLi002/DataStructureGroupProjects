@@ -4,10 +4,10 @@ public class Train {
 	private int currentIndex;
 	//private BagInterface<Passsenger> trainPassengers;
 	private boolean direction;
-	private int maxTime = 0;
 	
-	public Train(int time) {
-		maxTime = time;
+	public Train(int startPosition, boolean direction) {
+		currentIndex = startPosition;
+		this.direction = direction;
 	}
 	
 	public int getCurrentIndex() {
@@ -15,8 +15,13 @@ public class Train {
 	}
 	
 	//this method will be the train moving from station to another
-	public void trainMove(int transportTime) {
-		int time = transportTime;
+	public void trainMove() {
+		if (direction) {
+			currentIndex++;
+		}
+		else if (!direction) {
+			currentIndex--;
+		}
 		
 	}
 }
