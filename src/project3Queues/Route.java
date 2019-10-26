@@ -49,10 +49,11 @@ public class Route {
 		}
 	}
 	
-	public void travel (Train t) {
+	public String travel (Train t) {
 		t.trainMove();
-		
-		
+		findAndDeletePassengers(t);
+		String s = t.print() + stations[t.getCurrentIndex()].print();
+		return s;
 		//remove from train
 		//add to Train(currStation)
 		//currStation.addPassenger();
@@ -100,10 +101,6 @@ public class Route {
 		//negative which is why negPos is there
 	}
 	
-	
-	public void travel() {
-		
-	}
 	
 	public Station[] getStation() {
 		return stations;

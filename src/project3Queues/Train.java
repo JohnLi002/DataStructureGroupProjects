@@ -57,22 +57,25 @@ public class Train {
 
 	}
 
-	public void print() { //prints out name of station and all passengers inside station
-		System.out.println("----------------------");
-		System.out.println("Passengers exiting:");
-		System.out.println("" + '\t' + "Passengers:" + '\n');
+	public String print() { //prints out name of station and all passengers inside station
+		String s = "";
+		s+=("\n----------------------");
+		s+=("\nPassengers exiting:");
+		s+=("\n" + '\t' + "Passengers:" + '\n');
 		if (!passengers.isEmpty())
 		{
 			Passenger placeholder = passengers.getFront();
 			Passenger temp;
 			do{
 				temp = passengers.dequeue();
-				System.out.println(temp.toString());
+				s+=("\n"+temp.toString());
 				passengers.enqueue(temp);
 			} while( !passengers.getFront().equals(placeholder) );
 		}
-		System.out.println("===================");
+		s+=("\n===================");
+		return s;
 	}
+	
 
 	public LinkedQueue<Passenger> getPassengers() {
 		return passengers;

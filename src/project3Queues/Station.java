@@ -61,20 +61,23 @@ public class Station {
 		}
 	}
 	
-	public void print() { //prints out name of station and all passengers inside station
-		System.out.println("----------------------");
-		System.out.println(name);
-		System.out.println("Passengers Entering:");
-		System.out.println("" + '\t' + "Passengers:" + '\n');
+	public String print() { //prints out name of station and all passengers inside station
+		String s = "";
+		s+=("\n----------------------");
+		s+=("\n"+name);
+		s+=("\nPassengers Entering:");
+		s+=("\n" + '\t' + "Passengers:" + '\n');
 		if (!passengers.isEmpty()) {
 			Passenger placeholder = passengers.getFront();
 			Passenger temp;
 			do {
 				temp = passengers.dequeue();
-				System.out.println(temp.toString());
+				s+=("\n"+temp.toString());
 				passengers.enqueue(temp);
 			} while( !passengers.getFront().equals(placeholder) );
 		}
-		System.out.println("===================");
+		s+=("\n===================");
+		return s;
 	}
+	
 }
