@@ -1,0 +1,23 @@
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+21358, Oak Grove
+===================
+----------------------
+Wellington
+Passengers Entering:
+	Passengers:
+
+05651, Ruggles
+41402, Massachusetts Avenue
+52094, Downtown Crossing
+06282, Green Street
+97809, Downtown Crossing
+86887, Community College
+75563, Stony Brook
+69642, Haymarket
+35339, Stony Brook
+48227, Chinatown
+===================
