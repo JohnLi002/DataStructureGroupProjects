@@ -50,7 +50,7 @@ public class Route {
 	}
 	
 	public String travel (Train t) {
-		t.trainMove(stations.length);
+		t.trainMove(stations.length - 1);
 		findAndDeletePassengers(t);
 		String s = t.print() + stations[t.getCurrentIndex()].print();
 		return s;
