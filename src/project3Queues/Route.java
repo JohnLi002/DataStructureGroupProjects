@@ -55,8 +55,7 @@ public class Route {
 	
 	public String travel (Train t) {
 		t.trainMove(stations.length - 1);
-		findAndDeletePassengers(t);
-		String s = t.print() + stations[t.getCurrentIndex()].print();
+		String s = findAndDeletePassengers(t) + t.removePassengers(stations[t.getCurrentIndex()]);
 		return s;
 		//remove from train
 		//add to Train(currStation)
@@ -64,13 +63,19 @@ public class Route {
 		//update current Index;
 	}
 	
-	public void findAndDeletePassengers(Train t) {
+	public String findAndDeletePassengers(Train t) {
 		int i = t.getCurrentIndex();
 		Passenger[] p = stations[i].toArray();
 		LinkedQueue<Passenger> remove = new LinkedQueue<>();
+		String enter = "";
+		enter+=("\n----------------------");
+		enter+=("\n"+stations[i].getName());
+		enter+=("\nPassengers Entering:");
+		enter+=("\n" + '\t' + "Passengers:" + '\n');
 		
 		for(int ii = 0; ii < p.length; ii++) {
 			if(passengerGetOn(t,p[ii])) {
+				enter+=("\n" + p[ii]);
 				remove.enqueue(p[ii]);
 			}
 		}
@@ -82,6 +87,8 @@ public class Route {
 			stations[i].removePassenger(removed);
 			t.addPassenger(removed);
 		}
+		
+		return enter;
 	}
 	
 	private Integer getIndex(Station s) {

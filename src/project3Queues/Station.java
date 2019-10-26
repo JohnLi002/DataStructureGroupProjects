@@ -65,7 +65,7 @@ public class Station {
 		}
 	}
 	
-	public String print() { //prints out name of station and all passengers inside station
+	public void print() { //prints out name of station and all passengers inside station
 		String s = "";
 		s+=("\n----------------------");
 		s+=("\n"+name);
@@ -81,7 +81,7 @@ public class Station {
 			} while( !passengers.getFront().equals(placeholder) );
 		}
 		s+=("\n===================");
-		return s;
+		System.out.println(s);
 	}
 	
 }

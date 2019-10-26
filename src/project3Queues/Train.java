@@ -39,16 +39,23 @@ public class Train {
 		passengers.enqueue(p);
 	}
 	
-	public void removePassengers(Station s) {
+	public String removePassengers(Station s) {
+		String words = "";
+		words+=("\n----------------------");
+		words+=("\nTrain");
+		words+=("\nPassengers Exiting:");
+		words+=("\n" + '\t' + "Passengers:" + '\n');
+		
 		if(passengers.isEmpty()) {
-			return; //return instantly ends method
+			return words; //return instantly ends method
 		} 
 		
 		Passenger first = passengers.dequeue();
 		while(first.getDestination().equals(s)) { //in case the passengers that need to leave are first
 			if(passengers.isEmpty()) {
-				return;
+				return words;
 			} else {
+				words+=("\n"+first);
 				first = passengers.dequeue();
 			}
 		}
@@ -58,32 +65,13 @@ public class Train {
 		while(!passengers.getFront().equals(first)) {
 			current = passengers.dequeue(); //takes out first passenger
 			while(!passengers.isEmpty() && current.getDestination().equals(s)){ //if the next passenger has to leave
+				words+=("\n" + current);
 				current = passengers.dequeue(); //continues till the correct passenger is one is found
 			}
 			passengers.enqueue(current); //puts incorrect passenger back into queue;
 		}
-
+		return words;
 	}
-
-	public String print() { //prints out name of station and all passengers inside station
-		String s = "";
-		s+=("\n----------------------");
-		s+=("\nPassengers exiting:");
-		s+=("\n" + '\t' + "Passengers:" + '\n');
-		if (!passengers.isEmpty())
-		{
-			Passenger placeholder = passengers.getFront();
-			Passenger temp;
-			do{
-				temp = passengers.dequeue();
-				s+=("\n"+temp.toString());
-				passengers.enqueue(temp);
-			} while( !passengers.getFront().equals(placeholder) );
-		}
-		s+=("\n===================");
-		return s;
-	}
-	
 
 	public LinkedQueue<Passenger> getPassengers() {
 		return passengers;

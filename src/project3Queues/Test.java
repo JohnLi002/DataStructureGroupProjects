@@ -19,8 +19,6 @@ public class Test {
 				t1.removePassengers(station[i]);
 			}
 			
-			orangeLine.print();
-			t1.print();
 			PrintWriter printer = new PrintWriter("trains.txt");
 			for (int i = 0; i < 60; i++)
 			{
