@@ -1,5 +1,9 @@
 package project3Queues;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Train {
 	private int currentIndex;
 	//private BagInterface<Passsenger> trainPassengers;
