@@ -1,7 +1,5 @@
 package project3Queues;
 
-import java.util.Arrays;
-
 public class Train {
 	private int currentIndex;
 	//private BagInterface<Passsenger> trainPassengers;
@@ -43,7 +41,7 @@ public class Train {
 		} 
 		
 		Passenger first = passengers.dequeue();
-		while(first.getDestination().equals(s)) { //incase the passengers that need to leave are first
+		while(first.getDestination().equals(s)) { //in case the passengers that need to leave are first
 			if(passengers.isEmpty()) {
 				return;
 			} else {
