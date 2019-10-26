@@ -3,21 +3,7131 @@
 Passengers exiting:
 	Passengers:
 
-21358, Oak Grove
+85340, Oak Grove
+82149, Oak Grove
 ===================
 ----------------------
 Wellington
 Passengers Entering:
 	Passengers:
 
-05651, Ruggles
-41402, Massachusetts Avenue
-52094, Downtown Crossing
-06282, Green Street
-97809, Downtown Crossing
-86887, Community College
-75563, Stony Brook
-69642, Haymarket
-35339, Stony Brook
-48227, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+74444, Sullivan Square
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+14761, Sullivan Square
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+===================
+----------------------
+Assembly
+Passengers Entering:
+	Passengers:
+
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+===================
+----------------------
+Sullivan Square
+Passengers Entering:
+	Passengers:
+
+81160, Green Street
+37321, Chinatown
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+===================
+----------------------
+Community College
+Passengers Entering:
+	Passengers:
+
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+===================
+----------------------
+Haymarket
+Passengers Entering:
+	Passengers:
+
+39488, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+===================
+----------------------
+Downtown Crossing
+Passengers Entering:
+	Passengers:
+
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+===================
+----------------------
+Chinatown
+Passengers Entering:
+	Passengers:
+
+45748, Ruggles
+77159, Back Bay
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+===================
+----------------------
+Tufts Medical Center
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+===================
+----------------------
+Back Bay
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+===================
+----------------------
+Massachusetts Avenue
+Passengers Entering:
+	Passengers:
+
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+===================
+----------------------
+Ruggles
+Passengers Entering:
+	Passengers:
+
+16256, Green Street
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+===================
+----------------------
+Roxbury Crossing
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+===================
+----------------------
+Jackson Square
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+80216, Jackson Square
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+===================
+----------------------
+Stony Brook
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+80216, Jackson Square
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+14552, Roxbury Crossing
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+12503, Roxbury Crossing
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+68667, Stony Brook
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+===================
+----------------------
+Green Street
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+80216, Jackson Square
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+14552, Roxbury Crossing
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+12503, Roxbury Crossing
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+68667, Stony Brook
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+37819, Green Street
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34244, Stony Brook
+32078, Roxbury Crossing
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+15854, Ruggles
+38166, Ruggles
+77362, Ruggles
+===================
+----------------------
+Forest Hills
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+80216, Jackson Square
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+14552, Roxbury Crossing
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+12503, Roxbury Crossing
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+68667, Stony Brook
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34244, Stony Brook
+32078, Roxbury Crossing
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+15854, Ruggles
+38166, Ruggles
+77362, Ruggles
+===================
+----------------------
+Green Street
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+80216, Jackson Square
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+14552, Roxbury Crossing
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+12503, Roxbury Crossing
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+32078, Roxbury Crossing
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+15854, Ruggles
+38166, Ruggles
+77362, Ruggles
+===================
+----------------------
+Stony Brook
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+74523, Roxbury Crossing
+08091, Chinatown
+18308, Roxbury Crossing
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+80415, Roxbury Crossing
+55717, Roxbury Crossing
+76215, Roxbury Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+14552, Roxbury Crossing
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+12503, Roxbury Crossing
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+32078, Roxbury Crossing
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+15854, Ruggles
+38166, Ruggles
+77362, Ruggles
+===================
+----------------------
+Jackson Square
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+82082, Ruggles
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+08091, Chinatown
+56228, Sullivan Square
+14785, Ruggles
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+21922, Ruggles
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+15854, Ruggles
+38166, Ruggles
+77362, Ruggles
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+===================
+----------------------
+Roxbury Crossing
+Passengers Entering:
+	Passengers:
+
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+94176, Massachusetts Avenue
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+08091, Chinatown
+56228, Sullivan Square
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92485, Massachusetts Avenue
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+57753, Massachusetts Avenue
+76687, Back Bay
+74844, Massachusetts Avenue
+41395, Massachusetts Avenue
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+76017, Massachusetts Avenue
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+98093, Massachusetts Avenue
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+===================
+----------------------
+Ruggles
+Passengers Entering:
+	Passengers:
+
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+64787, Back Bay
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+72298, Back Bay
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+82149, Wellington
+89129, Haymarket
+98790, Back Bay
+14354, Chinatown
+09946, Back Bay
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+08091, Chinatown
+56228, Sullivan Square
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+76687, Back Bay
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+67714, Back Bay
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+83197, Chinatown
+88240, Community College
+07980, Back Bay
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+===================
+----------------------
+Massachusetts Avenue
+Passengers Entering:
+	Passengers:
+
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+35586, Tufts Medical Center
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+77650, Tufts Medical Center
+83629, Sullivan Square
+29041, Haymarket
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+82149, Wellington
+89129, Haymarket
+14354, Chinatown
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+27346, Tufts Medical Center
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+08091, Chinatown
+56228, Sullivan Square
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+63116, Tufts Medical Center
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+89211, Tufts Medical Center
+30357, Wellington
+07513, Tufts Medical Center
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+46327, Tufts Medical Center
+57254, Tufts Medical Center
+79826, Downtown Crossing
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+33786, Tufts Medical Center
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+83197, Chinatown
+88240, Community College
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+===================
+----------------------
+Back Bay
+Passengers Entering:
+	Passengers:
+
+86289, Tufts Medical Center
+84783, Sullivan Square
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+17582, Chinatown
+63148, Assembly
+83629, Sullivan Square
+29041, Haymarket
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+86608, Chinatown
+82149, Wellington
+89129, Haymarket
+14354, Chinatown
+39565, Chinatown
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+43538, Chinatown
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+08091, Chinatown
+56228, Sullivan Square
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+87469, Chinatown
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+30357, Wellington
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+79826, Downtown Crossing
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+83197, Chinatown
+88240, Community College
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+===================
+----------------------
+Tufts Medical Center
+Passengers Entering:
+	Passengers:
+
+24111, Assembly
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+20463, Downtown Crossing
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+63148, Assembly
+83629, Sullivan Square
+29041, Haymarket
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+82149, Wellington
+89129, Haymarket
+92611, Oak Grove
+83651, Downtown Crossing
+20701, Oak Grove
+97689, Haymarket
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+56228, Sullivan Square
+03494, Community College
+98224, Downtown Crossing
+20513, Haymarket
+92474, Downtown Crossing
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+98170, Community College
+87091, Community College
+87878, Downtown Crossing
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+30357, Wellington
+77799, Downtown Crossing
+86806, Oak Grove
+78871, Haymarket
+79826, Downtown Crossing
+99944, Wellington
+65710, Community College
+32971, Downtown Crossing
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+88240, Community College
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+===================
+----------------------
+Chinatown
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+46934, Wellington
+98196, Haymarket
+43685, Assembly
+39288, Haymarket
+81105, Oak Grove
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+63148, Assembly
+83629, Sullivan Square
+29041, Haymarket
+79072, Haymarket
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+82149, Wellington
+89129, Haymarket
+92611, Oak Grove
+20701, Oak Grove
+97689, Haymarket
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+56228, Sullivan Square
+03494, Community College
+20513, Haymarket
+22791, Haymarket
+97530, Wellington
+60670, Sullivan Square
+98170, Community College
+87091, Community College
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+30357, Wellington
+86806, Oak Grove
+78871, Haymarket
+99944, Wellington
+65710, Community College
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+01225, Haymarket
+02112, Assembly
+34256, Wellington
+88240, Community College
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+===================
+----------------------
+Downtown Crossing
+Passengers Entering:
+	Passengers:
+
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+46934, Wellington
+43685, Assembly
+81105, Oak Grove
+39811, Assembly
+02583, Community College
+30511, Sullivan Square
+63148, Assembly
+83629, Sullivan Square
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+82149, Wellington
+92611, Oak Grove
+20701, Oak Grove
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+56228, Sullivan Square
+03494, Community College
+97530, Wellington
+60670, Sullivan Square
+98170, Community College
+87091, Community College
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+30357, Wellington
+86806, Oak Grove
+99944, Wellington
+65710, Community College
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+50723, Community College
+51431, Wellington
+02112, Assembly
+34256, Wellington
+88240, Community College
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+===================
+----------------------
+Haymarket
+Passengers Entering:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+46934, Wellington
+43685, Assembly
+81105, Oak Grove
+39811, Assembly
+30511, Sullivan Square
+63148, Assembly
+83629, Sullivan Square
+76407, Sullivan Square
+09283, Sullivan Square
+13022, Assembly
+01562, Assembly
+82149, Wellington
+92611, Oak Grove
+20701, Oak Grove
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+56228, Sullivan Square
+97530, Wellington
+60670, Sullivan Square
+53971, Oak Grove
+96781, Wellington
+28896, Sullivan Square
+30357, Wellington
+86806, Oak Grove
+99944, Wellington
+19845, Sullivan Square
+71072, Wellington
+39600, Sullivan Square
+51431, Wellington
+02112, Assembly
+34256, Wellington
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+===================
+----------------------
+Community College
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+07825, Assembly
+46934, Wellington
+43685, Assembly
+81105, Oak Grove
+39811, Assembly
+63148, Assembly
+13022, Assembly
+01562, Assembly
+82149, Wellington
+92611, Oak Grove
+20701, Oak Grove
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+97530, Wellington
+53971, Oak Grove
+96781, Wellington
+30357, Wellington
+86806, Oak Grove
+99944, Wellington
+71072, Wellington
+51431, Wellington
+02112, Assembly
+34256, Wellington
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+===================
+----------------------
+Sullivan Square
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+75142, Wellington
+46934, Wellington
+81105, Oak Grove
+82149, Wellington
+92611, Oak Grove
+20701, Oak Grove
+83536, Oak Grove
+55306, Oak Grove
+46770, Wellington
+97530, Wellington
+53971, Oak Grove
+96781, Wellington
+30357, Wellington
+86806, Oak Grove
+99944, Wellington
+71072, Wellington
+51431, Wellington
+34256, Wellington
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+===================
+----------------------
+Assembly
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+85340, Oak Grove
+82149, Oak Grove
+78337, Oak Grove
+47268, Oak Grove
+81105, Oak Grove
+92611, Oak Grove
+20701, Oak Grove
+83536, Oak Grove
+55306, Oak Grove
+53971, Oak Grove
+86806, Oak Grove
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+74444, Sullivan Square
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+14761, Sullivan Square
+70510, Tufts Medical Center
+95358, Assembly
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+23832, Assembly
+68288, Massachusetts Avenue
+13652, Community College
+79707, Community College
+56912, Forest Hills
+94772, Sullivan Square
+58507, Roxbury Crossing
+93412, Chinatown
+84038, Community College
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+51775, Community College
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+===================
+----------------------
+Wellington
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+74444, Sullivan Square
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+14761, Sullivan Square
+70510, Tufts Medical Center
+95358, Assembly
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+23832, Assembly
+68288, Massachusetts Avenue
+13652, Community College
+79707, Community College
+56912, Forest Hills
+94772, Sullivan Square
+58507, Roxbury Crossing
+93412, Chinatown
+84038, Community College
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+51775, Community College
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+17756, Community College
+62564, Roxbury Crossing
+01474, Haymarket
+===================
+----------------------
+Oak Grove
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+74444, Sullivan Square
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+14761, Sullivan Square
+70510, Tufts Medical Center
+95358, Assembly
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+23832, Assembly
+68288, Massachusetts Avenue
+13652, Community College
+79707, Community College
+56912, Forest Hills
+94772, Sullivan Square
+58507, Roxbury Crossing
+93412, Chinatown
+84038, Community College
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+51775, Community College
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+17756, Community College
+62564, Roxbury Crossing
+01474, Haymarket
+===================
+----------------------
+Wellington
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+80437, Sullivan Square
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+74444, Sullivan Square
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+14761, Sullivan Square
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+13652, Community College
+79707, Community College
+56912, Forest Hills
+94772, Sullivan Square
+58507, Roxbury Crossing
+93412, Chinatown
+84038, Community College
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+51775, Community College
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+17756, Community College
+62564, Roxbury Crossing
+01474, Haymarket
+===================
+----------------------
+Assembly
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+66786, Community College
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+88736, Community College
+14094, Chinatown
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+78292, Community College
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+19360, Community College
+44638, Roxbury Crossing
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+13652, Community College
+79707, Community College
+56912, Forest Hills
+58507, Roxbury Crossing
+93412, Chinatown
+84038, Community College
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+51775, Community College
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+17756, Community College
+62564, Roxbury Crossing
+01474, Haymarket
+===================
+----------------------
+Sullivan Square
+Passengers Entering:
+	Passengers:
+
+09222, Roxbury Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+98310, Haymarket
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+93731, Haymarket
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+53702, Haymarket
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+14094, Chinatown
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+93412, Chinatown
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+09617, Haymarket
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+01474, Haymarket
+===================
+----------------------
+Community College
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+39488, Downtown Crossing
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+68531, Downtown Crossing
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+36835, Downtown Crossing
+97014, Massachusetts Avenue
+65540, Green Street
+71623, Back Bay
+14153, Downtown Crossing
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+03963, Forest Hills
+19562, Downtown Crossing
+84721, Massachusetts Avenue
+62994, Forest Hills
+39680, Downtown Crossing
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+75715, Downtown Crossing
+44259, Jackson Square
+04614, Ruggles
+14094, Chinatown
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+43930, Downtown Crossing
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+93412, Chinatown
+78245, Tufts Medical Center
+82928, Back Bay
+90009, Downtown Crossing
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+===================
+----------------------
+Haymarket
+Passengers Entering:
+	Passengers:
+
+60051, Forest Hills
+79802, Green Street
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+19117, Chinatown
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+87699, Chinatown
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+97014, Massachusetts Avenue
+65540, Green Street
+71623, Back Bay
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+37321, Chinatown
+03963, Forest Hills
+84721, Massachusetts Avenue
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+05531, Chinatown
+44259, Jackson Square
+04614, Ruggles
+14094, Chinatown
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+42679, Chinatown
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+47571, Chinatown
+33530, Chinatown
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+58582, Chinatown
+02984, Back Bay
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+93412, Chinatown
+78245, Tufts Medical Center
+82928, Back Bay
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+85306, Chinatown
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+88565, Chinatown
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+===================
+----------------------
+Downtown Crossing
+Passengers Entering:
+	Passengers:
+
+01585, Ruggles
+98455, Stony Brook
+29180, Roxbury Crossing
+62369, Chinatown
+07137, Tufts Medical Center
+25816, Back Bay
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+38802, Tufts Medical Center
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+97014, Massachusetts Avenue
+65540, Green Street
+71623, Back Bay
+91507, Tufts Medical Center
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+76050, Tufts Medical Center
+81160, Green Street
+03963, Forest Hills
+84721, Massachusetts Avenue
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+04614, Ruggles
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+99903, Tufts Medical Center
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+02984, Back Bay
+70510, Tufts Medical Center
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+66172, Stony Brook
+47768, Tufts Medical Center
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+78245, Tufts Medical Center
+82928, Back Bay
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+===================
+----------------------
+Chinatown
+Passengers Entering:
+	Passengers:
+
+77528, Stony Brook
+43742, Forest Hills
+17898, Jackson Square
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+77159, Back Bay
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+52375, Back Bay
+73126, Jackson Square
+15439, Back Bay
+79400, Jackson Square
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+97014, Massachusetts Avenue
+65540, Green Street
+71623, Back Bay
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+84721, Massachusetts Avenue
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+04614, Ruggles
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+77729, Forest Hills
+56854, Back Bay
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+02984, Back Bay
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+66172, Stony Brook
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+82928, Back Bay
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+===================
+----------------------
+Tufts Medical Center
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+71639, Massachusetts Avenue
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+60678, Massachusetts Avenue
+16999, Forest Hills
+16000, Massachusetts Avenue
+97823, Stony Brook
+45748, Ruggles
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+93022, Massachusetts Avenue
+02616, Massachusetts Avenue
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+73126, Jackson Square
+79400, Jackson Square
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+97014, Massachusetts Avenue
+65540, Green Street
+97536, Massachusetts Avenue
+35229, Stony Brook
+67132, Stony Brook
+35722, Massachusetts Avenue
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+84721, Massachusetts Avenue
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+04614, Ruggles
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+49294, Massachusetts Avenue
+45375, Jackson Square
+17693, Massachusetts Avenue
+88717, Jackson Square
+18103, Ruggles
+77729, Forest Hills
+91760, Green Street
+51746, Massachusetts Avenue
+13684, Forest Hills
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+66172, Stony Brook
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+68288, Massachusetts Avenue
+56912, Forest Hills
+58507, Roxbury Crossing
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+13882, Massachusetts Avenue
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+===================
+----------------------
+Back Bay
+Passengers Entering:
+	Passengers:
+
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+74897, Ruggles
+37352, Ruggles
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+16999, Forest Hills
+97823, Stony Brook
+45748, Ruggles
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+79437, Ruggles
+49225, Roxbury Crossing
+23166, Green Street
+25509, Forest Hills
+54213, Ruggles
+68997, Ruggles
+67711, Jackson Square
+44941, Stony Brook
+07568, Ruggles
+93434, Green Street
+76499, Jackson Square
+73126, Jackson Square
+79400, Jackson Square
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+28231, Ruggles
+65540, Green Street
+35229, Stony Brook
+67132, Stony Brook
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+04614, Ruggles
+18930, Forest Hills
+84859, Ruggles
+38836, Ruggles
+45375, Jackson Square
+88717, Jackson Square
+18103, Ruggles
+77729, Forest Hills
+91760, Green Street
+13684, Forest Hills
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+84456, Ruggles
+69737, Forest Hills
+00823, Forest Hills
+47414, Ruggles
+66172, Stony Brook
+06140, Green Street
+73950, Ruggles
+22190, Jackson Square
+56912, Forest Hills
+58507, Roxbury Crossing
+44627, Roxbury Crossing
+90093, Ruggles
+72929, Green Street
+57791, Stony Brook
+73997, Ruggles
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+35452, Jackson Square
+61066, Ruggles
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+===================
+----------------------
+Massachusetts Avenue
+Passengers Entering:
+	Passengers:
+
+77119, Jackson Square
+50870, Green Street
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+28496, Roxbury Crossing
+19701, Green Street
+08901, Forest Hills
+59270, Roxbury Crossing
+68438, Jackson Square
+63237, Jackson Square
+16999, Forest Hills
+97823, Stony Brook
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+41596, Roxbury Crossing
+91826, Roxbury Crossing
+78062, Roxbury Crossing
+14017, Jackson Square
+49225, Roxbury Crossing
+23166, Green Street
+25509, Forest Hills
+67711, Jackson Square
+44941, Stony Brook
+93434, Green Street
+76499, Jackson Square
+73126, Jackson Square
+79400, Jackson Square
+63765, Stony Brook
+62367, Green Street
+07300, Roxbury Crossing
+65540, Green Street
+35229, Stony Brook
+67132, Stony Brook
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+18930, Forest Hills
+45375, Jackson Square
+88717, Jackson Square
+77729, Forest Hills
+91760, Green Street
+13684, Forest Hills
+96888, Roxbury Crossing
+44638, Roxbury Crossing
+69737, Forest Hills
+00823, Forest Hills
+66172, Stony Brook
+06140, Green Street
+22190, Jackson Square
+56912, Forest Hills
+58507, Roxbury Crossing
+44627, Roxbury Crossing
+72929, Green Street
+57791, Stony Brook
+47638, Stony Brook
+89365, Roxbury Crossing
+02192, Green Street
+35452, Jackson Square
+62564, Roxbury Crossing
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+===================
+----------------------
+Ruggles
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+19701, Green Street
+08901, Forest Hills
+68438, Jackson Square
+63237, Jackson Square
+16999, Forest Hills
+97823, Stony Brook
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+53560, Jackson Square
+14017, Jackson Square
+23166, Green Street
+25509, Forest Hills
+67711, Jackson Square
+44941, Stony Brook
+93434, Green Street
+76499, Jackson Square
+73126, Jackson Square
+79400, Jackson Square
+63765, Stony Brook
+62367, Green Street
+65540, Green Street
+35229, Stony Brook
+67132, Stony Brook
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+62994, Forest Hills
+42293, Green Street
+93042, Jackson Square
+44259, Jackson Square
+18930, Forest Hills
+45375, Jackson Square
+88717, Jackson Square
+77729, Forest Hills
+91760, Green Street
+13684, Forest Hills
+69737, Forest Hills
+00823, Forest Hills
+66172, Stony Brook
+06140, Green Street
+22190, Jackson Square
+56912, Forest Hills
+72929, Green Street
+57791, Stony Brook
+47638, Stony Brook
+02192, Green Street
+35452, Jackson Square
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+===================
+----------------------
+Roxbury Crossing
+Passengers Entering:
+	Passengers:
+
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+09675, Stony Brook
+19701, Green Street
+08901, Forest Hills
+16999, Forest Hills
+97823, Stony Brook
+27079, Stony Brook
+02031, Stony Brook
+12586, Green Street
+23166, Green Street
+25509, Forest Hills
+44941, Stony Brook
+93434, Green Street
+63765, Stony Brook
+62367, Green Street
+65540, Green Street
+35229, Stony Brook
+67132, Stony Brook
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+62994, Forest Hills
+42293, Green Street
+18930, Forest Hills
+77729, Forest Hills
+91760, Green Street
+13684, Forest Hills
+69737, Forest Hills
+00823, Forest Hills
+66172, Stony Brook
+06140, Green Street
+56912, Forest Hills
+72929, Green Street
+57791, Stony Brook
+47638, Stony Brook
+02192, Green Street
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+===================
+----------------------
+Jackson Square
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+25001, Green Street
+69192, Forest Hills
+67873, Green Street
+65223, Green Street
+16256, Green Street
+90604, Forest Hills
+78454, Green Street
+47780, Green Street
+94918, Forest Hills
+94754, Forest Hills
+19357, Green Street
+88567, Green Street
+05016, Green Street
+19701, Green Street
+08901, Forest Hills
+16999, Forest Hills
+12586, Green Street
+23166, Green Street
+25509, Forest Hills
+93434, Green Street
+62367, Green Street
+65540, Green Street
+30121, Green Street
+81160, Green Street
+03963, Forest Hills
+62994, Forest Hills
+42293, Green Street
+18930, Forest Hills
+77729, Forest Hills
+91760, Green Street
+13684, Forest Hills
+69737, Forest Hills
+00823, Forest Hills
+06140, Green Street
+56912, Forest Hills
+72929, Green Street
+02192, Green Street
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+57051, Jackson Square
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+===================
+----------------------
+Stony Brook
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+84363, Forest Hills
+69192, Forest Hills
+90604, Forest Hills
+94918, Forest Hills
+94754, Forest Hills
+08901, Forest Hills
+16999, Forest Hills
+25509, Forest Hills
+03963, Forest Hills
+62994, Forest Hills
+18930, Forest Hills
+77729, Forest Hills
+13684, Forest Hills
+69737, Forest Hills
+00823, Forest Hills
+56912, Forest Hills
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+57051, Jackson Square
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+48702, Stony Brook
+01770, Community College
+56424, Jackson Square
+46721, Sullivan Square
+18431, Tufts Medical Center
+89599, Roxbury Crossing
+14664, Roxbury Crossing
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+11182, Stony Brook
+20574, Jackson Square
+===================
+----------------------
+Green Street
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+57051, Jackson Square
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+48702, Stony Brook
+01770, Community College
+56424, Jackson Square
+46721, Sullivan Square
+18431, Tufts Medical Center
+89599, Roxbury Crossing
+14664, Roxbury Crossing
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+11182, Stony Brook
+20574, Jackson Square
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+68436, Stony Brook
+===================
+----------------------
+Forest Hills
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+57051, Jackson Square
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+48702, Stony Brook
+01770, Community College
+56424, Jackson Square
+46721, Sullivan Square
+18431, Tufts Medical Center
+89599, Roxbury Crossing
+14664, Roxbury Crossing
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+11182, Stony Brook
+20574, Jackson Square
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+68436, Stony Brook
+===================
+----------------------
+Green Street
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+57051, Jackson Square
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+56424, Jackson Square
+46721, Sullivan Square
+18431, Tufts Medical Center
+89599, Roxbury Crossing
+14664, Roxbury Crossing
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+20574, Jackson Square
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+00241, Forest Hills
+61759, Forest Hills
+===================
+----------------------
+Stony Brook
+Passengers Entering:
+	Passengers:
+
+89127, Oak Grove
+08468, Downtown Crossing
+81438, Ruggles
+36735, Jackson Square
+06454, Community College
+44936, Tufts Medical Center
+51372, Tufts Medical Center
+45520, Oak Grove
+22743, Jackson Square
+21261, Assembly
+23647, Sullivan Square
+65127, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+76499, Roxbury Crossing
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+29302, Roxbury Crossing
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+04184, Roxbury Crossing
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+18431, Tufts Medical Center
+89599, Roxbury Crossing
+14664, Roxbury Crossing
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+===================
+----------------------
+Jackson Square
+Passengers Entering:
+	Passengers:
+
+92640, Chinatown
+78041, Wellington
+28679, Back Bay
+94600, Sullivan Square
+27444, Oak Grove
+64364, Community College
+65208, Massachusetts Avenue
+31874, Haymarket
+27663, Haymarket
+98029, Tufts Medical Center
+57319, Chinatown
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+02600, Ruggles
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+18431, Tufts Medical Center
+38854, Ruggles
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+96870, Ruggles
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+05307, Ruggles
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+===================
+----------------------
+Roxbury Crossing
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+93430, Massachusetts Avenue
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+40230, Massachusetts Avenue
+96017, Wellington
+52474, Back Bay
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+18431, Tufts Medical Center
+52904, Massachusetts Avenue
+44894, Tufts Medical Center
+26051, Haymarket
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+76827, Back Bay
+72807, Massachusetts Avenue
+32110, Wellington
+15067, Massachusetts Avenue
+46286, Haymarket
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+15655, Massachusetts Avenue
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+===================
+----------------------
+Ruggles
+Passengers Entering:
+	Passengers:
+
+49632, Wellington
+46773, Haymarket
+64758, Massachusetts Avenue
+91111, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+19532, Back Bay
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+23565, Back Bay
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+58358, Wellington
+92760, Back Bay
+32453, Tufts Medical Center
+86971, Community College
+46052, Back Bay
+33569, Chinatown
+96017, Wellington
+52474, Back Bay
+44358, Back Bay
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+18431, Tufts Medical Center
+44894, Tufts Medical Center
+26051, Haymarket
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+89603, Back Bay
+94834, Back Bay
+07451, Back Bay
+76827, Back Bay
+32110, Wellington
+46286, Haymarket
+63543, Assembly
+04515, Community College
+98371, Back Bay
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+===================
+----------------------
+Massachusetts Avenue
+Passengers Entering:
+	Passengers:
+
+43642, Downtown Crossing
+93298, Oak Grove
+68528, Chinatown
+41437, Assembly
+83702, Oak Grove
+24754, Sullivan Square
+27335, Wellington
+41443, Chinatown
+63885, Oak Grove
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+86289, Tufts Medical Center
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+03971, Tufts Medical Center
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+06431, Wellington
+07143, Haymarket
+55138, Tufts Medical Center
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+94466, Tufts Medical Center
+58358, Wellington
+32453, Tufts Medical Center
+86971, Community College
+33569, Chinatown
+96017, Wellington
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+18431, Tufts Medical Center
+44894, Tufts Medical Center
+26051, Haymarket
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+32110, Wellington
+46286, Haymarket
+63543, Assembly
+04515, Community College
+71715, Tufts Medical Center
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+===================
+----------------------
+Back Bay
+Passengers Entering:
+	Passengers:
+
+73957, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+38491, Chinatown
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+84783, Sullivan Square
+30040, Community College
+79003, Chinatown
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+33971, Chinatown
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+43259, Chinatown
+44936, Community College
+99143, Haymarket
+43053, Chinatown
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+20706, Chinatown
+19514, Chinatown
+95440, Chinatown
+53753, Wellington
+44239, Wellington
+59513, Community College
+43520, Chinatown
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+06431, Wellington
+07143, Haymarket
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+58358, Wellington
+86971, Community College
+33569, Chinatown
+96017, Wellington
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+26051, Haymarket
+10803, Chinatown
+27520, Downtown Crossing
+81640, Haymarket
+32110, Wellington
+46286, Haymarket
+63543, Assembly
+04515, Community College
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+87275, Roxbury Crossing
+09022, Massachusetts Avenue
+===================
+----------------------
+Tufts Medical Center
+Passengers Entering:
+	Passengers:
+
+84897, Sullivan Square
+00685, Downtown Crossing
+32751, Community College
+26348, Community College
+36776, Oak Grove
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+50793, Downtown Crossing
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+84783, Sullivan Square
+30040, Community College
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+17611, Downtown Crossing
+00483, Downtown Crossing
+73058, Oak Grove
+39317, Assembly
+44936, Community College
+99143, Haymarket
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+53753, Wellington
+44239, Wellington
+59513, Community College
+71333, Assembly
+12168, Downtown Crossing
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+06431, Wellington
+07143, Haymarket
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+58358, Wellington
+86971, Community College
+96017, Wellington
+13687, Downtown Crossing
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+26051, Haymarket
+27520, Downtown Crossing
+81640, Haymarket
+32110, Wellington
+46286, Haymarket
+63543, Assembly
+04515, Community College
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+87275, Roxbury Crossing
+09022, Massachusetts Avenue
+77528, Stony Brook
+43742, Forest Hills
+17898, Jackson Square
+74947, Green Street
+19415, Tufts Medical Center
+13859, Roxbury Crossing
+81236, Green Street
+69313, Green Street
+23349, Back Bay
+===================
+----------------------
+Chinatown
+Passengers Entering:
+	Passengers:
+
+03242, Downtown Crossing
+22018, Haymarket
+58751, Downtown Crossing
+62848, Community College
+63434, Community College
+59958, Assembly
+83998, Haymarket
+45394, Downtown Crossing
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+55210, Haymarket
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+85551, Haymarket
+63235, Haymarket
+11519, Community College
+52012, Haymarket
+24111, Assembly
+90917, Haymarket
+24452, Sullivan Square
+61415, Community College
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+84783, Sullivan Square
+30040, Community College
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+73058, Oak Grove
+39317, Assembly
+44936, Community College
+99143, Haymarket
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+06281, Haymarket
+15487, Assembly
+53753, Wellington
+44239, Wellington
+59513, Community College
+71333, Assembly
+57512, Oak Grove
+41452, Oak Grove
+94307, Haymarket
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+06431, Wellington
+07143, Haymarket
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+58358, Wellington
+86971, Community College
+96017, Wellington
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+26051, Haymarket
+81640, Haymarket
+32110, Wellington
+46286, Haymarket
+63543, Assembly
+04515, Community College
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+87275, Roxbury Crossing
+09022, Massachusetts Avenue
+77528, Stony Brook
+43742, Forest Hills
+17898, Jackson Square
+74947, Green Street
+19415, Tufts Medical Center
+13859, Roxbury Crossing
+81236, Green Street
+69313, Green Street
+23349, Back Bay
+01585, Ruggles
+98455, Stony Brook
+29180, Roxbury Crossing
+62369, Chinatown
+07137, Tufts Medical Center
+25816, Back Bay
+64226, Jackson Square
+59132, Forest Hills
+23816, Massachusetts Avenue
+91622, Back Bay
+99026, Stony Brook
+73494, Tufts Medical Center
+50088, Jackson Square
+===================
+----------------------
+Downtown Crossing
+Passengers Entering:
+	Passengers:
+
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+53409, Community College
+10935, Community College
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+21268, Oak Grove
+67571, Community College
+29248, Assembly
+11519, Community College
+24111, Assembly
+24452, Sullivan Square
+61415, Community College
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+84783, Sullivan Square
+30040, Community College
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+90715, Wellington
+72906, Wellington
+64407, Community College
+10957, Sullivan Square
+73058, Oak Grove
+39317, Assembly
+44936, Community College
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+15487, Assembly
+53753, Wellington
+44239, Wellington
+59513, Community College
+71333, Assembly
+57512, Oak Grove
+41452, Oak Grove
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+98644, Community College
+06431, Wellington
+34963, Community College
+79796, Oak Grove
+37511, Assembly
+58358, Wellington
+86971, Community College
+96017, Wellington
+74644, Assembly
+01770, Community College
+46721, Sullivan Square
+32110, Wellington
+63543, Assembly
+04515, Community College
+83995, Oak Grove
+66350, Community College
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+87275, Roxbury Crossing
+09022, Massachusetts Avenue
+77528, Stony Brook
+43742, Forest Hills
+17898, Jackson Square
+74947, Green Street
+19415, Tufts Medical Center
+13859, Roxbury Crossing
+81236, Green Street
+69313, Green Street
+23349, Back Bay
+01585, Ruggles
+98455, Stony Brook
+29180, Roxbury Crossing
+62369, Chinatown
+07137, Tufts Medical Center
+25816, Back Bay
+64226, Jackson Square
+59132, Forest Hills
+23816, Massachusetts Avenue
+91622, Back Bay
+99026, Stony Brook
+73494, Tufts Medical Center
+50088, Jackson Square
+60051, Forest Hills
+79802, Green Street
+87156, Ruggles
+75468, Downtown Crossing
+00179, Chinatown
+97831, Tufts Medical Center
+61434, Tufts Medical Center
+74365, Forest Hills
+49395, Roxbury Crossing
+78631, Massachusetts Avenue
+88403, Back Bay
+91792, Tufts Medical Center
+05025, Chinatown
+61726, Ruggles
+73009, Stony Brook
+22138, Massachusetts Avenue
+96325, Jackson Square
+94237, Forest Hills
+98420, Chinatown
+42156, Ruggles
+66922, Forest Hills
+===================
+----------------------
+Haymarket
+Passengers Entering:
+	Passengers:
+
+33057, Wellington
+59790, Oak Grove
+74672, Wellington
+30472, Sullivan Square
+51456, Sullivan Square
+===================
+
+----------------------
+Passengers exiting:
+	Passengers:
+
+73046, Assembly
+08965, Wellington
+76152, Sullivan Square
+15610, Wellington
+54615, Sullivan Square
+10413, Wellington
+92015, Sullivan Square
+16016, Sullivan Square
+39923, Assembly
+04891, Wellington
+40937, Assembly
+21268, Oak Grove
+29248, Assembly
+24111, Assembly
+24452, Sullivan Square
+40857, Wellington
+58421, Wellington
+10233, Oak Grove
+26701, Wellington
+84783, Sullivan Square
+19775, Oak Grove
+30294, Sullivan Square
+34114, Wellington
+76715, Oak Grove
+10296, Assembly
+90715, Wellington
+72906, Wellington
+10957, Sullivan Square
+73058, Oak Grove
+39317, Assembly
+04772, Assembly
+38411, Sullivan Square
+96576, Wellington
+15487, Assembly
+53753, Wellington
+44239, Wellington
+71333, Assembly
+57512, Oak Grove
+41452, Oak Grove
+60089, Sullivan Square
+79914, Assembly
+45525, Oak Grove
+06431, Wellington
+79796, Oak Grove
+37511, Assembly
+58358, Wellington
+96017, Wellington
+74644, Assembly
+46721, Sullivan Square
+32110, Wellington
+63543, Assembly
+83995, Oak Grove
+00241, Forest Hills
+61759, Forest Hills
+90378, Green Street
+26378, Stony Brook
+56257, Jackson Square
+18266, Green Street
+62245, Green Street
+23870, Roxbury Crossing
+16314, Forest Hills
+57852, Jackson Square
+77119, Jackson Square
+50870, Green Street
+40066, Jackson Square
+38422, Roxbury Crossing
+59215, Stony Brook
+67393, Ruggles
+94109, Jackson Square
+57374, Green Street
+56146, Stony Brook
+82456, Green Street
+87275, Roxbury Crossing
+09022, Massachusetts Avenue
+77528, Stony Brook
+43742, Forest Hills
+17898, Jackson Square
+74947, Green Street
+19415, Tufts Medical Center
+13859, Roxbury Crossing
+81236, Green Street
+69313, Green Street
+23349, Back Bay
+01585, Ruggles
+98455, Stony Brook
+29180, Roxbury Crossing
+62369, Chinatown
+07137, Tufts Medical Center
+25816, Back Bay
+64226, Jackson Square
+59132, Forest Hills
+23816, Massachusetts Avenue
+91622, Back Bay
+99026, Stony Brook
+73494, Tufts Medical Center
+50088, Jackson Square
+60051, Forest Hills
+79802, Green Street
+87156, Ruggles
+75468, Downtown Crossing
+00179, Chinatown
+97831, Tufts Medical Center
+61434, Tufts Medical Center
+74365, Forest Hills
+49395, Roxbury Crossing
+78631, Massachusetts Avenue
+88403, Back Bay
+91792, Tufts Medical Center
+05025, Chinatown
+61726, Ruggles
+73009, Stony Brook
+22138, Massachusetts Avenue
+96325, Jackson Square
+94237, Forest Hills
+98420, Chinatown
+42156, Ruggles
+66922, Forest Hills
+32379, Forest Hills
+42064, Massachusetts Avenue
+11271, Downtown Crossing
+71026, Massachusetts Avenue
+54117, Back Bay
+20431, Forest Hills
+43545, Stony Brook
+39882, Back Bay
+16510, Stony Brook
+93851, Ruggles
+48428, Chinatown
+79986, Ruggles
+23265, Haymarket
+94463, Stony Brook
+57993, Back Bay
+29919, Ruggles
+84280, Massachusetts Avenue
+88598, Ruggles
+50111, Chinatown
+46371, Jackson Square
+92272, Roxbury Crossing
+28017, Ruggles
+58858, Chinatown
+88992, Tufts Medical Center
+72646, Downtown Crossing
+26213, Tufts Medical Center
+===================
+----------------------
+Community College
+Passengers Entering:
+	Passengers:
+
+39043, Assembly
+91017, Assembly
+14503, Oak Grove
+46227, Sullivan Square
 ===================
