@@ -80,7 +80,7 @@ public class Route {
 			}
 		}
 		
-		t.removePassengers(stations[i]);
+		enter += t.removePassengers(stations[i]);
 		
 		while(!remove.isEmpty()) {
 			Passenger removed = remove.dequeue();
@@ -102,9 +102,9 @@ public class Route {
 	}
 	
 	private boolean passengerGetOn(Train t, Passenger p) {
-		int negPos = 1;
+		int negPos = -1;
 		if(!t.goingForward()) {//makes the final important number positive no matter what to make sure it is going in the right direction
-			negPos = -1;
+			negPos = 1;
 		}
 		
 		return negPos*(t.getCurrentIndex() - getIndex(p.getDestination())) > 0; //if going forward the passenger station will be greater
