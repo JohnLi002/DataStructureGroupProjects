@@ -55,7 +55,7 @@ public class Route {
 	
 	public String travel (Train t) {
 		t.trainMove(stations.length - 1);
-		String s = findAndDeletePassengers(t) + t.removePassengers(stations[t.getCurrentIndex()]);
+		String s = findAndDeletePassengers(t);
 		return s;
 		//remove from train
 		//add to Train(currStation)
