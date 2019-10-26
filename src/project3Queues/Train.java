@@ -19,18 +19,18 @@ public class Train {
 
 	//this method will be the train moving from station to another
 	public void trainMove(int max) {
-		if (goingForward) {
-			currentIndex++;
-		}
-		else if (!goingForward) {
-			currentIndex--;
-		}
 		if(currentIndex == 0) {
 			goingForward = true;
 		} else if (currentIndex == max) {
 			goingForward = false;
 		}
 		
+		if (goingForward) {
+			currentIndex++;
+		}
+		else if (!goingForward) {
+			currentIndex--;
+		}
 	}
 
 	public void addPassenger(Passenger p) {
