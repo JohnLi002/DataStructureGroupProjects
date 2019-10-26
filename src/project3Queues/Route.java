@@ -104,4 +104,8 @@ public class Route {
 	public void travel() {
 		
 	}
+	
+	public Station[] getStation() {
+		return stations;
+	}
 }
