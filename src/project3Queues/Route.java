@@ -53,14 +53,33 @@ public class Route {
 		t.trainMove();
 		
 		
-		
 		//remove from train
 		//add to Train(currStation)
 		//currStation.addPassenger();
 		//update current Index;
 	}
 	
-	public Integer getIndex(Station s) {
+	public void findAndDeletePassengers(Train t) {
+		int i = t.getCurrentIndex();
+		Passenger[] p = stations[i].toArray();
+		LinkedQueue<Passenger> remove = new LinkedQueue<>();
+		
+		for(int ii = 0; ii < p.length; ii++) {
+			if(passengerGetOn(t,p[ii])) {
+				remove.enqueue(p[ii]);
+			}
+		}
+		
+		t.removePassengers(stations[i]);
+		
+		while(!remove.isEmpty()) {
+			Passenger removed = remove.dequeue();
+			stations[i].removePassenger(removed);
+			t.addPassenger(removed);
+		}
+	}
+	
+	private Integer getIndex(Station s) {
 		for(int i = 0; i < stations.length; i++) {
 			if(stations[i].equals(s)) {
 				return i;
@@ -70,7 +89,7 @@ public class Route {
 		return null;
 	}
 	
-	public boolean passengerGetOn(Train t, Passenger p) {
+	private boolean passengerGetOn(Train t, Passenger p) {
 		int negPos = 1;
 		if(!t.goingForward()) {//makes the final important number positive no matter what to make sure it is going in the right direction
 			negPos = -1;

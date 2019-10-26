@@ -27,6 +27,10 @@ public class Train {
 		}
 	}
 
+	public void addPassenger(Passenger p) {
+		passengers.enqueue(p);
+	}
+	
 	public void removePassengers(Station s) {
 		if(passengers.isEmpty()) {
 			return; //return instantly ends method
