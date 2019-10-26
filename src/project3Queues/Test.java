@@ -18,7 +18,14 @@ public class Test {
 			orangeLine.print();
 			t1.print();
 			PrintWriter printer = new PrintWriter("trains.txt");
-			printer.println(orangeLine.travel(t1));
+			for (int i = 0; i < 60; i++)
+			{
+				if ( i % 10 == 9)
+				{
+					orangeLine.initializeStations();
+				}
+				printer.println(orangeLine.travel(t1));
+			}
 			printer.close();
 		} catch(FileNotFoundException ex) {
 			System.out.println ("trains.txt not found");
