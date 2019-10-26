@@ -51,7 +51,7 @@ public class Station {
 			}
 			
 			Passenger current = passengers.dequeue();
-			while(!passengers.getFront().equals(first)) {
+			while(!passengers.isEmpty() && !passengers.getFront().equals(first)) {
 				if(!passengers.isEmpty() && current.equals(p)) { //this is activates the removed passenger was taken out, end method
 					return;
 				}
