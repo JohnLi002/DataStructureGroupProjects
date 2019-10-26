@@ -19,6 +19,7 @@ public class Test {
 			t1.print();
 			PrintWriter printer = new PrintWriter("trains.txt");
 			printer.println(orangeLine.travel(t1));
+			printer.close();
 		} catch(FileNotFoundException ex) {
 			System.out.println ("trains.txt not found");
 		}
