@@ -1,5 +1,5 @@
 package project4Lists;
 
-public class Hand extends Pile{
-
+public class Hand extends Pile{	
+	
 }

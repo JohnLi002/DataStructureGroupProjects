@@ -2,7 +2,6 @@ package project4Lists;
 
 public class Deck extends Pile{
 	
-	
 	public Deck() {
 		createDeck();
 	}
