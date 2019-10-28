@@ -48,9 +48,18 @@ public class Message{
 	}
 
 	public Packet[] decode(Packet[] p) { //will use insertion sort
-
-
-		return p;
+		Packet[] sorted = new Packet[p.length];
+		for(int i = 0; i < p.length; i++) {
+			sorted[i] = p[i];
+			int ii = i - 1;
+			while(i != 0 && p[i].compareTo(sorted[ii]) == -1) {
+				Packet temp = sorted[ii];
+				sorted[ii] = sorted[ii+1];
+				sorted[ii] = temp;
+			}
+		}
+		
+		return sorted;
 	}
 
 	private class Packet implements Comparable<Packet>{
@@ -81,7 +90,7 @@ public class Message{
 
 				if(comparison < 0) {
 					return -1;
-				} else if ( comparison> 0) {
+				} else if (comparison > 0) {
 					return 1;
 				}
 			}
