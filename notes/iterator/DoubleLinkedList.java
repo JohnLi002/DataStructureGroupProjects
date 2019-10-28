@@ -2,16 +2,17 @@ package iterator;
 
 import java.util.NoSuchElementException;
 
-public class Alist<T> implements ListInterface <T>, Iterable <T> {
-	private T[] list;
+import lab5CardLists.Card;
+import lab5CardLists.DoubleNode;
+
+public class DoubleLinkedList<T> implements ListInterface<T>, Iterable<T>{
+
+	private DoubleNode head;
 	private int numberOfEntries;
-	private int capacity;
-	
 	
 	@Override
-	public Iterator<T> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+	public Iterator<T> iterator(){
+		return new IteratorForLinkedList();
 	}
 
 	@Override
@@ -58,7 +59,8 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 
 	@Override
 	public int getLength() {
-		return numberOfEntries;
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override
@@ -79,22 +81,21 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 		return null;
 	}
 	
-	
-	private class IteratorForAList implements Iterator<T> {
-		int cursor;
-		private boolean nextWasCalled;
+	private class IteratorForLinkedList implements Iterator<T> {
+		private DoubleNode nextNode = head;
+		private boolean nextWasCalled = false;
 		
-		public IteratorForAList() {
-			cursor = 0;
+		public IteratorForLinkedList() {
+			if(!nextWasCalled) {
+				throw new IllegalStateException();
+			}
+			nextNode = nextNode.getNext();
 		}
 
 		
-		public Iterator<T> iterator(){
-			return new IteratorForAList();
-		}
 		@Override
 		public boolean hasNext() {
-			return (cursor < numberOfEntries);
+			return (nextNode != null);
 		}
 
 		@Override
@@ -102,8 +103,9 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 			if(!hasNext()) {
 				throw new NoSuchElementException();
 			}
+			T item  = nextNode.getData();
 			nextWasCalled = true;
-			T item = list[cursor++];
+			nextNode = nextNode.getNext();
 			return item;
 		}
 
@@ -112,10 +114,37 @@ public class Alist<T> implements ListInterface <T>, Iterable <T> {
 			// throw new UnsupportedOperatorionException();
 			
 			if(!nextWasCalled) {
-				throw new IllegalStateException("attempt to call remove without call to next");
+				throw new IllegalStateException("illgal call to remove without next");
 			}
-			Alist.this.remove(--cursor); //by having the "--" as a prefix, the decrement in cursor happens first
+			
 			nextWasCalled = false;
+			DoubleNode curr = nextNode.getNext();
 		}
 	}
+	
+	private class DoubleNode {
+		private T data;
+		private DoubleNode next;
+		private DoubleNode prev;
+		
+		public T getData() {
+			return data;
+		}
+		public void setData(T item) {
+			data = item;
+		}
+		public DoubleNode getNext() {
+			return next;
+		}
+		public void setNext(DoubleNode next) {
+			this.next = next;
+		}
+		public DoubleNode getPrev() {
+			return prev;
+		}
+		public void setPrev(DoubleNode prev) {
+			this.prev = prev;
+		}
+	}
+
 }
