@@ -21,7 +21,7 @@ public class Message{
 		Packet[] p = new Packet[size];
 		int sNum = 0;
 		String s = "" + sNum;
-		for(int i = 0; i < msg.length(); i++) {
+		for(int i = 0; i < msg.length()-1; i++) {
 			if(i == msg.length() - 1) {
 
 			} else if(i != 0 && i % 3 == 0) {
@@ -29,7 +29,7 @@ public class Message{
 				s = sNum + " ";
 			} else {
 				s+=s.substring(0,1);
-				s = s.substring(1,msg.length()-1);
+				s = s.substring(1,msg.length());
 			}
 		}
 
