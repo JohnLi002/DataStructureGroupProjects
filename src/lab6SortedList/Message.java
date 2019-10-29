@@ -1,7 +1,8 @@
 package lab6SortedList;
 
 public class Message{
-	String msg;
+	private String msg;
+	private Packet[] p;
 
 	public Message() {
 		this("");
@@ -9,6 +10,7 @@ public class Message{
 
 	public Message(String s) {
 		msg = s;
+		encode();
 	}
 
 	public Packet[] encode() {
@@ -32,6 +34,10 @@ public class Message{
 		}
 
 		p = scramble(p);		
+		return p;
+	}
+	
+	public Packet[] getPacket() {
 		return p;
 	}
 
@@ -93,7 +99,6 @@ public class Message{
 			return 0;
 		}
 	}
-
 }
 
 
