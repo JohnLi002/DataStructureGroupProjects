@@ -18,16 +18,17 @@ public class Message{
 		if(size % 3 != 0) {
 			size++;
 		}
+		String original = msg;
 		Packet[] p = new Packet[size];
 		int sNum = 0;
-		String s = "" + sNum;
-		for(int i = 0; i < msg.length()-1; i++) {
+		String s = sNum + " ";
+		for(int i = 0; i < msg.length(); i++) {
 			if(i != 0 && i % 3 == 0) {
 				p[sNum] = new Packet(s);
 				s = sNum + " ";
 			} else {
-				s+=s.substring(0,1);
-				s = s.substring(1,msg.length()-1);
+				s+=original.substring(0,1);
+				original = original.substring(1,msg.length());
 			}
 		}
 
