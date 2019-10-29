@@ -98,6 +98,10 @@ public class Message{
 			
 			return 0;
 		}
+		
+		public String toString() {
+			return packetText;
+		}
 	}
 }
 
