@@ -47,19 +47,14 @@ public class Message{
 		return p;
 	}
 
-	public Packet[] decode(Packet[] p) { //will use insertion sort
-		Packet[] sorted = new Packet[p.length];
+	public SortedLinkedList<Packet> decode(Packet[] p) { //will use insertion sort
+		SortedLinkedList<Packet> s = new SortedLinkedList<>();
+		
 		for(int i = 0; i < p.length; i++) {
-			sorted[i] = p[i];
-			int ii = i - 1;
-			while(i != 0 && p[i].compareTo(sorted[ii]) == -1) {
-				Packet temp = sorted[ii];
-				sorted[ii] = sorted[ii+1];
-				sorted[ii] = temp;
-			}
+			s.add(p[i]);
 		}
 		
-		return sorted;
+		return s;
 	}
 
 	private class Packet implements Comparable<Packet>{
