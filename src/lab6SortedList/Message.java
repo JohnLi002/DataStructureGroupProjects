@@ -29,7 +29,7 @@ public class Message{
 				s = sNum + " ";
 			} else {
 				s+=s.substring(0,1);
-				s = s.substring(1,msg.length());
+				s = s.substring(1,msg.length()-1);
 			}
 		}
 
