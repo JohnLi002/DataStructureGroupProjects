@@ -1,17 +1,21 @@
 package lab6SortedList;
 
-public class SortedLinkedList <T extends Comparable <? super T>> extends LinkedList <T> implements SortedListInterface <T> {
+import sortedList.LinkedList;
 
-	private ListInterface <T> list;
-
-	public SortedLinkedList() {
-		super();
+public class SortedLinkedList <T extends Comparable <? super T>>extends LinkedList <T> implements SortedListInterface <T> {
+	private LinkedList<T> list;
+	
+	public SortedLinkedList () {
+		super ();
 	}
 
 	public void addEntry(T newEntry){
-		int newPosition = Math.abs(getPosition(newEntry)+1);
-		list.add (newPosition, newEntry);      
+		int newPosition = getPosition (newEntry);
+		if (newPosition < 0)
+			newPosition = -newPosition - 1;
+		list.add (newPosition, newEntry);        
 	}
+
 
 	public boolean removeEntry (T anEntry){
 		boolean result = false;
@@ -34,6 +38,35 @@ public class SortedLinkedList <T extends Comparable <? super T>> extends LinkedL
 				(anEntry.compareTo(list.getEntry(position))) < 0)
 			position = -1 - position;
 		return position;
+	}
+
+
+	public T getEntry(int givenPosition){
+		return list.getEntry(givenPosition);
+	}
+
+	public boolean contains (T anEntry){
+		return list.contains(anEntry);
+	}
+
+	public T remove (int givenPosition){
+		return list.remove(givenPosition);
+	}
+
+	public void clear(){
+		list.clear();
+	}
+
+	public int getLength(){
+		return list.getLength();
+	}
+
+	public boolean isEmpty(){
+		return list.isEmpty();
+	}
+
+	public Object[] toArray(){
+		return list.toArray();
 	}
 
 
