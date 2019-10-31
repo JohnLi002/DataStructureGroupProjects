@@ -13,7 +13,7 @@ public class FileDecoder {
 		try{
 			File f = new File(s);
 			Scanner scan = new Scanner(f);
-			PrintWriter print = new PrintWriter(new File("result.txt"));
+			PrintWriter print = new PrintWriter("result.txt");
 
 			m = new Message(scan);
 			m.decode();
