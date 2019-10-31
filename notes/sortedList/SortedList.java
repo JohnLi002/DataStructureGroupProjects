@@ -18,7 +18,7 @@ public class SortedList<T extends Comparable<? super T>> implements SortedListIn
 	public void addEntry(T needEntry){
 		int newPosition = getPosition(needEntry);
 		if(newPosition < 0)
-			newPosition = -newPosition-1;
+			newPosition = newPosition+1;
 		list.add(newPosition, needEntry);
 	}
 
@@ -33,14 +33,17 @@ public class SortedList<T extends Comparable<? super T>> implements SortedListIn
 	@Override
 	public int getPosition(T newEntry) {
 		int position = 0;
-		
 		while(position < getLength() && newEntry.compareTo(getEntry(position)) > 0){
-			position++;
 			if(newEntry.compareTo(getEntry(position)) == 0){
 				return position;
 			}
+			position++;
 		}
-		return (-position-1);
+		
+		if(position == getLength()) {
+			return position;
+		}
+		return position;
 	}
 	
 	//				  n(n+1)
@@ -62,8 +65,7 @@ public class SortedList<T extends Comparable<? super T>> implements SortedListIn
 	}
 	@Override
 	public int getLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return list.getLength();
 	}
 	@Override
 	public boolean isEmpty() {

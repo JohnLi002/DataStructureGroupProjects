@@ -141,7 +141,7 @@ public class LinkedList<T> implements ListInterface<T> {
 	@Override
 	public T getEntry(int givenPosition) {
 		Node current = firstNode;
-
+		
 		for(int i = 0; i < givenPosition; i++) {
 			current = current.getNext();
 		}

@@ -14,66 +14,68 @@ public class FileDecoder {
 			File f = new File(s);
 			Scanner scan = new Scanner(f);
 			PrintWriter print = new PrintWriter(new File("result.txt"));
-			
+
 			m = new Message(scan);
 			m.decode();
-			
+
 			Object[] packets = m.getPacket();
 			for(int i = 0; i < packets.length; i++) {
 				print.println(packets[i]);
 			}
-			
+
 			scan.close();
 		}catch(FileNotFoundException ex) {
 			System.out.println("File not found");
 		}
 	}
-	
+
 	public void print() {
 		Object[] p = m.getPacket();
-		
+
 		for(int i = 0; i < p.length; i++) {
 			System.out.println(p[i]);
 		}
 	}
-	
+
 	private class Message{
-		private Packet[] p;
+		private Packet[] packets;
 
 		public Message(Scanner s) {
-			p = new Packet[0];
+			Packet[] p = new Packet[0];
 			int i = 1;
-			while(s.hasNext()) {
+			while(s.hasNextLine()) {
 				p = Arrays.copyOf(p, i);
-				p[i-1] = new Packet(s.nextLine());
+				String something = s.nextLine();
+				p[i-1] = new Packet(something);
 				i++;
 			}
+			
+			packets = p;
 		}
 
 		public Packet[] getPacket() {
-			return p;
+			return packets;
 		}
-		
+
 		public void decode() { //will use insertion sort
 			SortedLinkedList<Packet> s = new SortedLinkedList<>();
 
-			for(int i = 0; i < p.length; i++) {
-				s.addEntry(p[i]);
+			for(int i = 0; i < packets.length; i++) {
+				s.addEntry(packets[i]);
 			}
-			
+
 			listToArray(s);
 		}
-		
+
 		private void listToArray(SortedLinkedList<Packet> s){
-			for(int i = 0; i < p.length; i++) {
-				p[i] = s.getEntry(i);
+			for(int i = 0; i < packets.length; i++) {
+				packets[i] = s.getEntry(i);
 			}
 		}
 
 		private class Packet implements Comparable<Packet>{
 			private String packetText;
-
-
+			
 			private Packet(String s) {
 				packetText = s;
 			}
@@ -92,17 +94,15 @@ public class FileDecoder {
 				//negative means this packet is smaller
 				//0 means the numbers are the same
 				//positive means this packet is bigger
+				
+				int comparison = (int) getPacketText().charAt(0) - (int) p.getPacketText().charAt(0);
 
-				for(int i = 0; i < p.getPacketText().length(); i++) {
-					int comparison = getPacketText().charAt(i) - p.getPacketText().charAt(i);
-
-					if(comparison < 0) {
-						return -1;
-					} else if (comparison > 0) {
-						return 1;
-					}
+				if(comparison < 0) {
+					return -1;
+				} else if (comparison > 0) {
+					return 1;
 				}
-
+				
 				return 0;
 			}
 

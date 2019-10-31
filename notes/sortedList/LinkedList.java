@@ -18,37 +18,44 @@ public class LinkedList<T> implements ListInterface<T> {
 		Node toInsert = new Node(newEntry);
 		if(isEmpty()) {
 			firstNode = toInsert;
-		}
-		else {
+		} else {
 			Node curr = firstNode;
 			while(curr.getNext() != null) {
 				curr = curr.getNext();
 			}
 			curr.setNext(toInsert);
 		}
-
 	}
 
 	@Override
-	public void add(int newPosition, T newEntry) {
-		if(newPosition < 0 || newPosition > numberOfEntries) {
+	public void add (int newPosition, T newEntry) {
+		if (newPosition < 0 || newPosition > getLength() )
 			throw new IndexOutOfBoundsException();
-		}
-		numberOfEntries++;
+			
 		Node toInsert = new Node(newEntry);
-		if(newPosition == 0) {
-			toInsert.setNext(firstNode);
+	    numberOfEntries ++;
+			
+		if (newPosition == 0) { // including empty list
+			toInsert.setNext (firstNode);
 			firstNode = toInsert;
+			return;
 		}
-		else {
-			Node before = getNodeAt(newPosition-1);
-			assert(before!=null);
-
-			Node after = before.getNext();
-			before.setNext(toInsert);
-			toInsert.setNext(after);
+		int pos = 1;
+		Node before = firstNode;
+		for (Node after = firstNode.getNext(); after != null; ) {
+			if (pos == newPosition) { //insert here
+				before.setNext (toInsert);
+				toInsert.setNext (after);
+				return;
+			}
+			before = after;
+			after = after.getNext();
+			pos ++;	
 		}
+		before.setNext (toInsert); // When loop finished, after == null;
+	                               // newPosition == length; end of chain
 	}
+
 
 	private Node getNodeAt(int position) {
 		int count = 0;
@@ -123,8 +130,15 @@ public class LinkedList<T> implements ListInterface<T> {
 
 	@Override
 	public T getEntry(int givenPosition) {
-		// TODO Auto-generated method stub
-		return null;
+		if(givenPosition < 0 || givenPosition > numberOfEntries) {
+			System.out.println("nope");
+		}
+		Node n = firstNode;
+		for(int i = 0; i < givenPosition; i++) {
+			n = n.getNext();
+		}
+		
+		return n.getData();
 	}
 
 	@Override
