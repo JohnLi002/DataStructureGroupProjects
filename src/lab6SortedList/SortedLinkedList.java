@@ -7,11 +7,11 @@ public class SortedLinkedList <T extends Comparable <? super T> >extends LinkedL
 		super ();
 	}
 
-	public void addEntry(T newEntry){
-		int newPosition = getPosition (newEntry);
-		if (newPosition < 0)
-			newPosition = -newPosition - 1;
-		super.add (newPosition, newEntry);        
+	public void addEntry(T needEntry){
+		int newPosition = getPosition(needEntry);
+		if(newPosition < 0)
+			newPosition = newPosition+1;
+		super.add(newPosition, needEntry);
 	}
 
 	public boolean removeEntry (T anEntry){
@@ -24,13 +24,18 @@ public class SortedLinkedList <T extends Comparable <? super T> >extends LinkedL
 		return result;
 	}
 
-	public int getPosition( T anEntry){
+	public int getPosition(T newEntry) {
 		int position = 0;
-		int length = super.getLength();
-		while (position < length && anEntry.compareTo(super.getEntry(position))> 0)
-			position ++;
-		if (position == length || (anEntry.compareTo(super.getEntry(position))) < 0)
-			position = -1 - position;
+		while(position < getLength() && newEntry.compareTo(getEntry(position)) > 0){
+			if(newEntry.compareTo(getEntry(position)) == 0){
+				return position;
+			}
+			position++;
+		}
+		
+		if(position == getLength()) {
+			return position;
+		}
 		return position;
 	}
 

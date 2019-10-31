@@ -22,13 +22,8 @@ public class Test {
 			System.out.println("File not found");
 		}
 		*/
-		//FileDecoder decode = new FileDecoder("encodedTest.txt");
-		//decode.print();
-		
-		SortedLinkedList<String> list = new SortedLinkedList<>();
-		list.addEntry("1");
-		list.addEntry("2");
-		list.addEntry("3");
-		
+		FileDecoder decode = new FileDecoder("encodedTest.txt");
+		decode.print();
+	
 	}
 }
