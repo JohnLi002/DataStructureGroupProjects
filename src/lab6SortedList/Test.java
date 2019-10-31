@@ -24,6 +24,5 @@ public class Test {
 		*/
 		FileDecoder decode = new FileDecoder("encoded.txt");
 		decode.print();
-	
 	}
 }

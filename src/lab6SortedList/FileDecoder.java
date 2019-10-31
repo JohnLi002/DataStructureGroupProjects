@@ -24,6 +24,7 @@ public class FileDecoder {
 			}
 
 			scan.close();
+			print.close();
 		}catch(FileNotFoundException ex) {
 			System.out.println("File not found");
 		}
@@ -105,11 +106,11 @@ public class FileDecoder {
 			private Integer getNums(String s) {
 				String nums = "";
 				for(int i = 0; i < s.length(); i++) {
-					if(s.charAt(i) >= '0' && s.charAt(i) < '9') {
-						nums+=s.charAt(i);
-					} else if(s.charAt(i) == ' ') {
+					char c = s.charAt(i);
+					if(s.charAt(i) == ' ') {
 						break;
 					}
+					nums+=c;
 				}
 				Integer num = Integer.parseInt(nums);
 				System.out.println(num);
