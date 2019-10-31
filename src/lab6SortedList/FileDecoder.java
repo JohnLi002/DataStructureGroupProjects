@@ -95,15 +95,25 @@ public class FileDecoder {
 				//0 means the numbers are the same
 				//positive means this packet is bigger
 				
-				int comparison = (int) getPacketText().charAt(0) - (int) p.getPacketText().charAt(0);
-
-				if(comparison < 0) {
-					return -1;
-				} else if (comparison > 0) {
-					return 1;
-				}
+				String s = p.packetText;
 				
-				return 0;
+				int result =getNums(packetText).compareTo(getNums(s));
+				System.out.println(result);
+				return result;
+			}
+			
+			private Integer getNums(String s) {
+				String nums = "";
+				for(int i = 0; i < s.length(); i++) {
+					if(s.charAt(i) >= '0' && s.charAt(i) < '9') {
+						nums+=s.charAt(i);
+					} else if(s.charAt(i) == ' ') {
+						break;
+					}
+				}
+				Integer num = Integer.parseInt(nums);
+				System.out.println(num);
+				return num;
 			}
 
 			public String toString() {

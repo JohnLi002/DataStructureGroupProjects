@@ -22,7 +22,7 @@ public class Test {
 			System.out.println("File not found");
 		}
 		*/
-		FileDecoder decode = new FileDecoder("encodedTest.txt");
+		FileDecoder decode = new FileDecoder("encoded.txt");
 		decode.print();
 	
 	}
