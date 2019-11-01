@@ -12,6 +12,11 @@ public class Card {
 		setSuite(Suite.valueOf(s.toUpperCase()));
 		setRank(Rank.valueOf(r.toUpperCase()));
 	}
+	
+	public Card(Suite s, Rank r) {
+		suite = s;
+		rank = r;
+	}
 
 	public Suite getSuite() {
 		return suite;
