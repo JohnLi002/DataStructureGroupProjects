@@ -39,6 +39,6 @@ public class Card {
 	}
 	
 	public String toString() {
-		return "";
+		return getRank() + " OF " + getSuite();
 	}
 }

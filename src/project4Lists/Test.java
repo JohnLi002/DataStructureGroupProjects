@@ -1,5 +1,7 @@
 package project4Lists;
 
+import java.util.Scanner;
+
 /*
  * Group Members: John Li, Tony Lei, AJ Kreuzkamp
  */
@@ -7,6 +9,11 @@ package project4Lists;
 public class Test {
 	public static void main(String[] args) {
 		Deck d = new Deck();
-		System.out.println(d.getLength());
+		for(int i = 0; i < 52; i++)
+			System.out.println(d.draw().toString());
+		Scanner input = new Scanner(System.in);
+		input.nextLine();
+		input.close();
+		
 	}
 }
