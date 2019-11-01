@@ -1,5 +1,9 @@
 package lab6SortedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public interface SortedListInterface <T extends Comparable <? super T> > {
 	public void addEntry(T newEntry);
 	public boolean removeEntry(T anEntry);

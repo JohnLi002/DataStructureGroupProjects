@@ -1,5 +1,9 @@
 package lab6SortedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Message{
 	private String msg;
 	private Packet[] p;

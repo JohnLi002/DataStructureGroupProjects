@@ -1,5 +1,9 @@
 package lab6SortedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import sortedList.LinkedList;
 
 public class SortedLinkedList <T extends Comparable <? super T> >extends LinkedList <T> implements SortedListInterface <T> {	
