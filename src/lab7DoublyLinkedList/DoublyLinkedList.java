@@ -167,7 +167,6 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			return nextNode != head;
 		}
 
-
 		@Override
 		public int nextIndex() {
 			return index+1;
@@ -178,15 +177,6 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			return index-1;
 		}
 
-		@Override
-		public void set(T anEntry) {
-			// TODO Auto-generated method stub
-		}
-
-		@Override
-		public void remove() {
-			// TODO Auto-generated method stub
-		}
 
 	}
 	private class DoubleNode {
