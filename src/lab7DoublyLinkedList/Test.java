@@ -7,7 +7,11 @@ public class Test {
 		list.add("2");
 		list.add("3");
 		list.add(2,"5");
-		System.out.println(list.getEntry(3));
+		Object[] a = list.toArray();
+		
+		for(int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
 		
 	}
 }

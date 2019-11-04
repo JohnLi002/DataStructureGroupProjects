@@ -147,8 +147,16 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 	@Override
 	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
+		int size = getLength();
+		DoubleNode n = head;
+		Object[] result = new Object[size];
+		
+		for(int i = 0; i < size; i++) {
+			result[i] = n.getData();
+			n = n.getPrev();
+		}
+		
+		return result;
 	}
 
 	private class ListIteratorForDList implements ListIterator<T>, Iterator<T>{
