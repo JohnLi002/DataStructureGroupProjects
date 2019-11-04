@@ -1,0 +1,11 @@
+
+
+                                                   Name
+                                                  /
+Telephone Directory       <------>      Dictionary
+------------------                                \
+Phone book                                         String
+------------------
+readFile(Scanner data)
+------------------
+getPhone(Name name)
