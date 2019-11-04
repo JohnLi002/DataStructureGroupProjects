@@ -19,7 +19,15 @@ public class Deck extends Pile{
 		remove(c); //remove said pile
 		return c;
 	}
-
+	
+	public Card[] deal() {
+		Card[] c = new Card[2];
+		for(int i = 0; !isEmpty() && i < c.length; i++) {
+			c[i] = draw();
+		}
+		return c;
+	}
+	
 	private void createDeck() {
 		for(Suite s : Suite.values()) { //creates a standards unique 52 deck of playing cards
 			for(Rank r : Rank.values()) {

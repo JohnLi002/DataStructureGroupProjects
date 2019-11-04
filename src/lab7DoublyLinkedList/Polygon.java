@@ -1,7 +1,7 @@
 package lab7DoublyLinkedList;
 
 public class Polygon {
-	DoublyLInkedList<Line2d> polygon;
+	//DoublyLinkedList<Line2d> polygon;
 	
 	public Polygon(String filename) {
 		
