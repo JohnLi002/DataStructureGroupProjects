@@ -65,23 +65,30 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 		} else if(givenPosition < 0 || givenPosition >= numberOfEntries) {
 			throw new IndexOutOfBoundsException();
 		} else if(givenPosition == 0) {
+			T data = head.getData();
 			head = head.getPrev();
 			head.setNext(null);
+			numberOfEntries--;
+			return data;
+		} else if(givenPosition == numberOfEntries-1) {
+			T data = tail.getData();
+			tail = tail.getNext();
+			tail.setPrev(null);
+			numberOfEntries--;
+			return data;
 		}
-
-		ListIteratorForDList iterator = (ListIteratorForDList) iterator();
-
-		while(iterator.hasPrevious()) {
-			if(iterator.nextIndex() == givenPosition) {
-				T item = iterator.next();
-				iterator.remove();
-				return item;
-			} else {
-				iterator.next();
-			}
+		
+		DoubleNode n = head;
+		
+		for(int i = 0; i < givenPosition - 1; i++) {
+			n = n.getPrev();
 		}
-
-		return null;
+		T item = n.getData();
+		n = n.getNext();
+		n.setPrev(n.getPrev().getPrev());
+		n.getPrev().setNext(n);
+		numberOfEntries--;
+		return item;
 	}
 
 	@Override
