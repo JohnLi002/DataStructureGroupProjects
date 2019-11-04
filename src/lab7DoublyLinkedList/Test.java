@@ -2,10 +2,12 @@ package lab7DoublyLinkedList;
 
 public class Test {
 	public static void main(String[] args) {
-		int a;
-		int b;
-		a = b = 3;
-		System.out.println(a);
-		System.out.println(b);
+		DoublyLinkedList<String> list = new DoublyLinkedList<>();
+		list.add("1");
+		list.add("2");
+		list.add("3");
+		list.add(2,"5");
+		System.out.println(list.getEntry(3));
+		
 	}
 }
