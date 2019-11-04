@@ -44,7 +44,20 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 	@Override
 	public T remove(int givenPosition) {
-		// TODO Auto-generated method stub
+		if(!(isEmpty())) {
+			throw new IndexOutOfBoundsException();
+		} else if(givenPosition < 0 || givenPosition >= numberOfEntries) {
+			throw new IndexOutOfBoundsException();
+		} else if(givenPosition == 0) {
+			head = head.getPrev();
+			head.setNext(null);
+		} 
+		DoubleNode n = head;
+		for(int i = 0; i < givenPosition - 1; i++) {
+			n = n.getPrev();
+		}
+		
+		n = n.setNext(n.getNext().getNext());
 		return null;
 	}
 
@@ -136,8 +149,6 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 				DoubleNode prevNode = nextNode.getPrev();
 			}
 			prevNode.setNext(insert);
-
-
 		}
 
 		public T previous() {
@@ -159,26 +170,22 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 		@Override
 		public int nextIndex() {
-			// TODO Auto-generated method stub
-			return 0;
+			return index+1;
 		}
 
 		@Override
 		public int previousIndex() {
-			// TODO Auto-generated method stub
-			return 0;
+			return index-1;
 		}
 
 		@Override
 		public void set(T anEntry) {
 			// TODO Auto-generated method stub
-
 		}
 
 		@Override
 		public void remove() {
 			// TODO Auto-generated method stub
-
 		}
 
 	}
