@@ -8,7 +8,7 @@ public class Test {
 		list.add("3");
 		list.add("4");
 		list.add("5");
-		System.out.println(list.remove(1));
+		list.add(2,"0");
 		Object[] a = list.toArray();
 		
 		for(int i = 0; i < a.length; i++) {

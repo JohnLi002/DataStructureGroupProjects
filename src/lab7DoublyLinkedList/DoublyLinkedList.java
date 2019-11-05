@@ -55,7 +55,10 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 		for(int i = 0; i < newPosition - 1; i++) {
 			n = n.getPrev();
 		}
-		
+		add.setPrev(n.getPrev());
+		n.setPrev(add);
+		add.setNext(n);
+		numberOfEntries++;
 	}
 
 	@Override
@@ -208,7 +211,7 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			insert.setNext(nextNode);
 			nextNode.setPrev(insert);
 			if(nextNode != head){
-				DoubleNode prevNode = nextNode.getPrev();
+				prevNode = nextNode.getPrev();
 			}
 			prevNode.setNext(insert);
 		}
