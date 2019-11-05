@@ -25,6 +25,10 @@ public class Point2D {
 		this.end = end;
 	}
 	
+	public boolean equals(Point2D p) {
+		return(getStart() == p.getStart() && getEnd() == p.getEnd()); //compare the points to identify if they are equal
+	}
+	
 	public String toString() {
 		return String.format("(%.2f, %.2f)", start,end);
 	}

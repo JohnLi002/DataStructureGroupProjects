@@ -28,7 +28,8 @@ public class Polygon {
 	}
 
 	public void display() {
-		// TODO Auto-generated method stub
-
+		Iterator<Line> i = (Iterator<Line>) polygon.iterator();
+		
+		
 	}
 }
