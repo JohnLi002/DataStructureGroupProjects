@@ -1,22 +1,32 @@
 package lab7DoublyLinkedList;
 
 public class Line {
-	private int Start;
-	private int End;
+	private Point2D start;
+	private Point2D end;
 	
-	public int getStart() {
-		return Start;
+	Line(double x1, double y1, double x2, double y2){
+		start = new Point2D(x1,y1);
+		end = new Point2D(x2,y2);
 	}
 	
-	public void setStart(int start) {
-		Start = start;
+	Line(Point2D s, Point2D e){
+		start = s;
+		end = e;
 	}
 	
-	public int getEnd() {
-		return End;
+	public Point2D getStart() {
+		return start;
 	}
 	
-	public void setEnd(int end) {
-		End = end;
+	public void setStart(Point2D s) {
+		start = s;
+	}
+	
+	public Point2D getEnd() {
+		return end;
+	}
+	
+	public void setEnd(Point2D e) {
+		end = e;
 	}
 }

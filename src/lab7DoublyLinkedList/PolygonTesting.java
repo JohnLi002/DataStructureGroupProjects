@@ -11,13 +11,13 @@ public class PolygonTesting {
 		String filename = "polygon.txt";
 			
 		Polygon p = new Polygon(filename);
-		DoublyLinkedList <Line2d> lines = p.getLines();
-		ListIterator <Line2d> it = lines.getListIterator();
+		DoublyLinkedList <Line> lines = p.getLines();
+		ListIterator <Line> it = lines.getListIterator();
 			
-		Line2d prevLine = it.next();
-		Line2d firstLine = prevLine;
-		Line2d currLine, gapLine;
-                                    /* the following piece is used in the bonus part
+		Line prevLine = it.next();
+		Line firstLine = prevLine;
+		Line currLine, gapLine;
+       /* the following piece is used in the bonus part
 		* while (it.hasNext()) {
 		*	currLine = it.next();
 		* gapLine = Polygon.fillGap (prevLine, currLine);
@@ -26,7 +26,7 @@ public class PolygonTesting {
 		* }
 		* This piece is for bonus part
 		* gapLine = Polygon.fillGap (prevLine, firstLine);
-		 *  insert this line in the list 
+		* insert this line in the list 
 		*/	
 		it = lines.getListIterator();
 		while (it.hasNext())
