@@ -60,39 +60,41 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 	@Override
 	public T remove(int givenPosition) {
-		if(!(isEmpty())) {
+		if(!(isEmpty())) { // all to make sure that the list is not empty
 			throw new IndexOutOfBoundsException();
-		} else if(givenPosition < 0 || givenPosition >= numberOfEntries) {
+		} else if(givenPosition < 0 || givenPosition >= numberOfEntries) { //make sure correct positions given: 6 entry = position 0-5
 			throw new IndexOutOfBoundsException();
-		} else if(givenPosition == 0) {
+		} else if(givenPosition == 0) { //in case the position is at the very beginning
 			T data = head.getData();
 			head = head.getPrev();
 			head.setNext(null);
 			numberOfEntries--;
 			return data;
-		} else if(givenPosition == numberOfEntries-1) {
-			T data = tail.getData();
-			tail = tail.getNext();
-			tail.setPrev(null);
+		} else if(givenPosition == numberOfEntries-1) { // in case the right entry is at the very end
+			T data = tail.getData(); //record tail data
+			tail = tail.getNext(); //moves the tail node one forward
+			tail.setPrev(null); //set the previous one as null
 			numberOfEntries--;
 			return data;
 		}
 		
 		DoubleNode n = head;
 		
-		for(int i = 0; i < givenPosition - 1; i++) {
+		for(int i = 0; i < givenPosition; i++) { //loops to the right node at the correct position
 			n = n.getPrev();
 		}
-		T item = n.getData();
-		n = n.getNext();
-		n.setPrev(n.getPrev().getPrev());
-		n.getPrev().setNext(n);
-		numberOfEntries--;
+		T item = n.getData(); //records the data at the current node which will be returned
+		n = n.getNext(); //goes back one node because the current node is what will be removed
+		n.setPrev(n.getPrev().getPrev()); //sets the new previous node to the node before the next one (aka it skips over the node
+		                                  //after the next one
+		n.getPrev().setNext(n); //the new previous node has the wrong next node, replace it with the new one
+		numberOfEntries--;//decrease entries
 		return item;
 	}
 
 	@Override
 	public boolean remove(T anEntry) {
+		
 		if(!contains(anEntry)) {
 			return false;
 		}
@@ -110,8 +112,19 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 	@Override
 	public T replace(int givenPosition, T newEntry) {
-		// TODO Auto-generated method stub
-		return null;
+		if(!(isEmpty())) { //checks if it is even possible to use given position
+			throw new IndexOutOfBoundsException();
+		} else if(givenPosition < 0 || givenPosition >= numberOfEntries) { //if position too small or too big
+			throw new IndexOutOfBoundsException();
+		}
+		
+		DoubleNode n = head;
+		for(int i = 0; i < givenPosition; i++) { //finds correct node location
+			n = n.getPrev();
+		}
+		T data = n.getData(); //record old data
+		n.setData(newEntry); //replace with new data
+		return data;
 	}
 
 	@Override
