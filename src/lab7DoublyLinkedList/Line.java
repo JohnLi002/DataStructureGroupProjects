@@ -1,6 +1,6 @@
 package lab7DoublyLinkedList;
 
-public class Line2d {
+public class Line {
 	private int Start;
 	private int End;
 	

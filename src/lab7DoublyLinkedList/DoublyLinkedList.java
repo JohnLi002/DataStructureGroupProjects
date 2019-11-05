@@ -181,7 +181,7 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 
 	@Override
 	public boolean isEmpty() {
-		return (numberOfEntries != 0);
+		return (numberOfEntries == 0);
 	}
 
 	@Override
@@ -206,6 +206,23 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 		}
 
 		return result;
+	}
+	
+	public void reverse() {
+		if(isEmpty()) { //no point in continuing or using the method
+			return;
+		}
+		DoubleNode current = null;
+		DoubleNode newTail = null;
+		for(current = tail; current != null; current = current.getNext()) {
+			newTail = current; //when current becomes null, you cannot got back so the the 
+			                   //purpose of tail to to be the prev of current for the tail
+			DoubleNode change = current.getNext();
+			current.setNext(current.getPrev()); //current alters tail by switching previous and next
+			current.setPrev(change);
+		}
+		head = tail;
+		tail = newTail;
 	}
 
 	private class ListIteratorForDList implements ListIterator<T>, Iterator<T>{
