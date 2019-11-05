@@ -29,4 +29,8 @@ public class Line {
 	public void setEnd(Point2D e) {
 		end = e;
 	}
+	
+	public String toString() {
+		return String.format("from " + start + " to " + end);
+	}
 }

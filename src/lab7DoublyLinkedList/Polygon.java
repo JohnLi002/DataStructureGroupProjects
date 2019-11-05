@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class Polygon {
 	DoublyLinkedList<Line> polygon;
-	
+
 	public Polygon(String filename) {
 		try {
 			Scanner scan = new Scanner(new File(filename));
-			
-			
+
+
 			scan.close();
 		} catch(FileNotFoundException ex) {
-			
+
 		}
 	}
 
@@ -23,12 +23,12 @@ public class Polygon {
 	}
 
 	public void reverse() {
-		polygon.reverse();
 		
+
 	}
 
 	public void display() {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

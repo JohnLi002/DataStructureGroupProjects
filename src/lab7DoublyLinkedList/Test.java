@@ -15,5 +15,8 @@ public class Test {
 			System.out.println(a[i]);
 		}
 		
+		Line l = new Line(1,2,3,4);
+		
+		System.out.println(l);
 	}
 }

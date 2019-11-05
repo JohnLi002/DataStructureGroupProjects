@@ -24,5 +24,8 @@ public class Point2D {
 	public void setEnd(double end) {
 		this.end = end;
 	}
-
+	
+	public String toString() {
+		return String.format("(%.2f, %.2f)", start,end);
+	}
 }
