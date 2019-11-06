@@ -30,11 +30,17 @@ public class Line {
 		end = e;
 	}
 	
+	public void reverse() {
+		Point2D temp = start;
+		start = end;
+		end = temp;
+	}
+	
 	public boolean equals(Line l) {
 		return (getStart().equals(l.getStart()) && getEnd().equals(l.getEnd()));
 	}
 	
 	public String toString() {
-		return String.format("from " + start + " to " + end);
+		return String.format("[" + start + " , " + end + "]");
 	}
 }

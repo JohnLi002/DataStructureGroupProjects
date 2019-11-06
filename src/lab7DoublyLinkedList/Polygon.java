@@ -57,12 +57,12 @@ public class Polygon {
 	}
 
 	public void reverse() {
+		polygon.reverse();
 		
-
 	}
 
 	public void display() {
-		ListIterator<Line> list = polygon.getListIterator();
+		Iterator<Line> list = (Iterator<Line>) polygon.iterator();
 		while(list.hasNext()) {
 			Line l = list.next();
 			System.out.println(l);

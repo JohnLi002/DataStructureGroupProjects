@@ -5,9 +5,6 @@ public class Test {
 		DoublyLinkedList<String> list = new DoublyLinkedList<>();
 		list.add("1");
 		list.add("2");
-		list.add("3");
-		list.add("4");
-		list.add("5");
 		list.reverse();
 		Object[] a = list.toArray();
 		
