@@ -18,6 +18,14 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 	public Iterator<T> iterator() {
 		return new ListIteratorForDList();
 	}
+	
+	public ListIterator<T> getIterator(){
+		return new ListIteratorForDList();
+	}
+	
+	public ListIteratorForDList getListIterator() {
+		return new ListIteratorForDList();
+	}
 
 	@Override
 	public void add(T newEntry) {

@@ -16,10 +16,9 @@ public class Polygon {
 			while(scan.hasNext()) {
 				String s = scan.next();
 				d[count%4] = stringToDouble(s);
-				if(count % 4 == 0 && count != 0) {
+				if(count % 4 == 3 && count != 0) {
 					addLine(d);
 				}
-				System.out.println(polygon.getLength());
 				count++;
 			}
 			
@@ -63,6 +62,14 @@ public class Polygon {
 	}
 
 	public void display() {
-		
+		ListIterator<Line> list = polygon.getListIterator();
+		while(list.hasNext()) {
+			Line l = list.next();
+			System.out.println(l);
+		}
+	}
+	
+	public Object[] toArray() {
+		return polygon.toArray();
 	}
 }
