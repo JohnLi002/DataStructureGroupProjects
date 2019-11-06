@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import iteratorDoubleLinkedList.ListIterator;
+
 public class Polygon {
 	DoublyLinkedList<Line> polygon;
 
@@ -62,7 +64,7 @@ public class Polygon {
 	}
 
 	public void display() {
-		Iterator<Line> list = (Iterator<Line>) polygon.iterator();
+		ListIterator<Line> list = polygon.getIterator();
 		while(list.hasNext()) {
 			Line l = list.next();
 			System.out.println(l);

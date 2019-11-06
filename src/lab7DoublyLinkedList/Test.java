@@ -11,10 +11,12 @@ public class Test {
 		for(int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
-		Polygon p = new Polygon("polygonTest.txt");
-		Object[] l = p.toArray();
-		for(int i = 0; i < l.length; i++) {
-			System.out.println(l[i]);
+		
+		ListIterator<String> iter = list.getIterator();
+		
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
 		}
+		
 	}
 }

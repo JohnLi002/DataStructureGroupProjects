@@ -1,4 +1,5 @@
 package lab7DoublyLinkedList;
+//constructor
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -13,18 +14,16 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 		head = null;
 		tail = null;
 	}
-
+	
 	@Override
 	public Iterator<T> iterator() {
-		return new ListIteratorForDList();
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	public ListIterator<T> getIterator(){
-		return new ListIteratorForDList();
-	}
-	
-	public ListIteratorForDList getListIterator() {
-		return new ListIteratorForDList();
+		ListIterator<T> list = new ListIteratorForDList();
+		return list;
 	}
 
 	@Override
@@ -249,8 +248,9 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			}
 
 			T item = nextNode.getData();
+			DoubleNode current = nextNode;
 			nextNode = nextNode.getNext();
-			prevNode = nextNode.getPrev();
+			prevNode = current;
 			return item;
 		}
 
@@ -328,8 +328,6 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			this.prev = prev;
 		}
 	}
-
-
 
 
 }
