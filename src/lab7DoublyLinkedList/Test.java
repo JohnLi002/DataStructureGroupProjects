@@ -16,6 +16,8 @@ public class Test {
 		}
 		Polygon p = new Polygon("polygonTest.txt");
 		Object[] l = p.toArray();
-		System.out.println(l.length);
+		for(int i = 0; i < l.length; i++) {
+			System.out.println(l[i]);
+		}
 	}
 }
