@@ -12,11 +12,8 @@ public class Test {
 			System.out.println(a[i]);
 		}
 		
-		ListIterator<String> iter = list.getIterator();
-		
-		while(iter.hasNext()) {
-			System.out.println(iter.next());
-		}
+		Polygon p = new Polygon("polygonTest.txt");
+		p.display();
 		
 	}
 }

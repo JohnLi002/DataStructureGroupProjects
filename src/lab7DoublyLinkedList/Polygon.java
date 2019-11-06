@@ -64,11 +64,11 @@ public class Polygon {
 	}
 
 	public void display() {
-		ListIterator<Line> list = polygon.getIterator();
+		lab7DoublyLinkedList.ListIterator<Line> list = polygon.getIterator();
 		while(list.hasNext()) {
-			Line l = list.next();
-			System.out.println(l);
+			System.out.println(list.next());
 		}
+		
 	}
 	
 	public Object[] toArray() {

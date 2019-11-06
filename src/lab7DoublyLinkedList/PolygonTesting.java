@@ -12,7 +12,7 @@ public class PolygonTesting {
 			
 		Polygon p = new Polygon(filename);
 		DoublyLinkedList <Line> lines = p.getLines();
-		ListIterator <Line> it = lines.getListIterator();
+		ListIterator <Line> it = lines.getIterator();
 			
 		Line prevLine = it.next();
 		Line firstLine = prevLine;
@@ -28,7 +28,7 @@ public class PolygonTesting {
 		* gapLine = Polygon.fillGap (prevLine, firstLine);
 		* insert this line in the list 
 		*/	
-		it = lines.getListIterator();
+		it = lines.getIterator();
 		while (it.hasNext())
 			System.out.println (it.next());
 
