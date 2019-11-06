@@ -14,7 +14,8 @@ public class Test {
 		for(int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
-		Polygon p = new Polygon("polygonTest.txt");
-		System.out.println(4%4);
+		Line l = new Line(1,2,3,4);
+		Line l2 = new Line(1,2,3,5);
+		System.out.println(l.equals(l2));
 	}
 }

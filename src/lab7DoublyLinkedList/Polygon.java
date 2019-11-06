@@ -16,10 +16,10 @@ public class Polygon {
 			while(scan.hasNext()) {
 				String s = scan.next();
 				d[count%4] = stringToDouble(s);
-				if(count != 0 && count%4 == 0) {
+				if(count % 4 == 0 && count != 0) {
 					addLine(d);
-					System.out.println(polygon.getLength());
 				}
+				System.out.println(polygon.getLength());
 				count++;
 			}
 			
@@ -32,7 +32,8 @@ public class Polygon {
 	private void addLine(Double[] array) { //is only suppose to take an array with a size of 4
 		Point2D p1 = new Point2D(array[0], array[1]);
 		Point2D p2 = new Point2D(array[2], array[3]);
-		polygon.add(new Line(p1,p2));
+		Line l = new Line(p1,p2);
+		polygon.add(l);
 	}
 	
 	
@@ -62,7 +63,6 @@ public class Polygon {
 	}
 
 	public void display() {
-
 		
 	}
 }

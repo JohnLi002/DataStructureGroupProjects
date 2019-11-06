@@ -30,6 +30,10 @@ public class Line {
 		end = e;
 	}
 	
+	public boolean equals(Line l) {
+		return (getStart().equals(l.getStart()) && getEnd().equals(l.getEnd()));
+	}
+	
 	public String toString() {
 		return String.format("from " + start + " to " + end);
 	}
