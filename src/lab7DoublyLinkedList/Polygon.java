@@ -58,7 +58,7 @@ public class Polygon {
 	public DoublyLinkedList<Line> getLines() {
 		return polygon;
 	}
-
+	
 	public void reverse() { //reverses the shape of the polygon. x to y and y to x.
 		
 		lab7DoublyLinkedList.ListIterator<Line> list = polygon.getIterator();

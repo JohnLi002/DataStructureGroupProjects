@@ -12,8 +12,8 @@ public class PolygonTesting {
 			
 		Polygon p = new Polygon(filename);
 		DoublyLinkedList <Line> lines = p.getLines();
-		ListIterator <Line> it = lines.getIterator();
-			
+		lab7DoublyLinkedList.ListIterator<Line> it = lines.getIterator();
+		
 		Line prevLine = it.next();
 		Line firstLine = prevLine;
 		Line currLine, gapLine;
