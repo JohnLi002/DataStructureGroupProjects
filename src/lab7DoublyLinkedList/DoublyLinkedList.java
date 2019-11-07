@@ -17,8 +17,7 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 	
 	@Override
 	public Iterator<T> iterator() {
-		// TODO Auto-generated method stub
-		return null;
+		return new ListIteratorForDList();
 	}
 	
 	public ListIterator<T> getIterator(){
