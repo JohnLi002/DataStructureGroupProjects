@@ -274,8 +274,10 @@ public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
 			}
 			if(nextNode == null) {
 				nextNode = tail;
+				prevNode = nextNode.getPrev();
 			} else {
 				nextNode = nextNode.getPrev();
+				prevNode = nextNode.getPrev();
 			}
 			return nextNode.getData();
 		}

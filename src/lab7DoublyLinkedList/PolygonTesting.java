@@ -35,6 +35,7 @@ public class PolygonTesting {
 		System.out.println ("======Now backwards======");
 		while (it.hasPrevious())
 			System.out.println (it.previous());
+		
 		System.out.println ("======Reverse======");	
 		p.reverse();
 		p.display();
