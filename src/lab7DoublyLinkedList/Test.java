@@ -1,5 +1,8 @@
 package lab7DoublyLinkedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 public class Test {
 	public static void main(String[] args) {
 		DoublyLinkedList<String> list = new DoublyLinkedList<>();

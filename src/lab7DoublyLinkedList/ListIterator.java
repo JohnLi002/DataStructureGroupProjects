@@ -1,4 +1,7 @@
 package lab7DoublyLinkedList;
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public interface ListIterator <T> extends Iterator <T> {
 	// hasNext() and next() inherited from Iterator

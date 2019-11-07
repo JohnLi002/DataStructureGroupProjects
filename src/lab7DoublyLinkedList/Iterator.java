@@ -1,4 +1,7 @@
 package lab7DoublyLinkedList;
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public interface Iterator<T> {
 	/** Returns true if the iteration has more elements.

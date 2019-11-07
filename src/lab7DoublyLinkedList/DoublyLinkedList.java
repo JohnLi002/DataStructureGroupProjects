@@ -5,6 +5,10 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class DoublyLinkedList<T> implements ListInterface<T>, Iterable <T> {
+
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 	private DoubleNode head;
 	private DoubleNode tail;
 	private int numberOfEntries;

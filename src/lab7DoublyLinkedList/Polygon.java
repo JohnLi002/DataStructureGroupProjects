@@ -1,5 +1,8 @@
 package lab7DoublyLinkedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

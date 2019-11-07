@@ -1,5 +1,8 @@
 package lab7DoublyLinkedList;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 public class Point2D {
 	private double start;
 	private double end;
