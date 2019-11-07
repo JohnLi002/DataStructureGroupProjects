@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import iteratorDoubleLinkedList.ListIterator;
 
 public class Polygon {
 	DoublyLinkedList<Line> polygon;
