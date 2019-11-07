@@ -29,6 +29,11 @@ public class Point2D {
 		return(getStart() == p.getStart() && getEnd() == p.getEnd()); //compare the points to identify if they are equal
 	}
 	
+	public void reverse() {
+		double temp = start;
+		start = end;
+		end = temp;
+	}
 	public String toString() {
 		return String.format("(%.2f, %.2f)", start,end);
 	}

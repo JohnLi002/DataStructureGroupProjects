@@ -14,6 +14,9 @@ public class Test {
 		
 		Polygon p = new Polygon("polygonTest.txt");
 		p.display();
+		p.reverse();
+		System.out.println();
+		p.display();
 		
 	}
 }

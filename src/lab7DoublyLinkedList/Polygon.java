@@ -59,9 +59,27 @@ public class Polygon {
 		return polygon;
 	}
 
-	public void reverse() {
+	public void reverse() { //reverses the shape of the polygon. x to y and y to x.
+		
+		lab7DoublyLinkedList.ListIterator<Line> list = polygon.getIterator();
+		Line[] l = new Line[polygon.getLength()];
+		int count = 0;
+		while(list.hasNext()) {
+			l[count] = list.next();
+			l[count].getStart().reverse();
+			l[count].getEnd().reverse();
+			l[count].reverse();
+			count++;
+			
+		}
+		
+		while(list.hasNext() && count == 0) {
+			count = l.length;
+			polygon.add(l[count]);
+			System.out.println(count);
+			count--;
+		}
 		polygon.reverse();
-
 	}
 
 	public void display() {
