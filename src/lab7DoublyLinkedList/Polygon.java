@@ -43,7 +43,7 @@ public class Polygon {
 		int size = string.length();
 		for(int i = 0; i < size; i++) {
 			Character c = string.charAt(i);
-			if((c < '0' || c > '9') && c != '.'){
+			if((c < '0' || c > '9') && c != '.' && c != '-'){
 				string.deleteCharAt(i);
 				i--;
 				size = string.length();
