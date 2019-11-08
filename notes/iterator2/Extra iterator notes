@@ -1,0 +1,114 @@
+Iterator<T>: next(), hasNext(), remove() [remove is optional but can help]
+ListIterator<T>: next(), prev(), hasNext(), hasPrev(), nextIndex(), prevIndex(), add(), remove(), set()
+Iterable<T>: 
+
+DoublyLinkedList<T> implements ListInterface<T>, Iterable<T>
+**when implementing Iterable<T>, the [public Iterator<T> iterator()] method is needed**
+					public Iterator<T> iterator() {
+						return new ListIteratorForDList();
+					}
+					
+***can also have [public ListIterator<T> getListIterator()] 
+					public ListIterator<T> getListIterator() {
+						return new ListIteratorForDList();
+					}
+
+private class ListIteratorForDList implements ListIterator<T> {
+	private DNode nextNode;
+	private int index;
+	private boolean isRemoveOrSetLegal;
+	private Move lastMove;
+	
+	public ListIteratorForDList(){
+		nextNode = head;
+		index = 0;
+		isRemoveOrSetLegal = false;
+		lastMove = null;
+	}
+	
+	public boolean hasNext(){
+		return nextNode != null;
+	}
+	
+	public T next() {
+		if(!hasNext()){
+			throw new NoSuchElementException();
+		}
+		
+		T item = nextNode.getData();
+		nextNode = nextNode.getNext();
+		isRemoveOrSetLegal = true;
+		lastMove = Move.NEXT;
+		index++;
+		return item;
+	}
+	
+	public T previous() {
+		if(!hasPrevious()) {
+			throw new NoSuchElementException();
+		} else if(nextNode == null) {
+			prevNode = tail;
+		} else {
+			nextNode = nextNode.getPrev();
+			
+			isRemoveOrSetLegal = true;
+			lastMove = Move.PREV;
+			index--;
+		}
+		
+		return nextNode.getData();
+	}
+	
+	public boolean hasPrevious() {
+		return (nextNode != head);
+	}
+	
+	public void remove(){
+		if(!isRemoveOrSetLrhsl{
+			if(!isRemoveORSetLegal ())
+		}
+		if(LastMove == Move.NEXT){
+			DNode prevNode 
+		} else {
+			DNode prev = nextNode.getPrev();
+			DNode next = nextNode.getNext();
+		}
+	
+		isRemoveOrSetLegal = false;
+	}
+//==========================
+	public void add(int new Position, T newEntry){
+		if(newPosition < 0 || newPosition > numberOfEntries) 
+			throw new IndexOutOfBoundsException();
+		DNode toAdd = new DNode(newEntry);
+		if(isEmpty()) {
+			tail = toAdd;
+			head = toAdd;
+		} else if(newPosition == 0) 
+			toAdd.setNext(head);
+			head.setPrev(toAdd);
+			head = toAdd();
+		} else if(newPosition == numberOfEntires) {
+			tail.setNext(toAdd);
+			toAdd.setPrev(tail);
+			tail = toAdd;
+		} else {
+			DNode before = getNodeAt(newPosition - 1);
+			DNode after =  getNodeAt(newPosition - 1);
+			toAdd.setNext(after);
+			after.setPrev(toAdd);
+		}
+		numberOfEntries++;
+	}
+	
+	public void remove(int givenPositon) {
+		if(givenPossition == 0) {
+			DNode prev = nextNode.getPrev();
+			DNode next = nextNode.getNext();
+			if(head == null) {
+				tail == null;
+			head = setPrev(null);
+			
+			
+	
+	
