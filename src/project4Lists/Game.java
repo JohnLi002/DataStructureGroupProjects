@@ -46,6 +46,7 @@ public class Game {
 	/**
 	 * Creates new player class for both computer and user. It comes with the assumption there the score is only
 	 * for the player
+	 * 
 	 * @param score of user
 	 */
 	private void startGame(int score) {
@@ -115,31 +116,64 @@ public class Game {
 	/**
 	 * In Blackjack, a player automatically loses if their hand value goes over 21. The method returns if the player
 	 * has lost because of this rule
+	 * 
+	 * @return whether or not the user has lost
 	 */
 	public boolean overValue() {
 		return (getHandValue() > 21); 
 	}
 	
+	/**
+	 * returns the boolean PlayerFirst which dictates if the player goes first
+	 * 
+	 * @return boolean of whether or not the player goes first
+	 */
 	public boolean isPlayerFirst() {
 		return PlayerFirst;
 	}
+	
 
+	/**
+	 * sets the current boolean of playerFirst with the one in the parameter
+	 * 
+	 * @param playerFirst the boolean to replace the current PlayerFirst
+	 */
 	public void setPlayerFirst(boolean playerFirst) {
 		PlayerFirst = playerFirst;
 	}
 
+	/**
+	 * returns the Player for user
+	 * 
+	 * @return user player
+	 */
 	public Player getUser() {
 		return user;
 	}
 
+	/**
+	 * sets the current user Player with the Player given in the parameter
+	 * 
+	 * @param user the player that will replace the user's Player within game
+	 */
 	public void setUser(Player user) {
 		this.user = user;
 	}
 
+	/**
+	 * returns computer
+	 * 
+	 * @return Player of computer
+	 */
 	public Player getComputer() {
 		return computer;
 	}
 
+	/**
+	 * sets the current computer Player with the Player given in the parameter
+	 * 
+	 * @param computer the player that will replace the computer's Player within game
+	 */
 	public void setComputer(Player computer) {
 		this.computer = computer;
 	}
