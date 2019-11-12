@@ -1,0 +1,46 @@
+private class KeyIterator implements Iterator<K> {
+	private DictNode nextNode;
+	public KeyIterator() {
+		nextNode = head;
+	}
+	
+	public K next() {
+		K key = nextNode.getKey();
+		nextNode = nextNode.getNext();
+		return key;
+	}
+	
+//=======================
+
+public class TelepohoneDirectory {
+	private SotrtedLinkedIctiony <Name, String>
+	
+	public void readFile(Scanner data) {
+		while(data.hasNext()){
+			String lne = data.nextLine();
+			Name name = extractName(line);
+			String phone = extractPhone(line);
+			phonebook.add(name,phone);
+			
+			
+	}
+	
+	public void display() ;
+	
+}
+
+/===========================
+
+class Name {
+	String firstName;
+	String lastName;
+	
+	public int compareTo(Name other) {
+		return (firstName.compareTo(other.getFirst()));
+	}
+	
+	
+}
+
+
+
