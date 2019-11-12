@@ -52,4 +52,7 @@ public class Player {
 		this.handValue = handValue;
 	}
 	
+	public int getNumAces() {
+		return hand.getNumAces();
+	}
 }
