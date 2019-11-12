@@ -13,12 +13,23 @@ public class Hand extends Pile{
 		}
 	}
 	
+	/**
+	 * Takes in the next card to be added to Hand
+	 * 
+	 * @param c the Card to be added
+	 */
 	public void addCard(Card c) {
-		if(c.getRank().equals(Rank.ACE)) {
+		if(c.getRank().equals(Rank.ACE)) { //makes sure the number of aces are correct
 			numAces++;
 		}
 		add(c);
 	}
+	
+	/**
+	 * Takes every card in hand and puts it into an array to be returned
+	 * 
+	 * @return returns cards in Hand in a Array format
+	 */
 	
 	public Card[] getHand() {
 		Card[] c =  new Card[getNumCards()];
@@ -35,6 +46,11 @@ public class Hand extends Pile{
 		return c;
 	}
 	
+	/**
+	 * Looks at the value of every card in Hand and returns the total value
+	 * 
+	 * @return returns the total value of all cards in Hand
+	 */
 	public int getValue() {
 		int result = 0;
 		Card[] c = getHand();
@@ -46,12 +62,18 @@ public class Hand extends Pile{
 		return result;
 	}
 	
+	/**
+	 * Looks at the Rank of the given card and returns a value based on the rank of the given card
+	 * 
+	 * @param c Card that is given to get the value of
+	 * @return returns value of a card
+	 */
 	public int getValueCard(Card c) {
 		Rank r = c.getRank();
 		switch (r) {
 			case ACE:
 				numAces++;
-				return 1; //ACE can be either 1 or 11, user chooses whether to use one or eleven;
+				return 1; //ACE can be either 1 or 11, user chooses whether to use one or eleven in the game
 			case TWO:
 				return 2;
 			case THREE:
@@ -72,11 +94,21 @@ public class Hand extends Pile{
 				return 10;
 		}
 	}
-
+	
+	/**
+	 * Returns what is the number of aces that is within this hand
+	 * 
+	 * @return returns the number of aces in this Hand
+	 */
 	public int getNumAces() {
 		return numAces;
 	}
-
+	
+	/**
+	 * Replaces the int numAces with the new int given in the parameter
+	 * 
+	 * @param numAces the new number of aces
+	 */
 	public void setNumAces(int numAces) {
 		this.numAces = numAces;
 	}
