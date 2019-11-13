@@ -108,7 +108,13 @@ public class Player {
 		handValue = hand.getValue();
 	}
 	
+	/**
+	 * returns string of the hand as well as the score and hand value
+	 * 
+	 * @return returns the string of the hand
+	 */
 	public String toString() {
-		return hand.toString();
+		String s = String.format("Score: %d%nHand Value: %d%n%s", score, handValue, hand.toString());
+		return s;
 	}
 }

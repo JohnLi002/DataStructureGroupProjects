@@ -109,6 +109,11 @@ public class Hand extends Pile{
 		this.numAces = n;
 	}
 	
+	/**
+	 * returns string version of the hand
+	 * 
+	 * @return the hand to string
+	 */
 	public String toString() {
 		Card[] c = toArray();
 		String s = "[";
