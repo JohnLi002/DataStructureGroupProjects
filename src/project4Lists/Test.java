@@ -21,14 +21,16 @@ public class Test {
 			} else if(input.toLowerCase().equals("done")) {
 				restart = false;
 			} else if(input.toLowerCase().equals("aces")) {
+				System.out.println(g.getHandValue());
 				g.getUser().addAceValue(true);
+				System.out.println(g.getHandValue());
 			}
 		}
 
 		System.out.println(g.getComputer());
 		System.out.println(g.getUser());
 
-
+		
 		scan.close();
 
 	}

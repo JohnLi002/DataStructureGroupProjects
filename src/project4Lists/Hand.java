@@ -16,10 +16,10 @@ public class Hand extends Pile{
 	 * @param c the Card to be added
 	 */
 	public void addCard(Card c) {
+		add(c);
 		if(c.getRank().equals(Rank.ACE)) { //makes sure the number of aces are correct
 			numAces++;
 		}
-		add(c);
 	}
 	
 	/**
@@ -69,7 +69,6 @@ public class Hand extends Pile{
 		Rank r = c.getRank();
 		switch (r) {
 			case ACE:
-				numAces++;
 				return 1; //ACE can be either 1 or 11, user chooses whether to use one or eleven in the game
 			case TWO:
 				return 2;
