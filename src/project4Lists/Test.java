@@ -27,6 +27,8 @@ public class Test {
 			}
 		}
 
+		
+		
 		System.out.println(g.getComputer());
 		System.out.println(g.getUser());
 
