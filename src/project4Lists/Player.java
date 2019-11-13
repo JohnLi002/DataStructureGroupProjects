@@ -39,6 +39,7 @@ public class Player {
 		handValue += hand.getValueCard(c); //adds so that the current value of ace is kept
 	}
 	
+	
 	/**
 	 * returns the hand of the player
 	 * 
@@ -83,7 +84,6 @@ public class Player {
 	public int getHandValue() {
 		return handValue;
 	}
-	
 
 	/**
 	 * Allows the handValue to be set to the handValue said in the parameter
@@ -101,5 +101,14 @@ public class Player {
 	 */
 	public int getNumAces() {
 		return hand.getNumAces();
+	}
+	
+	public void restart(Hand h) {
+		hand = h;
+		handValue = hand.getValue();
+	}
+	
+	public String toString() {
+		return hand.toString();
 	}
 }

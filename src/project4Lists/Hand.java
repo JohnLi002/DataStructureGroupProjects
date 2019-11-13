@@ -6,9 +6,6 @@ public class Hand extends Pile{
 	public Hand(Card[] cards) {
 		setNumAces(0);
 		for(Card card : cards) {
-			if(card.getRank().equals(Rank.ACE)) {
-				numAces++;
-			}
 			addCard(card);
 		}
 	}
@@ -109,7 +106,22 @@ public class Hand extends Pile{
 	 * 
 	 * @param numAces the new number of aces
 	 */
-	public void setNumAces(int numAces) {
-		this.numAces = numAces;
+	public void setNumAces(int n) {
+		this.numAces = n;
+	}
+	
+	public String toString() {
+		Card[] c = toArray();
+		String s = "[";
+		for(int i = 0; i < c.length; i++) {
+			s += c[i].toString();
+			if(i != c.length - 1) {
+				s += "; ";
+			}
+		}
+		
+		s += "]";
+		
+		return s;
 	}
 }

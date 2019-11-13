@@ -8,10 +8,28 @@ import java.util.Scanner;
 
 public class Test {
 	public static void main(String[] args) {
-		Card[] c= {new Card("DIAMONDS","ACE"), new Card("SPADES","JACK")};
-		Hand h = new Hand(c);
-		Player p = new Player(h,0, h.getValue());
-		p.addAceValue(true);
-		System.out.println(p.getHandValue());
+
+		Game g = new Game();
+		boolean restart = true;
+		Scanner scan = new Scanner(System.in);
+		while(restart) {
+			System.out.println("you have " + g.getUser().getNumAces() + " Aces!");
+			String input = scan.next();
+
+			if(input.toLowerCase().equals("draw")) {
+				g.drawCard();
+			} else if(input.toLowerCase().equals("done")) {
+				restart = false;
+			} else if(input.toLowerCase().equals("aces")) {
+				g.getUser().addAceValue(true);
+			}
+		}
+
+		System.out.println(g.getComputer());
+		System.out.println(g.getUser());
+
+
+		scan.close();
+
 	}
 }

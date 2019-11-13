@@ -1,10 +1,9 @@
 package project4Lists;
 
 public class Deck extends Pile{
-
 	
 	public Deck() {
-		this(false);
+		this(true);
 	}
 	
 	public Deck(boolean b) {
@@ -34,5 +33,10 @@ public class Deck extends Pile{
 				add(new Card(s, r));
 			}
 		}
+	}
+	
+	public void redo() {
+		createDeck();
+		shuffle();
 	}
 }

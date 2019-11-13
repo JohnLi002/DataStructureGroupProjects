@@ -9,21 +9,51 @@ public class Game {
 	public Game() {
 		int result = (int) (Math.random() * 2);
 		setPlayerFirst((result == 0));
-		deck = new Deck(true);
+		deck = new Deck();
 		startGame();
 	}
 	
 	public Game(int score) {
 		int result = (int) (Math.random() * 2);
 		setPlayerFirst((result == 0));
-		deck = new Deck(true);
+		deck = new Deck();
 		startGame(score);
 	}
+	
 	public Game(int userScore, int computerScore) {
 		int result = (int) (Math.random() * 2);
 		setPlayerFirst((result == 0));
-		deck = new Deck(true);
+		deck = new Deck();
 		startGame(userScore, computerScore);
+	}
+	
+	/**
+	 * Restarts the game by shuffling deck and redistributing cards to both players
+	 * 
+	 * @param i is the ent that represents who won in the game. 1 is the player, 0 is a draw, any other num is a draw
+	 */
+	public void restart(int i) { //this method will restart the game
+		deck.redo();
+		if(i == 1) { //incomplete
+			user.setScore(user.getScore() + 1);
+		} else if(i == 0) {
+			computer.setScore(computer.getScore() + 1);
+		} //if the number is neither 1 or 0, then the result must be a draw. No one gets an increase to the score.
+		Hand h1 = new Hand(deck.deal());
+		Hand h2 = new Hand(deck.deal());
+		user.restart(h1);
+		computer.restart(h2);
+	}
+	
+	/**
+	 * Cards a card for the user
+	 * 
+	 * @return new user hand value
+	 */
+	public int drawCard() {
+		user.addCard(deck.draw());
+		
+		return user.getHandValue();
 	}
 	
 	/**
@@ -41,6 +71,7 @@ public class Game {
 			computer = new Player(h1, 0, h1.getValue());
 		}
 		
+		computerAce();
 	}
 	
 	/**
@@ -81,6 +112,8 @@ public class Game {
 			user = new Player(h2, uScore, h2.getValue());
 			computer = new Player(h1, cScore, h1.getValue());
 		}
+		
+		computerAce();
 	}
 	
 	/**
@@ -176,5 +209,9 @@ public class Game {
 	 */
 	public void setComputer(Player computer) {
 		this.computer = computer;
+	}
+	
+	public boolean hasAces() {
+		return user.getNumAces() > 0;
 	}
 }
