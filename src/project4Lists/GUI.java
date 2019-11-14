@@ -198,6 +198,9 @@ public class GUI extends Application
 				startGame.setOnAction( e -> {
 					blackjack.restart(0);
 					seeCards(player_cards, blackjack.getUser().getHand().getHand() );
+					playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
+					computerScore_num.setText("0");
+					dealer_cards.getChildren().clear();
 				});
 				
 				TextField yourTurn = new TextField("Hit or Hold?");
@@ -228,7 +231,8 @@ public class GUI extends Application
 					youHold.setMinHeight(40); 	youHold.setMaxHeight(40);
 					youHold.setFont(Font.font("System", FontWeight.NORMAL, 20));
 					youHold.setOnAction( e -> {
-						//	runs the stuff for the AI opponant
+						seeCards(dealer_cards, blackjack.getComputer().getHand().getHand() );
+						computerScore_num.setText( "" + blackjack.getComputerValue());
 					});
 				
 				
