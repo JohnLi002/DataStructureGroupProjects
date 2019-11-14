@@ -26,10 +26,15 @@ public class Name implements Comparable <Name>{
 		return (firstName + " " + lastName);
 	}
 	public boolean equals (Object o) {
-		// to implement	
+		return o.toString().equals(toString());
 	}
 	
 	public int compareTo (Name other) {
-		// to implement
+		if( firstName.compareTo(other.firstName) != 0) {
+			return (firstName.compareTo(other.firstName));
+		}
+		else {
+			return (lastName.compareTo(other.lastName));
+		}
 	}
 }

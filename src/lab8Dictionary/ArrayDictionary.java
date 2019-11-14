@@ -73,13 +73,22 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
 	    
 	  
 	 public V getValue (K key) {
-		 // to implement
+		 if(!contains(key)) {
+			 throw new IllegalArgumentException(); //only a placeholder for now. AJ thinks its nullpointerexception
+		 }
+		 
+		 int i = locateIndex(key);
+		 return entries[i].getValue();
 	 }
 	    
 	   
 	 public boolean contains (K key) {
-		 
-		 // to implement
+		 for(int i = 0; i < numberOfEntries; i++) {
+			 if(entries[i].getKey().equals(key)) {
+				 return true;
+			 }
+		 }
+		 return false;
 	 }
 	    
 	  public int getSize() {
@@ -124,6 +133,18 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
     	}
     }
      private class ValueIterator implements Iterator <V> {
+
+		@Override
+		public boolean hasNext() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		@Override
+		public V next() {
+			// TODO Auto-generated method stub
+			return null;
+		}
      	// to implement	
      }	 
 }
