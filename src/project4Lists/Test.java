@@ -9,31 +9,29 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String[] args) {
 
-		Game g = new Game();
-		boolean restart = true;
-		Scanner scan = new Scanner(System.in);
-		while(restart) {
-			System.out.println("you have " + g.getUser().getNumAces() + " Aces!");
-			String input = scan.next();
-
-			if(input.toLowerCase().equals("draw")) {
-				g.drawCard();
-			} else if(input.toLowerCase().equals("done")) {
-				restart = false;
-			} else if(input.toLowerCase().equals("aces")) {
-				System.out.println(g.getHandValue());
-				g.getUser().addAceValue(true);
-				System.out.println(g.getHandValue());
-			}
+		Deck d = new Deck();
+		
+		Card[] c1 = d.deal();
+		d.deal();
+		d.deal();
+		d.deal();
+		d.deal();
+		d.deal();
+		
+		for(int i =0 ; i< c1.length;i++) {
+			System.out.println(c1[i]);
 		}
-
 		
+		Card[] c = d.toArray();
+		System.out.println();
+		for(int i = 0; i < c.length; i++) {
+			if(c[i].equals(c1[0])) {
+				System.out.println(true);
+			} else if(c[i].equals(c1[1])) {
+				System.out.println(true);
+			}
+			System.out.println(i);
+		}
 		
-		System.out.println(g.getComputer());
-		System.out.println(g.getUser());
-
-		
-		scan.close();
-
 	}
 }

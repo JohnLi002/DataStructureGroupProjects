@@ -36,6 +36,7 @@ public class Deck extends Pile{
 	}
 	
 	public void redo() {
+		clear();
 		createDeck();
 		shuffle();
 	}
