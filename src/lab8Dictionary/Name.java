@@ -13,7 +13,7 @@ public class Name implements Comparable <Name>{
 		StringBuilder s = new StringBuilder(fullName);
 		int locate = s.indexOf(" ");
 		firstName = fullName.substring(0, locate);
-		lastName = fullName.substring(locate, fullName.length());
+		lastName = fullName.substring(locate + 1, fullName.length());
 		
 	}
 
@@ -27,7 +27,7 @@ public class Name implements Comparable <Name>{
 	}
 
 	public String toString () {
-		return (firstName + " " + lastName);
+		return (firstName + " " +lastName);
 	}
 	public boolean equals (Object o) {
 		return o.toString().equals(toString());

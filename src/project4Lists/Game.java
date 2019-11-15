@@ -143,6 +143,7 @@ public class Game {
 	 * @return the total card value of the computer's hand
 	 */
 	public int getComputerValue() {
+		computerAce();
 		return computer.getHandValue();
 	}
 	

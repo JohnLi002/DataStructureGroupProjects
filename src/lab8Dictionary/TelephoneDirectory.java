@@ -27,9 +27,15 @@ public class TelephoneDirectory {
 		String firstName, lastName, phoneNumber;
 		Name fullName;
 		while (data.hasNext()) {
+			
 			firstName = data.next();
 			lastName = data.next();
 			phoneNumber = data.next();
+			while(phoneNumber.charAt(0) < '0' || phoneNumber.charAt(0) > '9') {
+				lastName += (" " + phoneNumber);
+				phoneNumber = data.next();
+			}
+			
 			fullName = new Name(firstName, lastName);
 			dictionary.add(fullName, phoneNumber);
 		}
@@ -52,7 +58,7 @@ public class TelephoneDirectory {
 
 		try {
 			TelephoneDirectory td = new TelephoneDirectory();	
-			File cinemas = new File ("movies.txt");
+			File cinemas = new File ("movie.txt");
 
 			Scanner fileSc = new Scanner (cinemas);
 
