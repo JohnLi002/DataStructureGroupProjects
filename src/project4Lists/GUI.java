@@ -50,16 +50,19 @@ public class GUI extends Application
 		for (Card temp : cards)
 		{
 			HBox cardstock = new HBox();
-			cardstock.setMinWidth(70); 	cardstock.setMaxWidth(70);
+			cardstock.setMinWidth(80); 	cardstock.setMaxWidth(80);
 			cardstock.setMinHeight(100); 	cardstock.setMaxHeight(100);
 			cardstock.setAlignment(Pos.CENTER);
 			cardstock.setBackground( new Background(new BackgroundFill(
 					Paint.valueOf("ffffff"), CornerRadii.EMPTY, Insets.EMPTY )) );
-			TextField cardstock_rank = new TextField();
+			Label cardstock_rank = new Label();
 			cardstock_rank.setText( rankTranslator(temp.getRank()) );
-			cardstock_rank.setMinWidth(30); cardstock_rank.setMaxWidth(30);
+			cardstock_rank.setMinWidth(40); cardstock_rank.setMaxWidth(40);
 			cardstock_rank.setMinHeight(30); cardstock_rank.setMaxHeight(30);
-			cardstock_rank.setEditable(false);
+			cardstock_rank.setFont(Font.font("Times New Roman", FontWeight.BOLD, 28));
+			if( temp.getSuite().equals(Suite.DIAMONDS) || temp.getSuite().equals(Suite.HEARTS) )
+			{ cardstock_rank.setTextFill(Paint.valueOf("e42424")); }
+			cardstock_rank.setAlignment(Pos.CENTER);
 			cardstock.getChildren().add(cardstock_rank);
 			VBox cardstock_picHold = new VBox();
 			cardstock_picHold.setMinWidth(30); cardstock_picHold.setMaxWidth(30);
@@ -168,6 +171,7 @@ public class GUI extends Application
 					playerScore_num.setMinWidth(70); 	playerScore_num.setMaxWidth(70);
 					playerScore_num.setMinHeight(30); 	playerScore_num.setMaxHeight(30);
 					playerScore_num.setAlignment(Pos.CENTER_LEFT);
+					playerScore_num.setEditable(false);
 					playerScore_num.setBackground( buttons.getBackground() );
 				
 				HBox computerScore = new HBox();
@@ -188,6 +192,7 @@ public class GUI extends Application
 					computerScore_num.setMinWidth(70); 		computerScore_num.setMaxWidth(70);
 					computerScore_num.setMinHeight(30); 	computerScore_num.setMaxHeight(30);
 					computerScore_num.setAlignment(Pos.CENTER_LEFT);
+					computerScore_num.setEditable(false);
 					computerScore_num.setBackground( buttons.getBackground() );
 			
 				Button startGame = new Button("RESTART");
@@ -234,8 +239,12 @@ public class GUI extends Application
 						seeCards(dealer_cards, blackjack.getComputer().getHand().getHand() );
 						computerScore_num.setText( "" + blackjack.getComputerValue());
 					});
-				
-				
+		
+		// setup for what you see in your first game
+		seeCards(player_cards, blackjack.getUser().getHand().getHand() );
+		playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
+		computerScore_num.setText("0");
+		
 		Scene scene = new Scene(complete, 1000, 500);
 		primaryStage.setTitle("Blackjack");
 		primaryStage.setScene(scene);
