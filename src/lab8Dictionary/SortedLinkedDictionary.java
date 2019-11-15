@@ -3,43 +3,10 @@ package lab8Dictionary;
 import java.util.Iterator;
 
 public class SortedLinkedDictionary <K extends Comparable <? super K> , V> 
-<<<<<<< HEAD
-                implements DictionaryInterface <K, V> {
-    private DictNode head;
-    private DictNode tail;
-    private int numberOfEntries;
-    
-    public SortedLinkedDictionary () {
-    	head = null; 
-        tail = null; 
-        numberOfEntries = 0;
-    }
-    
-    public V getValue (K key) {
-    	// to implement
-    }
-    
-    public int getSize() {
-    	return numberOfEntries;
-    }
-    
-    public void clear() {
-    	while( )
-    }
-    
-    public boolean isEmpty () {
-    	// to implement
-    }
-    
-    public boolean contains (K aKey) {
-    	// to implement
-    }
-=======
 implements DictionaryInterface <K, V> {
 	private DictNode head;
 	private DictNode tail;
 	private int numberOfEntries;
->>>>>>> branch 'master' of https://github.com/JohnLi002/DataStructureGroupProjects.git
 
 	public SortedLinkedDictionary () {
 		head = null; 
@@ -185,12 +152,14 @@ implements DictionaryInterface <K, V> {
 	}
 
 	private class ValueIteratorForLinkedDictionary implements Iterator <V> {
-		DictNode nextNode;
-		DictNode prevNode;
+		private DictNode nextNode;
+		private DictNode prevNode;
+		private boolean canSetAndAdd;
 		
 		ValueIteratorForLinkedDictionary(){
 			nextNode = head;
 			prevNode = tail;
+			canSetAndAdd = false;
 		}
 		
 		@Override

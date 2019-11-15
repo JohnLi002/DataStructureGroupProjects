@@ -56,65 +56,7 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
 		return oldValue;
 	}
 
-<<<<<<< HEAD
-	 public Iterator <V> getValueIterator(){
-		 return new ValueIterator();
-	 }
-	 
-	 public boolean isEmpty() {
-		 return (numberOfEntries == 0);
-	 }
-	 
-	 public void clear() {
-		 for(int i = 0; i< entries.length; i++) {
-			 entries[i] = null;
-		 }
-	 }
-=======
->>>>>>> branch 'master' of https://github.com/JohnLi002/DataStructureGroupProjects.git
 
-<<<<<<< HEAD
-     
-     private class KeyIterator implements Iterator <K> {
-    	public int cursor;
-    		 
-    	public KeyIterator () {
-    		cursor = 0;
-    	}
-    		 
-    	public boolean hasNext() { return (cursor < getSize()) ;}
-    		 
-    	public K next() {
-    		K out = (K) entries[cursor++].getKey();
-    		return out;
-    	}
-    		 
-    	public void remove() {
-    		throw new UnsupportedOperationException (
-    			"No remove for dictionary iterator");
-    	}
-    }
-     private class ValueIterator implements Iterator <V> {
-     	// to implement	
-    	public int cursor;
-    	
-    	public ValueIterator() {
-    		cursor = 0;
-    	}
-    	
-    	public boolean hasNext() { return (cursor < getSize()) ;}
-    	
-    	public V next() {
-    		V out = (V) entries[cursor++].getValue();
-    		return out;
-    	}
-    	
-    	public void remove() {
-    		throw new UnsupportedOperationException (
-    			"No remove for dictionary iterator");
-    	}
-     }	 
-=======
 
 	public V remove (K key) {
 		checkInitialization();
@@ -193,7 +135,7 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
 		}
 	}
 	private class ValueIterator implements Iterator <V> {
-		public int cursor;
+		private int cursor;
 
 		public ValueIterator(){
 			cursor = 0;
@@ -211,5 +153,4 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
 			return result;
 		}
 	}	 
->>>>>>> branch 'master' of https://github.com/JohnLi002/DataStructureGroupProjects.git
 }
