@@ -152,14 +152,11 @@ implements DictionaryInterface <K, V> {
 	}
 
 	private class ValueIteratorForLinkedDictionary implements Iterator <V> {
+		//to implement
 		private DictNode nextNode;
-		private DictNode prevNode;
-		private boolean canSetAndAdd;
 		
 		ValueIteratorForLinkedDictionary(){
 			nextNode = head;
-			prevNode = tail;
-			canSetAndAdd = false;
 		}
 		
 		@Override
@@ -169,8 +166,9 @@ implements DictionaryInterface <K, V> {
 
 		@Override
 		public V next() {
+			if (!hasNext())
+				throw new IllegalStateException ("Iteration after the list");
 			V result = nextNode.getValue();
-			prevNode = nextNode;
 			nextNode = nextNode.getNext();
 			return result;
 		}
