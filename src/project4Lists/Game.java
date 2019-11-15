@@ -147,6 +147,19 @@ public class Game {
 	}
 	
 	/**
+	 * Checks if the user is the winner
+	 * 
+	 * @return who has the bigger hand value after checking if the player's hand is over 21
+	 */
+	public boolean winner() {
+		if(overValue()) {
+			return false;
+		}
+		
+		return user.getHandValue() > computer.getHandValue();
+	}
+	
+	/**
 	 * In Blackjack, a player automatically loses if their hand value goes over 21. The method returns if the player
 	 * has lost because of this rule
 	 * 
@@ -211,6 +224,11 @@ public class Game {
 		this.computer = computer;
 	}
 	
+	/**
+	 * checks if the user has any aces in their hand
+	 * 
+	 * @return a boolean of if the player has any aces
+	 */
 	public boolean hasAces() {
 		return user.getNumAces() > 0;
 	}
