@@ -23,7 +23,7 @@ public class SortedLinkedDictionary <K extends Comparable <? super K> , V>
     }
     
     public void clear() {
-    	// to implement
+    	while( )
     }
     
     public boolean isEmpty () {

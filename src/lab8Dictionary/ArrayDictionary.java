@@ -100,7 +100,9 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
 	 }
 	 
 	 public void clear() {
-		 // to implement
+		 for(int i = 0; i< entries.length; i++) {
+			 entries[i] = null;
+		 }
 	 }
 
      
@@ -125,5 +127,22 @@ public class ArrayDictionary <K, V> implements DictionaryInterface <K, V> {
     }
      private class ValueIterator implements Iterator <V> {
      	// to implement	
+    	public int cursor;
+    	
+    	public ValueIterator() {
+    		cursor = 0;
+    	}
+    	
+    	public boolean hasNext() { return (cursor < getSize()) ;}
+    	
+    	public V next() {
+    		V out = (V) entries[cursor++].getValue();
+    		return out;
+    	}
+    	
+    	public void remove() {
+    		throw new UnsupportedOperationException (
+    			"No remove for dictionary iterator");
+    	}
      }	 
 }
