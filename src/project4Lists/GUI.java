@@ -82,6 +82,20 @@ public class GUI extends Application
 			cardWhere.getChildren().add(cardstock);
 		}
 	}
+	private void dealerSecret(HBox cardWhere)
+	{
+		cardWhere.getChildren().clear();
+		for (int i = 0; i < 2; i++)
+		{
+			HBox cardblank = new HBox();
+			cardblank.setMinWidth(80); 		cardblank.setMaxWidth(80);
+			cardblank.setMinHeight(100); 	cardblank.setMaxHeight(100);
+			cardblank.setAlignment(Pos.CENTER);
+			cardblank.setBackground( new Background(new BackgroundFill(
+					Paint.valueOf("ffffff"), CornerRadii.EMPTY, Insets.EMPTY )) );
+			cardWhere.getChildren().add(cardblank);
+		}
+	}
 	
 	public void start(Stage primaryStage) throws Exception
 	{
@@ -205,7 +219,7 @@ public class GUI extends Application
 					seeCards(player_cards, blackjack.getUser().getHand().getHand() );
 					playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
 					computerScore_num.setText("0");
-					dealer_cards.getChildren().clear();
+					dealerSecret(dealer_cards);
 				});
 				
 				TextField yourTurn = new TextField("Hit or Hold?");
@@ -244,6 +258,7 @@ public class GUI extends Application
 		seeCards(player_cards, blackjack.getUser().getHand().getHand() );
 		playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
 		computerScore_num.setText("0");
+		dealerSecret(dealer_cards);
 		
 		Scene scene = new Scene(complete, 1000, 500);
 		primaryStage.setTitle("Blackjack");
