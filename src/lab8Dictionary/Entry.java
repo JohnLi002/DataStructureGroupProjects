@@ -1,4 +1,7 @@
 package lab8Dictionary;
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
  class Entry <K, V> {
     private K key;

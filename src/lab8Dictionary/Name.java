@@ -1,4 +1,7 @@
 package lab8Dictionary;
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public class Name implements Comparable <Name>{
 	private String firstName;
