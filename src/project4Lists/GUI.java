@@ -1,5 +1,9 @@
 package project4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.io.FileInputStream;
 import java.io.IOException;
 

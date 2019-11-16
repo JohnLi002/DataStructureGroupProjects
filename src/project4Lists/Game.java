@@ -1,5 +1,9 @@
 package project4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Game {
 	private boolean PlayerFirst;
 	private Player user;

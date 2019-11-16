@@ -1,5 +1,9 @@
 package project4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Player {
 	private Hand hand;
 	private int score; //how many victories so far?

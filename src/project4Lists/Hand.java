@@ -1,5 +1,9 @@
 package project4Lists;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class Hand extends Pile{	
 	private int numAces;
 	
