@@ -98,6 +98,15 @@ public class GUI extends Application
 			cardWhere.getChildren().add(cardblank);
 		}
 	}
+	private int handValueWithAces(Player user)
+	{
+		int handV = user.getHand().getValue();
+		if (user.getNumAces() > 0)
+		{
+			if (handV <= 11) { handV+=10; }
+		}
+		return handV;
+	}
 	
 	public void start(Stage primaryStage) throws Exception
 	{
@@ -243,7 +252,7 @@ public class GUI extends Application
 				startGame.setOnAction( e -> {
 					blackjack.restart(winsTrack);
 					seeCards(player_cards, blackjack.getUser().getHand().getHand() );
-					playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
+					playerScore_num.setText( "" + handValueWithAces(blackjack.getUser()) );
 					computerScore_num.setText("0");
 					dealerSecret(dealer_cards);
 					gameWinnerAnnouncement.setText("");
@@ -269,8 +278,8 @@ public class GUI extends Application
 					youHit.setOnAction( e -> {
 						if(blackjack.getHandValue() <= 21 && gameWinnerAnnouncement.getText().compareTo("YOU WIN!") != 0 && gameWinnerAnnouncement.getText().compareTo("YOU LOSE!") != 0)
 						{
-							if ( blackjack.drawCard() > 0 )
-							{	playerScore_num.setText( "" + blackjack.getHandValue() );	}		//player draws a card
+							if (blackjack.drawCard() > 0) //to draw a card as though it returned null
+							{	playerScore_num.setText( "" + handValueWithAces(blackjack.getUser()) );	}	//player draws a card
 							seeCards(player_cards, blackjack.getUser().getHand().getHand() );
 						}
 					});
@@ -282,7 +291,7 @@ public class GUI extends Application
 					youHold.setFont(Font.font("System", FontWeight.NORMAL, 20));
 					youHold.setOnAction( e -> {
 						seeCards(dealer_cards, blackjack.getComputer().getHand().getHand() );
-						computerScore_num.setText( "" + blackjack.getComputerValue());
+						computerScore_num.setText( "" + handValueWithAces(blackjack.getComputer()) );
 						// Evaluate who won the game
 						if (gameWinnerAnnouncement.getText().compareTo("YOU WIN!") != 0 && gameWinnerAnnouncement.getText().compareTo("YOU LOSE!") != 0)
 						{	//This outer loop stops a bug where they can just spam the HOLD button
