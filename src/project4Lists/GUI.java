@@ -27,6 +27,8 @@ import javafx.stage.Stage;
 
 public class GUI extends Application
 {
+	private int winsTrack = 0;
+	
 	private String rankTranslator(Rank rank)
 	{
 		if(rank.equals(Rank.ACE)) {return "A";}
@@ -107,7 +109,8 @@ public class GUI extends Application
 			VBox table = new VBox();
 			complete.getChildren().add(table);
 			table.setAlignment(Pos.TOP_CENTER);
-			table.setSpacing(50);
+			table.setBackground( new Background(new BackgroundFill(
+					Paint.valueOf("ffffff"), CornerRadii.EMPTY, Insets.EMPTY )) );
 			table.setPadding(new Insets(10,10,10,10));
 			
 				VBox dealer = new VBox();
@@ -133,6 +136,29 @@ public class GUI extends Application
 					dealer_cards.setBackground( dealer.getBackground() );
 					dealer_cards.setAlignment(Pos.CENTER);
 					dealer_cards.setSpacing(5);
+				
+				HBox gap = new HBox();
+				table.getChildren().add(gap);
+				gap.setMinHeight(50);	gap.setMaxHeight(50);
+				gap.setAlignment(Pos.CENTER_RIGHT);
+				
+					Label gameWinnerAnnouncement = new Label("");
+					gap.getChildren().add(gameWinnerAnnouncement);
+					gameWinnerAnnouncement.setMinSize(200, 50);
+					gameWinnerAnnouncement.setMaxSize(200, 50);
+					gameWinnerAnnouncement.setFont(Font.font("Comic Sans", FontWeight.NORMAL, 28));
+					
+					Label wincount_label = new Label("Player Wins:  ");
+					gap.getChildren().add(wincount_label);
+					wincount_label.setMinSize(140, 50);
+					wincount_label.setMaxSize(140, 50);
+					wincount_label.setFont(Font.font("Consolas", FontWeight.NORMAL, 18));
+					
+					Label wincount = new Label("0");
+					gap.getChildren().add(wincount);
+					wincount.setMinSize(120, 50);
+					wincount.setMaxSize(120, 50);
+					wincount.setFont(Font.font("Consolas", FontWeight.BOLD, 20));
 				
 				VBox player = new VBox();
 				table.getChildren().add(player);
@@ -215,11 +241,12 @@ public class GUI extends Application
 				startGame.setMinHeight(50); 	startGame.setMaxHeight(50);
 				startGame.setFont(Font.font("System", FontWeight.NORMAL, 20));
 				startGame.setOnAction( e -> {
-					blackjack.restart(0);
+					blackjack.restart(winsTrack);
 					seeCards(player_cards, blackjack.getUser().getHand().getHand() );
 					playerScore_num.setText( "" + blackjack.getUser().getHandValue() );
 					computerScore_num.setText("0");
 					dealerSecret(dealer_cards);
+					gameWinnerAnnouncement.setText("");
 				});
 				
 				TextField yourTurn = new TextField("Hit or Hold?");
@@ -240,8 +267,12 @@ public class GUI extends Application
 					youHit.setMinHeight(40); 	youHit.setMaxHeight(40);
 					youHit.setFont(Font.font("System", FontWeight.NORMAL, 20));
 					youHit.setOnAction( e -> {
-						playerScore_num.setText( "" + blackjack.drawCard() );		//player draws a card
-						seeCards(player_cards, blackjack.getUser().getHand().getHand() );
+						if(blackjack.getHandValue() <= 21 && gameWinnerAnnouncement.getText().compareTo("YOU WIN!") != 0 && gameWinnerAnnouncement.getText().compareTo("YOU LOSE!") != 0)
+						{
+							if ( blackjack.drawCard() > 0 )
+							{	playerScore_num.setText( "" + blackjack.getHandValue() );	}		//player draws a card
+							seeCards(player_cards, blackjack.getUser().getHand().getHand() );
+						}
 					});
 					
 					Button youHold = new Button("HOLD");
@@ -252,6 +283,22 @@ public class GUI extends Application
 					youHold.setOnAction( e -> {
 						seeCards(dealer_cards, blackjack.getComputer().getHand().getHand() );
 						computerScore_num.setText( "" + blackjack.getComputerValue());
+						// Evaluate who won the game
+						if (gameWinnerAnnouncement.getText().compareTo("YOU WIN!") != 0 && gameWinnerAnnouncement.getText().compareTo("YOU LOSE!") != 0)
+						{	//This outer loop stops a bug where they can just spam the HOLD button
+							if ( blackjack.winner() )
+							{
+								//	Player Wins
+								gameWinnerAnnouncement.setText("YOU WIN!");
+								winsTrack++;
+								wincount.setText(""+winsTrack);
+							}
+							else
+							{
+								//	Computer Wins
+								gameWinnerAnnouncement.setText("YOU LOSE!");
+							}
+						}
 					});
 		
 		// setup for what you see in your first game
