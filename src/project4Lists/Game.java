@@ -137,17 +137,6 @@ public class Game {
 	}
 	
 	/**
-	 * Returns the hand value of the computer. Although a person can use the getComputer method and then
-	 * the getHandValue() method to obtain the said values, this method serves as a simple shortcut.
-	 * 
-	 * @return the total card value of the computer's hand
-	 */
-	public int getComputerValue() {
-		computerAce();
-		return computer.getHandValue();
-	}
-	
-	/**
 	 * Checks if the user is the winner
 	 * 
 	 * @return who has the bigger hand value after checking if the player's hand is over 21
