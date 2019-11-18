@@ -7,6 +7,7 @@ package project4Lists;
 public class Deck extends Pile{
 	
 	public Deck() {
+		//super() could just do this
 		this(true);
 	}
 	
