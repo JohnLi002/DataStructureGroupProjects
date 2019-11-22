@@ -58,10 +58,10 @@ public class BinaryNode<T> implements BinaryNodeInterface<T>{
 		int leftNodes = 0, rightNodes = 0;
 		
 		if(hasLeftChild()) {
-			leftNodes = leftChild.getHeight();
+			leftNodes = leftChild.getNumberOfNodes();
 		}
 		if(hasRightChild()) {
-			rightNodes = rightChild.getHeight();
+			rightNodes = rightChild.getNumberOfNodes();
 		}
 		return (1 + leftNodes + rightNodes);
 	}
