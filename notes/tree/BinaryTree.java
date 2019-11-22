@@ -2,21 +2,16 @@ package tree;
 
 import java.util.NoSuchElementException;
 import java.util.Stack;
-
 import iterator.Iterator;
-import lab2Stacks.ArrayStack;
 import project3Queues.LinkedQueue;
 
 public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 	private BinaryNode<T> root;
 
-
 	public BinaryTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) {
 		initializeTree(rootData, leftTree, rightTree);
 	}
-
-
 
 	public void setTree(T rootData) {
 		root = new BinaryNode<>(rootData);
@@ -25,7 +20,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	public void setTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) {
 		initializeTree(rootData, leftTree, rightTree);
 	}
-	
+
 	private void initializeTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) {
 		root = new BinaryNode<>(rootData);
 		if(leftTree != null && !leftTree.isEmpty()) {
@@ -35,22 +30,17 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			if(rightTree == leftTree) {
 				root.setRightChild(rightTree.getRoot().copy());
 			} else {
-				
+
 			}
 		}
 	}
-
-
-
+	
 	private boolean isEmpty() {
 		return root == null;
 	}
 
-
-
 	private BinaryNodeInterface<T> getRoot() {
-		// TODO Auto-generated method stub
-		return null;
+		return root;
 	}
 
 
@@ -58,53 +48,46 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	public T getData() {
 		return root.getData();
 	}
-	
+
 	public T getRootData() {
 		return root.getData();
 	}
 
 	@Override
 	public BinaryNodeInterface<T> getLeftChild() {
-		// TODO Auto-generated method stub
-		return null;
+		return root.getLeftChild();
 	}
 
 
 
 	@Override
 	public BinaryNodeInterface<T> getRightChild() {
-		// TODO Auto-generated method stub
-		return null;
+		return root.getRightChild();
 	}
 
 	@Override
 	public boolean hasLeftChild() {
-		// TODO Auto-generated method stub
-		return false;
+		return root.hasLeftChild();
 	}
 
 	@Override
 	public boolean hasRightChild() {
-		// TODO Auto-generated method stub
-		return false;
+		return root.hasRightChild();
 	}
 
 	@Override
 	public void setLeftChild(BinaryNodeInterface<T> leftChild) {
-		// TODO Auto-generated method stub
-		
+		root.setLeftChild(leftChild);
 	}
 
 	@Override
 	public void setRightChild(BinaryNodeInterface<T> rightChild) {
-		// TODO Auto-generated method stub
-		
+		root.setRightChild(rightChild);
 	}
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return root.getHeight();
 	}
 
 	@Override
@@ -117,20 +100,30 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 	@Override
 	public BinaryNodeInterface<T> copy() {
-		// TODO Auto-generated method stub
-		return null;
+		BinaryNode<T> result = (BinaryNode<T>) root.copy();
+		return result;
 	}
-	
+
+
+	@Override
+	public void setData(T newData) {
+		root.setData(newData);
+	}
+
+	@Override
+	public boolean isLeaf() {
+		return (!(root.hasLeftChild()) && !(root.hasRightChild()));
+	}
+
 	private  class PreorderIterator implements Iterator<T>{
 		private Stack<BinaryNode<T>> nodeStack;
-		
+
 		public PreorderIterator() {
 			nodeStack.push(root);
 		}
-		
+
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
 			return (!nodeStack.isEmpty());
 		}
 
@@ -139,32 +132,37 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			if(!hasNext()) {
 				throw new NoSuchElementException();
 			}
-			return null;
+			
+			BinaryNode <T> currNode = nodeStack.pop();
+			T item = currNode.getData();
+			if (currNode.hasRightChild())
+				nodeStack.push(currNode.getRightChild());
+			if (currNode.hasLeftChild())
+				nodeStack.push(currNode.getLeftChild());
+			return item;
 		}
 		
-
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-			
+			throw new UnsupportedOperationException();
 		}
 	}
-	
+
 	public class InorderIterator implements Iterator<T>{
-		
+
 		private Stack<BinaryNode<T>> nodeStack;
-		
+
 		public InorderIterator() {
 			addToStack(root);
 		}
-		
+
 		private void addToStack(BinaryNode<T> node) {
 			if(node.hasRightChild()) {
 				addToStack(node.getRightChild());
 			}
-			
+
 			nodeStack.push(node);
-			
+
 			if(node.hasLeftChild()) {
 				addToStack(node.getLeftChild());
 			}
@@ -179,11 +177,11 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		public T next() {
 			return nodeStack.pop().getData();
 		}
-		
+
 		public void outputLeaves() {
 			outputNodeLeaves(root);
 		}
-		
+
 		public void outputNodeLeaves(BinaryNode<T> node) {
 			if(node.isLeaf()) {
 				System.out.print(node.getData());
@@ -192,53 +190,35 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 				outputNodeLeaves((BinaryNode<T>) node.getLeftChild());
 			}
 		}
-		
+
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-			
+			throw new UnsupportedOperationException();
 		}
-		
 	}
-	
+
 	public class LevelorderIterator  implements Iterator<T>{
-	private LinkedQueue<BinaryNode<T>> nodeQueue;
-	
-	public LevelorderIterator() {
-		nodeQueue = new LinkedQueue<>();
-		nodeQueue.enqueue(root);
-	}
+		private LinkedQueue<BinaryNode<T>> nodeQueue;
 
-	@Override
-	public boolean hasNext() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+		public LevelorderIterator() {
+			nodeQueue = new LinkedQueue<>();
+			nodeQueue.enqueue(root);
+		}
 
-	@Override
-	public T next() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		@Override
+		public boolean hasNext() {
+			// TODO Auto-generated method stub
+			return false;
+		}
 
-	@Override
-	public void remove() {
-		// TODO Auto-generated method stub
-		
-	}
-	}
+		@Override
+		public T next() {
+			throw new NoSuchElementException();
+		}
 
-	@Override
-	public void setData(T newData) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public boolean isLeaf() {
-		// TODO Auto-generated method stub
-		return false;
+		@Override
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
 	}
 }
