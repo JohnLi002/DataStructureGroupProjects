@@ -6,7 +6,7 @@ public class Test {
 		BinaryNode<Integer> c = new BinaryNode(30);
 		BinaryNode<Integer> a = new BinaryNode(10,b,c);
 		
-		
+		System.out.println(a.getNumberOfNodes());
 		
 	}
 }
