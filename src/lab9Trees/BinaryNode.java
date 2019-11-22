@@ -1,4 +1,4 @@
-package tree;
+package lab9Trees;
 
 public class BinaryNode<T> implements BinaryNodeInterface<T>{
 	private T data;
@@ -55,16 +55,8 @@ public class BinaryNode<T> implements BinaryNodeInterface<T>{
 
 	@Override
 	public int getNumberOfNodes() {
-		int total = 0;
 		
-		if(leftChild!=null) {
-			total += leftChild.getNumberOfNodes();
-		}
-		if(rightChild!=null) {
-			
-		}
-		
-		return total;
+		return 0;
 	}
 
 	@Override
@@ -86,12 +78,6 @@ public class BinaryNode<T> implements BinaryNodeInterface<T>{
 
 	public boolean isLeaf () {
 	   return (leftChild == null && rightChild == null);
-	}
-
-	@Override
-	public void setData(T newData) {
-		data = newData;
-		
 	}
 
 }
