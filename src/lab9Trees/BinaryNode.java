@@ -19,6 +19,10 @@ public class BinaryNode<T> implements BinaryNodeInterface<T>{
 		return data;
 	}
 	
+	public void setData(T newData) {
+		data = newData;
+	}
+	
 	public BinaryNode<T> getLeftChild(){
 		return leftChild;
 	}
