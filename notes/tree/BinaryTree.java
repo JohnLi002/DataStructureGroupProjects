@@ -114,11 +114,24 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	public boolean isLeaf() {
 		return (!(root.hasLeftChild()) && !(root.hasRightChild()));
 	}
-
-	private  class PreorderIterator implements Iterator<T>{
+	
+	public Iterator<T> getPreorderIterator(){
+		return new PreorderIterator();
+	}
+	
+	public Iterator<T> getInorderIterator(){
+		return new InorderIterator();
+	}
+	
+	public Iterator<T> getLevelorderIterator(){
+		return new LevelorderIterator();
+	}
+	
+	private class PreorderIterator implements Iterator<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 
 		public PreorderIterator() {
+			nodeStack = new Stack<>();
 			nodeStack.push(root);
 		}
 
@@ -207,8 +220,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
-			return false;
+			return !(nodeQueue.isEmpty());
 		}
 
 		@Override
