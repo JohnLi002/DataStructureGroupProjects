@@ -39,7 +39,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		return root == null;
 	}
 
-	private BinaryNodeInterface<T> getRoot() {
+	protected BinaryNodeInterface<T> getRoot() {
 		return root;
 	}
 
