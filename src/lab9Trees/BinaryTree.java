@@ -63,46 +63,37 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 	@Override
 	public BinaryNodeInterface<T> getLeftChild() {
-		// TODO Auto-generated method stub
-		return null;
+		return root.getLeftChild();
 	}
-
-
 
 	@Override
 	public BinaryNodeInterface<T> getRightChild() {
-		// TODO Auto-generated method stub
-		return null;
+		return root.getRightChild();
 	}
 
 	@Override
 	public boolean hasLeftChild() {
-		// TODO Auto-generated method stub
-		return false;
+		return root.hasLeftChild();
 	}
 
 	@Override
 	public boolean hasRightChild() {
-		// TODO Auto-generated method stub
-		return false;
+		return root.hasRightChild();
 	}
 
 	@Override
 	public void setLeftChild(BinaryNodeInterface<T> leftChild) {
-		// TODO Auto-generated method stub
-
+		root.setLeftChild(leftChild);
 	}
 
 	@Override
 	public void setRightChild(BinaryNodeInterface<T> rightChild) {
-		// TODO Auto-generated method stub
-
+		root.setRightChild(rightChild);
 	}
 
 	@Override
 	public int getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return root.getHeight();
 	}
 	
 	@Override
@@ -115,23 +106,32 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	
 	@Override
 	public BinaryNodeInterface<T> copy() {
-		// TODO Auto-generated method stub
-		return null;
+		return root.copy();
 	}
 	
 	@Override
 	public void setData(T newData) {
-		// TODO Auto-generated method stub
-
+		root.setData(newData);
 	}
 	
 	@Override
 	public boolean isLeaf() {
-		// TODO Auto-generated method stub
-		return false;
+		return (!(root.hasLeftChild()) && !(root.hasRightChild()));
 	}
 	
-	private  class PreorderIterator implements Iterator<T>{
+	public Iterator<T> getPreorderIterator(){
+		return new PreorderIterator();
+	}
+	
+	public Iterator<T> getInorderIterator(){
+		return new InorderIterator();
+	}
+	
+	public Iterator<T> getLevelorderIterator(){
+		return new LevelorderIterator();
+	}
+	
+	private class PreorderIterator implements Iterator<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 
 		public PreorderIterator() {
@@ -151,17 +151,15 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			return null;
 		}
 
-
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-
+			throw new UnsupportedOperationException();
 		}
 	}
 	
 	
 
-	public class InorderIterator implements Iterator<T>{
+	private class InorderIterator implements Iterator<T>{
 
 		private Stack<BinaryNode<T>> nodeStack;
 
@@ -202,19 +200,21 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			if(node.hasLeftChild()) {
 				outputNodeLeaves((BinaryNode<T>) node.getLeftChild());
 			}
+			if(node.hasRightChild()) {
+				outputNodeLeaves((BinaryNode<T>) node.getLeftChild());
+			}
 		}
 
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-
+			throw new UnsupportedOperationException();
 		}
 
 	}
 
 	
 	
-	public class LevelorderIterator  implements Iterator<T>{
+	private class LevelorderIterator  implements Iterator<T>{
 		private LinkedQueue<BinaryNode<T>> nodeQueue;
 
 		public LevelorderIterator() {
@@ -236,11 +236,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 		@Override
 		public void remove() {
-			// TODO Auto-generated method stub
-
+			throw new UnsupportedOperationException();
 		}
 	}
-
-	
-	
 }
