@@ -42,7 +42,7 @@ public class Parts2and3 {
 		//	START Part 3
 		System.out.println("_Prompted Tree_");
 		System.out.print("  height: " + BT_A.getHeight() );
-		System.out.print("  number of nodes: " + BT_A.getNumberOFNodes() );
+		System.out.print("  number of nodes: " + BT_A.getNumberOfNodes() );
 		System.out.print("  leaves: ");
 		System.out.print("  four tree traversals: ");
 		//	END Part 3

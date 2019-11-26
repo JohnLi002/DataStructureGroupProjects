@@ -90,5 +90,4 @@ public class BinaryNode<T> implements BinaryNodeInterface<T>{
 	public boolean isLeaf () {
 	   return (leftChild == null && rightChild == null);
 	}
-
 }

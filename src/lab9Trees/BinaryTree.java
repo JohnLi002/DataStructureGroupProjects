@@ -140,7 +140,6 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
 			return (!nodeStack.isEmpty());
 		}
 
