@@ -1,5 +1,9 @@
 package lab9Trees;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public class BinaryNode<T> implements BinaryNodeInterface<T>{
 	private T data;
 	private BinaryNode<T> leftChild;

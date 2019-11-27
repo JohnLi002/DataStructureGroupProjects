@@ -1,9 +1,11 @@
 package lab9Trees;
 
-import java.util.NoSuchElementException;
+/**
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
+
 import java.util.Stack;
-import iterator.Iterator;
-import project3Queues.LinkedQueue;
 
 public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
@@ -182,26 +184,31 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 		
 		public PostOrderIterator() {
-			nodeStack.push(root);
+			nodeStack = new Stack<>();
+			addToStack (root);
 		}
+			
+		private void addToStack (BinaryNode <T> aNode) {
+			if (aNode == null)
+				return;
+		     BinaryNode <T> right = (BinaryNode <T>)aNode.getRightChild();
+			BinaryNode <T> left = (BinaryNode <T>)aNode.getLeftChild();
+			nodeStack.push(aNode);
+			addToStack (right);
+			addToStack (left);
+		}
+
 		
 		@Override
 		public boolean hasNext() {
 			return (!nodeStack.isEmpty());
 		}
-
+		
+		
+		
 		@Override
 		public T next() {
-			BinaryNode<T> node = nodeStack.pop();
-			
-			if(node.hasLeftChild()) {
-				nodeStack.push(node.getLeftChild());
-			}
-			if(node.hasRightChild()) {
-				nodeStack.push(node.getRightChild());
-			}
-			
-			return node.getData();
+			return nodeStack.pop().getData();
 		}
 
 		@Override
@@ -217,7 +224,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			nodeStack = new Stack <> ();
 			addToStack (root);
 		}
-
+		
 		private void addToStack (BinaryNode <T> aNode) {
 			if (aNode == null)
 				return;

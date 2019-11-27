@@ -1,5 +1,9 @@
 package lab9Trees;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 public interface TreeInterface<T> {
 	public T getRootData();
 	public int getHeight();

@@ -1,5 +1,8 @@
 package lab9Trees;
 
+/**
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public class Parts2and3 {
 	/*	2) Create a binary tree corresponding to the following diagram:
@@ -46,14 +49,44 @@ public class Parts2and3 {
 		System.out.println("  height: " + BT_A.getHeight() );
 		System.out.println("  number of nodes: " + BT_A.getNumberOfNodes() );
 		System.out.print("  leaves: "); BT_A.outputLeaves();
+		
+		
 		System.out.println('\n' + "  four tree traversals: ");
 		System.out.println("    Pre-Order:"		+ '\t' + "  A B D H I L E C F G J K");
+		System.out.print("    Iterator:" + "\t" + "  ");
+		Iterator<String> i = BT_A.getPreorderIterator();
+		while(i.hasNext()) {
+			System.out.print(i.next() + " ");
+		}
+		System.out.println("\n");
+		
+		
 		System.out.println("    In-Order:"		+ '\t' + "  H D I L B E A F C J G K");
+		System.out.print("    Iterator:" + "\t" + "  ");
+		i = BT_A.getInorderIterator();
+		while(i.hasNext()) {
+			System.out.print(i.next() + " ");
+		}
+		System.out.println("\n");
+		
+		
 		System.out.println("    Post-Order:"	+ '\t' + "  H L I D E B F J K G C A");
+		System.out.print("    Iterator:" + "\t" + "  ");
+		i = BT_A.getPostOrderIterator();
+		while(i.hasNext()) {
+			System.out.print(i.next() + " ");
+		}
+		System.out.println("\n");
+		
+		
 		System.out.println("    Level-Order:"	+ "  A B C D E F G H I J K L");
+		System.out.print("    Iterator:" + "\t" + "  ");
+		i = BT_A.getLevelorderIterator();
+		while(i.hasNext()) {
+			System.out.print(i.next() + " ");
+		}
+		System.out.println("\n");
 		
 		//	END Part 3
-		
-		
 	}
 }
