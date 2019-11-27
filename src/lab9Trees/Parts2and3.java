@@ -45,12 +45,12 @@ public class Parts2and3 {
 		System.out.println("___Prompted_Tree___");
 		System.out.println("  height: " + BT_A.getHeight() );
 		System.out.println("  number of nodes: " + BT_A.getNumberOfNodes() );
-		System.out.println("  leaves: "); BT_A.outputLeaves();
-		System.out.println("  four tree traversals: ");
-		System.out.println("    Pre-Order: A B D H I L E C F G J K");
-		System.out.println("    In-Order: H D I L B E A F C J G K");
-		System.out.println("    Post-Order: H L I D E B F J K G C A");
-		System.out.println("    Level-Order: A B C D E F G H I J K L");
+		System.out.print("  leaves: "); BT_A.outputLeaves();
+		System.out.println('\n' + "  four tree traversals: ");
+		System.out.println("    Pre-Order:"		+ '\t' + "  A B D H I L E C F G J K");
+		System.out.println("    In-Order:"		+ '\t' + "  H D I L B E A F C J G K");
+		System.out.println("    Post-Order:"	+ '\t' + "  H L I D E B F J K G C A");
+		System.out.println("    Level-Order:"	+ "  A B C D E F G H I J K L");
 		
 		//	END Part 3
 		
