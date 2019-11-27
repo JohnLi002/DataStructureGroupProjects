@@ -1,5 +1,6 @@
 package lab9Trees;
 
+
 public class Parts2and3 {
 	/*	2) Create a binary tree corresponding to the following diagram:
 	 *				   (A)
@@ -22,6 +23,7 @@ public class Parts2and3 {
 	public static void main(String[] args)
 	{
 		//	START Part 2
+
 		BinaryTree<String> BT_L = new BinaryTree<String> ("L", null, null);
 		BinaryTree<String> BT_I = new BinaryTree<String> ("I", null, BT_L);
 		BinaryTree<String> BT_H = new BinaryTree<String> ("H", null, null);
@@ -43,9 +45,11 @@ public class Parts2and3 {
 		System.out.println("_Prompted Tree_");
 		System.out.print("  height: " + BT_A.getHeight() );
 		System.out.print("  number of nodes: " + BT_A.getNumberOfNodes() );
-		System.out.print("  leaves: ");
+		System.out.print("  leaves: "); BT_A.outputLeaves();
 		System.out.print("  four tree traversals: ");
+		
 		//	END Part 3
+		
+		
 	}
-
 }

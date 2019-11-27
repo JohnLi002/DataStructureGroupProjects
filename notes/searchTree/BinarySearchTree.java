@@ -1,10 +1,6 @@
 package searchTree;
 
-import iterator.Iterator;
-import tree.BinaryNode;
-import tree.BinaryNodeInterface;
-import tree.BinaryTree;
-import tree.BinaryTreeInterface;
+import java.util.Iterator;
 
 public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTree<T> implements SearchTreeInterface<T> {
 
@@ -71,10 +67,12 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 			setRoot(new BinaryNode<T>(newEntry));
 			return null;
 		} else {
-			return addEntry(getRoot(), newEntry);
+			return addEntry((BinaryNode<T>) getRoot(), newEntry);
 		}
 	}
 	
+	
+
 	private T addEntry(BinaryNode<T> node, T newEntry) {
 		assert(node != null);
 		T rootEntry = node.getData();
@@ -92,9 +90,11 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 			if(node.hasRightChild()) {
 				return addEntry(node.getRightChild(), newEntry);
 			} else {
-				node.setRightChild(newEntry);
+				node.setRightChild(node);
 			}
 		}
+		
+		return rootEntry;
 	}
 	
 	@Override
@@ -136,7 +136,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 	}
 
 	@Override
-	public Iterator<T> getInorderIterator() {
+	public iterator.Iterator<T> getInorderIterator() {
 		// TODO Auto-generated method stub
 		return null;
 	}
