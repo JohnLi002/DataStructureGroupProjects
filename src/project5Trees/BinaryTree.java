@@ -2,8 +2,7 @@ package project5Trees;
 
 import java.util.NoSuchElementException;
 import java.util.Stack;
-import iterator.Iterator;
-import project3Queues.LinkedQueue;
+import java.util.Iterator;
 
 public class BinaryTree<T> implements BinaryNodeInterface<T>{
 

@@ -1,6 +1,5 @@
 package project5Trees;
 
-import java.util.Iterator;
 
 public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTree<T> implements SearchTreeInterface<T> {
 
@@ -191,12 +190,6 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 	}
 
 
-
-	@Override
-	public iterator.Iterator<T> getInorderIterator() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	private class MoveInfo {
 		private BinaryNode <T> parent;

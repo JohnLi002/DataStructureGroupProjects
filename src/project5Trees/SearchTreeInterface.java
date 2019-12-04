@@ -1,6 +1,6 @@
 package project5Trees;
 
-import iterator.Iterator;
+import java.util.Iterator;
 import tree.TreeInterface;
 
 public interface SearchTreeInterface<T extends Comparable<? super T>> extends TreeInterface<T> {
