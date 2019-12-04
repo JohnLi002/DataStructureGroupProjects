@@ -1,0 +1,44 @@
+general
+
+(A)
+|
+|
+|
+(B) ------------(C) ------------------(D)
+|                |                     |
+|                |                     |
+(E) --- (F)     (G)---(H)---(I)       (J) --- (K)
+
+
+
+
+Binary
+
+                      (A)
+                      / 
+                     /   
+                   (B)
+                   / \
+                  /   \
+                 /     \
+               (E)     (C)
+                \      / \
+                 \   (G) (D)
+                 (F)   \   \
+                       (H) (J)
+                         \   \
+                         (I) (K)
+                         
+                         
+                         
+                         
+                         
+General
+preorder  ABEFCGHIDJK
+postorder EFBGHICJKDA
+levelorder ABCDEFGHIJK
+
+Binary
+preorder: ABEFCGHIDJK
+inorder: EFBGHICDJKA
+postorder: FEIHGKJDCBA

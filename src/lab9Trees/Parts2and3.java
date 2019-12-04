@@ -88,5 +88,10 @@ public class Parts2and3 {
 		System.out.println("\n");
 		
 		//	END Part 3
+		// other tests
+		
+		System.out.println(BT_A.getRightChild().getData());
+		System.out.println(BT_A.getLeftChild().getData());
+		System.out.println(BT_A.getRootData());
 	}
 }
