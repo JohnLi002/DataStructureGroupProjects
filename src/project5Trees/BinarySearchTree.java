@@ -100,7 +100,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 			if(node.hasRightChild()) {
 				return addEntry(node.getRightChild(), newEntry);
 			} else {
-				node.setRightChild(node);
+				node.setRightChild(new BinaryNode<T>(newEntry));
 			}
 		}
 

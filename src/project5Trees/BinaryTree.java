@@ -228,7 +228,15 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 		@Override
 		public T next() {
-			throw new NoSuchElementException();
+			BinaryNode<T> n = nodeQueue.dequeue();
+			
+			if(n.hasLeftChild()) {
+				nodeQueue.enqueue(n.getLeftChild());
+			}
+			if(n.hasRightChild()) {
+				nodeQueue.enqueue(n.getRightChild());
+			}
+			return n.getData();
 		}
 
 		@Override

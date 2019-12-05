@@ -1,5 +1,7 @@
 package project5Trees;
 
+import java.util.Iterator;
+
 public class Problem1Answers {
 	public static void main(String[] args) {
 		/*
@@ -14,12 +16,55 @@ public class Problem1Answers {
 		 * 		Searching for a duplicate must allow a search in both subtrees.
 		 */
 		
+		
+		
+		//						C							
+		//					   / \
+		//					  D   B
+		//                   /     \
+		//					E		A
+		//				   /	   /
+		//				  E		  A
+		//				 /
+		//              F
+		
+		
+		String a = "A";
+		String b = "B";
+		String c = "C";
+		String d = "D";
+		String e = "E";
+		String f = "F";
+		BinarySearchTree<String> tree = new BinarySearchTree<>(c, null, null);
+		tree.add(b);
+		tree.add(a);
+		tree.add(d);
+		tree.add(a);
+		tree.add(e);
+		tree.add(e);
+		tree.add(f);
+		
+		//Levelorder: C D B E A E A F
+		
+		System.out.print("LevelOrder: "); 
+		Iterator<String> i = tree.getLevelorderIterator();
+		while(i.hasNext()) {
+			System.out.print(i.next() + " ");
+		}
+		
+		
+		
+		
+		
 		/* 
 		 * 	2.	Write Java code that creates a binary search tree (implemented in part 1)  from n random integers in the 
 		 * 		range 0 to 50,  outputs them using inorder iterator, and returns the height of the search tree. 
 		 * 		Run your code for n=2^h-1 where h ranges from 4 to 10. Compare the height of the randomly built tree with h, 
 		 * 		the height of the shortest binary tree.
 		 */
+		
+		
+		
 		
 		/*
 		 *  3.	Create a class Name as in lab 8, make it comparable by comparing just first names, then create a 
