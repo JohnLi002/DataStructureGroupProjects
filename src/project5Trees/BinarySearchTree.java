@@ -70,16 +70,27 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 		}
 	}
 
-
-
+	/**
+	 * Problem 1, Question 1
+	 * 
+	 * modified addEntry(BinaryNode<T> node, T newEntry):
+	 *  -The data in a node is greater than or equal to the data in the node’s left subtree
+	 * 	-The data in a node is less than or equal to the data in the node’s right subtree
+	 * 
+	 * @param node
+	 * @param newEntry
+	 * @return data of new entry
+	 */
 	private T addEntry(BinaryNode<T> node, T newEntry) {
 		assert(node != null);
 		T rootEntry = node.getData();
 		int comparison = newEntry.compareTo(rootEntry);
-		if(comparison == 0) {
+		/*if(comparison == 0) {
 			node.setData(newEntry);
 			return rootEntry;
-		} else if(comparison < 0) {
+		} else */
+		
+		if(comparison >= 0) {
 			if(node.hasLeftChild()) {
 				return addEntry(node.getLeftChild(), newEntry);
 			} else {
