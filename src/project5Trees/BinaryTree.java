@@ -41,11 +41,14 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		return root == null;
 	}
 
-	private BinaryNodeInterface<T> getRoot() {
-		return root;
+	public BinaryNodeInterface<T> getRoot() {
+		return (BinaryNodeInterface<T>) root;
 	}
 
-
+	public void setRoot(BinaryNode<T> node) {
+		root = node;
+	}
+	
 	@Override
 	public T getData() {
 		return root.getData();
