@@ -57,7 +57,7 @@ public class Problem1Answers {
 		
 		
 		
-		System.out.println("\n\n"+"2 Question"+"\n\n");
+		System.out.println("\n\n"+"2 Question");
 		
 		/* 
 		 * 	2.	Write Java code that creates a binary search tree (implemented in part 1)  from n random integers in the 
@@ -95,14 +95,15 @@ public class Problem1Answers {
 		
 		
 		try(Scanner s = new Scanner(new File("src/names.txt"));){
-			BinarySearchTree<Name> tree3 = new BinarySearchTree<>(null, null, null);
+			Name tree3_temp = new Name(s.nextLine());
+			BinarySearchTree<Name> tree3 = new BinarySearchTree<>(tree3_temp, null, null);
 			while(s.hasNextLine()) {
 				Name name = new Name(s.nextLine());
 				tree3.add(name);
 			}
 			
 			Iterator<Name> iterate = tree3.getInorderIterator();
-			System.out.println("Names: ");
+			System.out.println("\n\n" + "Names: ");
 			while(iterate.hasNext()) {
 				System.out.println(iterate.next());
 			}
