@@ -69,7 +69,7 @@ public class Problem1Answers {
 		Integer num = new Integer((int) (Math.random() * 51)); //random num from 0 - 50
 		BinarySearchTree<Integer> tree2 = new BinarySearchTree<>(num, null, null);
 		
-		int n = 10;
+		int n = ( 2^((int) (Math.random()*6 + 4)) )-1;
 
 		for(int count = 0; count < n; count++) {
 			num = new Integer((int) (Math.random() * 51));
