@@ -1,5 +1,9 @@
 package project5Trees;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Iterator;
@@ -49,7 +53,7 @@ public class Problem1Answers {
 		
 		//Levelorder: C D B E A E A F
 		
-		System.out.print("LevelOrder: "); 
+		System.out.print("1 >" + "\n" + "LevelOrder: "); 
 		Iterator<String> i = tree.getInorderIterator();
 		while(i.hasNext()) {
 			System.out.print(i.next() + " ");
@@ -57,7 +61,7 @@ public class Problem1Answers {
 		
 		
 		
-		System.out.println("\n\n"+"2 Question");
+		System.out.println("\n\n"+"2 >");
 		
 		/* 
 		 * 	2.	Write Java code that creates a binary search tree (implemented in part 1)  from n random integers in the 
@@ -77,12 +81,12 @@ public class Problem1Answers {
 			tree2.add(num);
 		}
 		
-		System.out.print("\n" + "Inorder: ");
+		System.out.print("Inorder: ");
 		Iterator<Integer> i2 = tree2.getInorderIterator();
 		while(i2.hasNext()) {
 			System.out.print(i2.next() + " ");
 		}
-		System.out.println("\n"+"height: " + tree2.getHeight());
+		System.out.print("\n"+"height: " + tree2.getHeight());
 		System.out.println("h = " + h + " n: " + n);
 		
 		
@@ -103,7 +107,7 @@ public class Problem1Answers {
 			}
 			
 			Iterator<Name> iterate = tree3.getInorderIterator();
-			System.out.println("\n\n" + "Names: ");
+			System.out.println("\n" + "3 >" + "\n" + "Names: ");
 			while(iterate.hasNext()) {
 				System.out.println(iterate.next());
 			}

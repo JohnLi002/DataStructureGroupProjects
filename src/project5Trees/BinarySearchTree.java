@@ -1,5 +1,8 @@
 package project5Trees;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
 
 public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTree<T> implements SearchTreeInterface<T> {
 

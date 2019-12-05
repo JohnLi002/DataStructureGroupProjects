@@ -1,5 +1,9 @@
 package project5Trees;
 
+/*
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
 import java.util.Iterator;
 import tree.TreeInterface;
 
