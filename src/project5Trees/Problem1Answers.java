@@ -47,7 +47,7 @@ public class Problem1Answers {
 		//Levelorder: C D B E A E A F
 		
 		System.out.print("LevelOrder: "); 
-		Iterator<String> i = tree.getLevelorderIterator();
+		Iterator<String> i = tree.getInorderIterator();
 		while(i.hasNext()) {
 			System.out.print(i.next() + " ");
 		}
@@ -62,6 +62,25 @@ public class Problem1Answers {
 		 * 		Run your code for n=2^h-1 where h ranges from 4 to 10. Compare the height of the randomly built tree with h, 
 		 * 		the height of the shortest binary tree.
 		 */
+		
+		Integer num = new Integer((int) (Math.random() * 51)); //random num from 0 - 50
+		BinarySearchTree<Integer> tree2 = new BinarySearchTree<>(num, null, null);
+		
+		int n = 10;
+
+		for(int count = 0; count < n; count++) {
+			num = new Integer((int) (Math.random() * 51));
+			tree2.add(num);
+		}
+		
+		System.out.print("\n" + "Inorder: ");
+		Iterator<Integer> i2 = tree2.getInorderIterator();
+		while(i2.hasNext()) {
+			System.out.print(i2.next() + " ");
+		}
+		System.out.println("\n"+"height: " + tree2.getHeight());
+		int h = (int) (Math.random()*7) + 4;
+		System.out.println("h = " + h + " height: " + n);
 		
 		
 		

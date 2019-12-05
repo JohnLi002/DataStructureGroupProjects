@@ -169,19 +169,18 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 
 		public InorderIterator() {
+			nodeStack = new Stack<>();
 			addToStack(root);
 		}
 
 		private void addToStack(BinaryNode<T> node) {
-			if(node.hasRightChild()) {
-				addToStack(node.getRightChild());
-			}
-
+			if (node == null)
+				return;
+			BinaryNode <T> right = (BinaryNode <T>)node.getRightChild();
+			BinaryNode <T> left = (BinaryNode <T>)node.getLeftChild();	
+			addToStack (right);
 			nodeStack.push(node);
-
-			if(node.hasLeftChild()) {
-				addToStack(node.getLeftChild());
-			}
+			addToStack (left);
 		}
 
 		@Override
