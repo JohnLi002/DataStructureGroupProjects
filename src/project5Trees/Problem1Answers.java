@@ -1,6 +1,9 @@
 package project5Trees;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class Problem1Answers {
 	public static void main(String[] args) {
@@ -54,11 +57,11 @@ public class Problem1Answers {
 		
 		
 		
-		
+		System.out.println("\n\n"+"2 Question"+"\n\n");
 		
 		/* 
 		 * 	2.	Write Java code that creates a binary search tree (implemented in part 1)  from n random integers in the 
-		 * 		range 0 to 50,  outputs them using inorder iterator, and returns the height of the search tree. 
+		 * 		range 0 to 50, outputs them using inorder iterator, and returns the height of the search tree. 
 		 * 		Run your code for n=2^h-1 where h ranges from 4 to 10. Compare the height of the randomly built tree with h, 
 		 * 		the height of the shortest binary tree.
 		 */
@@ -80,9 +83,7 @@ public class Problem1Answers {
 		}
 		System.out.println("\n"+"height: " + tree2.getHeight());
 		int h = (int) (Math.random()*7) + 4;
-		System.out.println("h = " + h + " height: " + n);
-		
-		
+		System.out.println("h = " + h + " n: " + n);
 		
 		
 		/*
@@ -93,8 +94,21 @@ public class Problem1Answers {
 		 */
 		
 		
-		
-		
-		
+		try(Scanner s = new Scanner(new File("src/names.txt"));){
+			BinarySearchTree<Name> tree3 = new BinarySearchTree<>(null, null, null);
+			while(s.hasNextLine()) {
+				Name name = new Name(s.nextLine());
+				tree3.add(name);
+			}
+			
+			Iterator<Name> iterate = tree3.getInorderIterator();
+			System.out.println("Names: ");
+			while(iterate.hasNext()) {
+				System.out.println(iterate.next());
+			}
+			
+		} catch(FileNotFoundException ex) {
+			System.out.println("File not found");
+		}
 	}
 }

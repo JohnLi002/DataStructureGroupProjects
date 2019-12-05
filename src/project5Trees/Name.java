@@ -20,7 +20,6 @@ public class Name implements Comparable <Name>{
 		
 	}
 
-
 	public String getFirst() {
 		return firstName;
 	}
