@@ -1,6 +1,10 @@
 package project5Trees;
 
-import java.util.NoSuchElementException;
+/**
+ * Group Members: John Li, Tony Lei, AJ Kreuzkamp
+ */
+
+
 import java.util.Stack;
 import java.util.Iterator;
 
@@ -8,9 +12,12 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 	private BinaryNode<T> root;
 
+
 	public BinaryTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) {
 		initializeTree(rootData, leftTree, rightTree);
 	}
+
+
 
 	public void setTree(T rootData) {
 		root = new BinaryNode<>(rootData);
@@ -22,27 +29,19 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 	private void initializeTree(T rootData, BinaryTree<T> leftTree, BinaryTree<T> rightTree) {
 		root = new BinaryNode<>(rootData);
-		if(leftTree != null && !leftTree.isEmpty()) {
-			root.setLeftChild(leftTree.getRoot());
+		if(leftTree != null) {
+			root.setLeftChild(leftTree.getRoot().copy());
 		}
-		if(rightTree != null && !rightTree.isEmpty()) {
-			if(rightTree == leftTree) {
-				root.setRightChild(rightTree.getRoot().copy());
-			} else {
+		if(rightTree != null) {
+			root.setRightChild(rightTree.getRoot());
+		}
+	}
 
-			}
-		}
-	}
-	
-	public void setRoot(BinaryNode<T> node) {
-		root = node;
-	}
-	
 	private boolean isEmpty() {
 		return root == null;
 	}
 
-	protected BinaryNodeInterface<T> getRoot() {
+	private BinaryNodeInterface<T> getRoot() {
 		return root;
 	}
 
@@ -60,8 +59,6 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	public BinaryNodeInterface<T> getLeftChild() {
 		return root.getLeftChild();
 	}
-
-
 
 	@Override
 	public BinaryNodeInterface<T> getRightChild() {
@@ -101,12 +98,28 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		return root.getNumberOfNodes();
 	}
 
-	@Override
-	public BinaryNodeInterface<T> copy() {
-		BinaryNode<T> result = (BinaryNode<T>) root.copy();
-		return result;
+	public void outputLeaves() {
+		outputNodeLeaves(root);
 	}
 
+	public void outputNodeLeaves(BinaryNode<T> node) {
+		if(node.isLeaf()) {
+			System.out.print(node.getData());
+		}
+
+		if(node.hasLeftChild()) {
+			outputNodeLeaves((BinaryNode<T>) node.getLeftChild());
+		}
+
+		if(node.hasRightChild()) {
+			outputNodeLeaves((BinaryNode<T>) node.getRightChild());
+		}
+	}
+
+	@Override
+	public BinaryNodeInterface<T> copy() {
+		return root.copy();
+	}
 
 	@Override
 	public void setData(T newData) {
@@ -117,25 +130,33 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 	public boolean isLeaf() {
 		return (!(root.hasLeftChild()) && !(root.hasRightChild()));
 	}
-	
+
 	public Iterator<T> getPreorderIterator(){
 		return new PreorderIterator();
 	}
-	
+
+	public Iterator<T> getPostOrderIterator(){
+		return new PostOrderIterator();
+	}
+
 	public Iterator<T> getInorderIterator(){
 		return new InorderIterator();
 	}
-	
+
 	public Iterator<T> getLevelorderIterator(){
 		return new LevelorderIterator();
 	}
-	
+
 	private class PreorderIterator implements Iterator<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 
-		public PreorderIterator() {
-			nodeStack = new Stack<>();
-			nodeStack.push(root);
+		public PreorderIterator (){
+			if (root == null)
+				throw new IllegalArgumentException (
+						"No iteration on empty tree");
+
+			nodeStack = new Stack <>();
+			nodeStack.push (root);
 		}
 
 		@Override
@@ -145,10 +166,6 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 
 		@Override
 		public T next() {
-			if(!hasNext()) {
-				throw new NoSuchElementException();
-			}
-			
 			BinaryNode <T> currNode = nodeStack.pop();
 			T item = currNode.getData();
 			if (currNode.hasRightChild())
@@ -157,32 +174,31 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 				nodeStack.push(currNode.getLeftChild());
 			return item;
 		}
-		
+
 		@Override
-		public void remove() {
+		public void remove (){
 			throw new UnsupportedOperationException();
 		}
 	}
 
-	public class InorderIterator implements Iterator<T>{
 
+	private class PostOrderIterator implements Iterator<T>{
 		private Stack<BinaryNode<T>> nodeStack;
 
-		public InorderIterator() {
+		public PostOrderIterator() {
 			nodeStack = new Stack<>();
-			addToStack(root);
+			addToStack (root);
 		}
 
-		private void addToStack(BinaryNode<T> node) {
-			if (node == null)
+		private void addToStack (BinaryNode <T> aNode) {
+			if (aNode == null)
 				return;
-			BinaryNode <T> right = (BinaryNode <T>)node.getRightChild();
-			BinaryNode <T> left = (BinaryNode <T>)node.getLeftChild();	
+			BinaryNode <T> right = (BinaryNode <T>)aNode.getRightChild();
+			BinaryNode <T> left = (BinaryNode <T>)aNode.getLeftChild();
+			nodeStack.push(aNode);
 			addToStack (right);
-			nodeStack.push(node);
 			addToStack (left);
 		}
-
 		@Override
 		public boolean hasNext() {
 			return (!nodeStack.isEmpty());
@@ -193,24 +209,44 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 			return nodeStack.pop().getData();
 		}
 
-		public void outputLeaves() {
-			outputNodeLeaves(root);
-		}
-
-		public void outputNodeLeaves(BinaryNode<T> node) {
-			if(node.isLeaf()) {
-				System.out.print(node.getData());
-			}
-			if(node.hasLeftChild()) {
-				outputNodeLeaves((BinaryNode<T>) node.getLeftChild());
-			}
-		}
-
 		@Override
 		public void remove() {
 			throw new UnsupportedOperationException();
 		}
 	}
+
+
+	private class InorderIterator implements Iterator <T> {
+		private Stack <BinaryNode<T>> nodeStack;
+
+		public InorderIterator() {
+			nodeStack = new Stack <> ();
+			addToStack (root);
+		}
+
+		private void addToStack (BinaryNode <T> aNode) {
+			if (aNode == null)
+				return;
+			BinaryNode <T> right = (BinaryNode <T>)aNode.getRightChild();
+			BinaryNode <T> left = (BinaryNode <T>)aNode.getLeftChild();	
+			addToStack (right);
+			nodeStack.push(aNode);
+			addToStack (left);
+		}
+
+		public boolean hasNext() {
+			return (!nodeStack.isEmpty());
+		}
+
+		public T next() {
+			return nodeStack.pop().getData();
+		}
+
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+	}
+
 
 	public class LevelorderIterator  implements Iterator<T>{
 		private LinkedQueue<BinaryNode<T>> nodeQueue;
@@ -228,7 +264,7 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		@Override
 		public T next() {
 			BinaryNode<T> n = nodeQueue.dequeue();
-			
+
 			if(n.hasLeftChild()) {
 				nodeQueue.enqueue(n.getLeftChild());
 			}
@@ -244,3 +280,4 @@ public class BinaryTree<T> implements BinaryNodeInterface<T>{
 		}
 	}
 }
+
