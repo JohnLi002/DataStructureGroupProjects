@@ -69,7 +69,8 @@ public class Problem1Answers {
 		Integer num = new Integer((int) (Math.random() * 51)); //random num from 0 - 50
 		BinarySearchTree<Integer> tree2 = new BinarySearchTree<>(num, null, null);
 		
-		int n = ( 2^((int) (Math.random()*6 + 4)) )-1;
+		int h = (int) (Math.random()*7) + 4;
+		int n = ( 2^h )-1;
 
 		for(int count = 0; count < n; count++) {
 			num = new Integer((int) (Math.random() * 51));
@@ -82,7 +83,6 @@ public class Problem1Answers {
 			System.out.print(i2.next() + " ");
 		}
 		System.out.println("\n"+"height: " + tree2.getHeight());
-		int h = (int) (Math.random()*7) + 4;
 		System.out.println("h = " + h + " n: " + n);
 		
 		
