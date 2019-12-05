@@ -85,11 +85,6 @@ public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTre
 		assert(node != null);
 		T rootEntry = node.getData();
 		int comparison = newEntry.compareTo(rootEntry);
-		/*if(comparison == 0) {
-			node.setData(newEntry);
-			return rootEntry;
-		} else */
-		
 		if(comparison >= 0) {
 			if(node.hasLeftChild()) {
 				return addEntry(node.getLeftChild(), newEntry);
